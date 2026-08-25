@@ -5,6 +5,7 @@
 
 
 ## Analyze
+### Analyzing Portfolios
 ---
 
 **[Analyzing MartyC-137's Data Engineering Portfolio:](https://github.com/MartyC-137/Data-Engineering)**
@@ -31,7 +32,7 @@ Professional tone: The document utilizes a semi-professional, detail-oriented to
 
 ---
 
-**[Analyzing Scissors]**
+### Analyzing Scissors
 
 Primary Function (a): The primary function of a pair of scissors is to give the user the ability to apply a high-intensity shear force over a small area by applying a force into the lever system about a fulcrum.
 
