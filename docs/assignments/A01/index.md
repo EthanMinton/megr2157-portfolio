@@ -40,6 +40,9 @@
 
 <img width="466" height="70" alt="image" src="https://github.com/user-attachments/assets/aabc19d1-4347-4006-88f2-06dbb94aa29f" />
 
+<img width="696" height="428" alt="Math Scratch Paper" src="https://github.com/user-attachments/assets/4a2e67ae-01e8-490f-bd86-3d7e730141c2" />
+
+
 **F(Handle)** - Mechanical Force Applied by the user; the variable that can be applied at different magnitudes to produce different results.
 
 **d(Handle)** - Distance from force application to fulcrum; in most cases, the distance of the handle is longer than the distance of the blade. 
@@ -66,7 +69,7 @@
 
 The Photographed Blades, the Top Blade and Bottom blade, are symmetrical and mirrored components. Having the same geometric properties and application within the equations. As was touched on in the description of the governing models, the distance of each force creates the mechanical advantage the scissors take advantage of. The Extended length on the handle side of the blade allows a user to apply a force that would be magnified by the mechanical advantage to the opposing shortened, sharper side of the blade. With a now-magnified resulting force, it is applied to a chosen material, where the “Sharpness” of the shortened side of the blade creates a minuscule cross-sectional area that allows the shear stress to cut through the material.
 
-<img width="823" height="1060" alt="IMG_5694" src="https://github.com/user-attachments/assets/1927a1ae-a41f-4aa2-82fe-9a8f9c5a7130" />
+<img width="400" height="530" alt="IMG_5694" src="https://github.com/user-attachments/assets/1927a1ae-a41f-4aa2-82fe-9a8f9c5a7130" />
 
 The photographed fulcrum differs from the blades; mathematically, the fulcrum is the origin point that determines the values of distance from it within the first governing model. It acts as the body about which the blades are able to rotate freely without any separation between the blades. The Fulcrum in this case a cylindrical pin with a 2 sided flat top. The Cylindrical body is a fixed rotational point that allows for mechanical motion to rotate about itself and transfer the mechanical force from the handle to the blade with minimal friction. The capped ends of the Fulcrum align the 2 blades together on a cylindrical path and prevent lateral separation if ever facing resistance from the material chosen.
 
