@@ -73,6 +73,8 @@
 
 **The fulcrum:** differs from the blades; mathematically, the fulcrum is the origin point that determines the values of distance from it within the first governing model. It acts as the body about which the blades are able to rotate freely without any separation between the blades. The Fulcrum in this case a cylindrical pin with a 2 sided flat top. The Cylindrical body is a fixed rotational point that allows for mechanical motion to rotate about itself and transfer the mechanical force from the handle to the blade with minimal friction. The capped ends of the Fulcrum align the 2 blades together on a cylindrical path and prevent lateral separation if ever facing resistance from the material chosen.
 
+---
+
 **Patent:** US2680294A Authored by: Willie M Shoffner
 
 The Historic Nature of how the pair of scissors has existed for thousands of years means no physical patent or document exists showcasing the original design from which it came to be. While researching, I came across the patent found above, one of the earliest online documents showing a specialized pair of scissors described as "Hand shears for cutting sheet metal". The image below is sourced directly from the patent, showing the exact described mechanical advantage above, with the handle being found at a longer length with the shears remaining considerably shorter. 
@@ -88,9 +90,21 @@ The Historic Nature of how the pair of scissors has existed for thousands of yea
 
 **Laser cutters** perform a similar task to scissors by cutting materials using a highly focused light instead of simple blades. Its applications primarily are with materials that would be considered too harsh for scissors to be able to properly cut, such as metals like aluminum or stainless steel. It carries immense precision with the cuts it performs, with the major downsides being the wattage required to function and the complexity to operate compared to scissors.
 
+---
 
 ## Decide
 
+**Homepage Identity** - When a visitor comes across the page, the first couple of seconds are considered the most important, as whatever is seen will be the first introduction to all of the work that follows. The page needs to convey not only the details of what the portfolio is, but who the portfolio belongs to, how to contact them, and where to go next. Assuming that the user who has opened the page knows nothing about the course, you need to provide this introduction. I chose to keep the template's introduction so that it provides helpful information about the course itself they may be helpful to the reader in understanding what is asked within each assignment. The inclusion of the written one is to provide the reader the necessary information to leave the landing page without any major confusion, as described above.
+
+**Intentional Customization** - The element chosen to be altered is the Assignment title “A1” within the “mkdocs.yml” file under “Nav:” and subsequently “Assignments:”. It has been changed to include a small title description that describes the assignment's content. The new title is now “A1- Professional Portfolio Standards,” assisting with user navigation with distinctive titles that inform them about the content the page holds. The original title for the assignment did not properly meet the requirement, as any uninformed user accessing the portfolio and opening the assignment page would be met with 11 untitled pages that pose a lot of confusion. Each assignment title that will be edited will continue to contain the “A#” distinction for informed individuals and graders.
+
+**Document Standard** - Every assignment committed to this portfolio will strictly adhere to the Engineering Method by providing reproducible technical explanations, a clear problem-solving rationale, and a rigor that is expected of Professional Engineers.
+
+
+---
 
 ## Communicate
 
+The assignment requires written work to be located within the "About Me" Page on the sidebar to the Left. 
+
+Time Spent: 10 Hours
