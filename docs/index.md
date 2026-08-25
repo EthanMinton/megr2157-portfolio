@@ -1,6 +1,6 @@
 # Ethan Minton - MEGR 2157 Portfolio
 
-![MEGR 2156-7 Title](MEGR2156title.png)
+<img width="1200" height="630" alt="Untitled design (3)" src="https://github.com/user-attachments/assets/3e6736b7-6e54-4a51-bb05-443821286f5d" />
 
 ---
 
@@ -10,7 +10,17 @@ I am currently a full-time student at UNC Charlotte specializing in a concentrat
 
 ---
 
+
+
+
+
+
+
+
+
 # Course Introduction 
+
+![MEGR 2156-7 Title](MEGR2156title.png)
 
 This site is the working record of your engineering design decisions across MEGR 2157. Every entry follows the Analyze, Decide, Communicate structure in accordance with standard engineering documentation practice, so a reader can see not just what you built, but how and why you built it that way. Engineering documentation is a skill developed through deliberate practice. Each assignment is an opportunity to improve the precision, clarity, and professional quality of how you record and defend your work. As you progress through the semester your engineering capability will grow alongside your documentation — this portfolio is the record of that journey.
 
