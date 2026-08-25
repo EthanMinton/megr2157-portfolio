@@ -10,7 +10,9 @@ I am currently a full-time student at UNC Charlotte specializing in a concentrat
 
 ---
 
+*MEGR 2157 — Design Projects I Laboratory | UNC Charlotte | Ethan C. Minton | eminton4@charlotte.edu*
 
+---
 
 
 
