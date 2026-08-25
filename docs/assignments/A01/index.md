@@ -5,8 +5,9 @@
 
 
 ## Analyze
+---
 
-[Analyzing MartyC-137's Data Engineering Portfolio:](https://github.com/MartyC-137/Data-Engineering)
+**[Analyzing MartyC-137's Data Engineering Portfolio:](https://github.com/MartyC-137/Data-Engineering)**
 
 Navigability: The link provided above redirects to MartyC-137's portfolio landing page. The landing page features all files attributed to the portfolio. Scrolling down the page, you will find an introduction prefacing the content found below. These links, once the page is fully loaded, take roughly 12 seconds to locate.
 
@@ -16,8 +17,9 @@ Evidence of reasoning: The portfolio only provides the finalized coding script. 
 
 Professional tone: The document uses a casual tone to introduce itself and describe the functionality of the existing code. It lacks a standard of professionalism that would be expected within documentation of career work.
 
+---
 
-[Analyzing Sarah Jean-Gilles's ePortfolio:](https://instructure.charlotte.edu/eportfolios/4930/home)
+**[Analyzing Sarah Jean-Gilles's ePortfolio:](https://instructure.charlotte.edu/eportfolios/4930/home)**
 
 Navigability: The link provided above directs to Sarah Jean-Gilles's ePortfolio Welcome page. Immediately, the welcome page features a sidebar that allows direct access to the assignments. Compared to GitHub, Canvas features a streamlined design with the integrated sidebar links. After the page is completely loaded, it takes only 2-5 seconds to access one of the provided assignments listed.
 
@@ -27,8 +29,9 @@ Evidence of reasoning: The portfolio provided in each of the assignments a full 
 
 Professional tone: The document utilizes a semi-professional, detail-oriented tone to convey the step-by-step process carried out through all listed assignments. 
 
+---
 
-[Analyzing Scissors]
+**[Analyzing Scissors]**
 
 Primary Function (a): The primary function of a pair of scissors is to give the user the ability to apply a high-intensity shear force over a small area by applying a force into the lever system about a fulcrum.
 
@@ -55,8 +58,9 @@ A(Contact) - Cross-Sectional Area of contact between the blades; the sharper the
 
 Frictionless Assumption: The Mechanical Motion is assumed to be frictionless within both the rotation about the fulcrum and the sliding motion between the 2 blades. The general assumption allows for the equation to remain simple in conveying the internal force reactions and the geometric properties that govern the scissors.
 
-<img width="1038" height="2803" alt="IMG_5693" src="https://github.com/user-attachments/assets/4d273522-ba9d-4488-9f0f-08a33764069d" />
-<img width="1004" height="2874" alt="IMG_5691" src="https://github.com/user-attachments/assets/4df6b34f-78c9-4e89-bab3-cef39c6bebfe" />
+<img width="2874" height="1004" alt="IMG_5691 (1)" src="https://github.com/user-attachments/assets/cb69abc6-94cd-4a65-af09-7f4b3aee0ae8" />
+<img width="2803" height="1038" alt="IMG_5693 (1)" src="https://github.com/user-attachments/assets/2e538f63-f821-460e-aca5-fa4a9d5e5a95" />
+
 
 The Photographed Blades, the Top Blade and Bottom blade, are symmetrical and mirrored components. Having the same geometric properties and application within the equations. As was touched on in the description of the governing models, the distance of each force creates the mechanical advantage the scissors take advantage of. The Extended length on the handle side of the blade allows a user to apply a force that would be magnified by the mechanical advantage to the opposing shortened, sharper side of the blade. With a now-magnified resulting force, it is applied to a chosen material, where the “Sharpness” of the shortened side of the blade creates a minuscule cross-sectional area that allows the shear stress to cut through the material.
 
