@@ -30,9 +30,45 @@ Professional tone: The document utilizes a semi-professional, detail-oriented to
 
 [Analyzing Scissors]
 
-Primary Function (a): The primary function of a pair of scissors is to give the user the ability to apply a high-intensity shear force over a small area by applying a force into its lever system. 
+Primary Function (a): The primary function of a pair of scissors is to give the user the ability to apply a high-intensity shear force over a small area by applying a force into the lever system about a fulcrum.
 
-Governing Model (b): The governing model 
+Governing Model (b): The governing model for scissors is the “Lever Model Equation”, using mechanical leverage of distance between the handle of the shear and the blade. 
+
+<img width="466" height="70" alt="image" src="https://github.com/user-attachments/assets/aabc19d1-4347-4006-88f2-06dbb94aa29f" />
+
+F(Handle) - Mechanical Force Applied by the user; the variable that can be applied at different magnitudes to produce different results.
+
+d(Handle) - Distance from force application to fulcrum; in most cases, the distance of the handle is longer than the distance of the blade. 
+
+F(Blade) - Output Force Applied from Blade to Material; the output variable to be used to determine shear stress applied to material. 
+
+d(Blade) - Distance from the output force to the fulcrum; in most cases, the distance of the blade is shorter than the distance of the handle.
+
+<img width="340" height="65" alt="image" src="https://github.com/user-attachments/assets/643cf009-0534-40f2-a01c-2c9a03ced088" />
+
+𝛕 - Shear Stress applied to the material; the stress that leads to the shearing of the chosen material by the user.
+
+F(Blade) - Output Force Applied from the blade to the material; the previous governing equations' output is variable here to determine the shear stress applied.
+
+A(Contact) - Cross-Sectional Area of contact between the blades; the sharper the blade, the smaller the area of contact, the higher the shear stress.
+
+
+Frictionless Assumption: The Mechanical Motion is assumed to be frictionless within both the rotation about the fulcrum and the sliding motion between the 2 blades. The general assumption allows for the equation to remain simple in conveying the internal force reactions and the geometric properties that govern the scissors.
+
+<img width="1038" height="2803" alt="IMG_5693" src="https://github.com/user-attachments/assets/4d273522-ba9d-4488-9f0f-08a33764069d" />
+<img width="1004" height="2874" alt="IMG_5691" src="https://github.com/user-attachments/assets/4df6b34f-78c9-4e89-bab3-cef39c6bebfe" />
+
+The Photographed Blades, the Top Blade and Bottom blade, are symmetrical and mirrored components. Having the same geometric properties and application within the equations. As was touched on in the description of the governing models, the distance of each force creates the mechanical advantage the scissors take advantage of. The Extended length on the handle side of the blade allows a user to apply a force that would be magnified by the mechanical advantage to the opposing shortened, sharper side of the blade. With a now-magnified resulting force, it is applied to a chosen material, where the “Sharpness” of the shortened side of the blade creates a minuscule cross-sectional area that allows the shear stress to cut through the material.
+
+<img width="823" height="1060" alt="IMG_5694" src="https://github.com/user-attachments/assets/1927a1ae-a41f-4aa2-82fe-9a8f9c5a7130" />
+
+The photographed fulcrum differs from the blades; mathematically, the fulcrum is the origin point that determines the values of distance from it within the first governing model. It acts as the body about which the blades are able to rotate freely without any separation between the blades. The Fulcrum in this case a cylindrical pin with a 2 sided flat top. The Cylindrical body is a fixed rotational point that allows for mechanical motion to rotate about itself and transfer the mechanical force from the handle to the blade with minimal friction. The capped ends of the Fulcrum align the 2 blades together on a cylindrical path and prevent lateral separation if ever facing resistance from the material chosen.
+
+Guillotine Cutters preform a similar task to the typically pair of scissors, with both being mechanisms that are both used to cut materials through a precise manner using intense shear force over a small area, creating neat cuts. Often, these 2 are used in academic and professional settings where they excel at the specific level for each of their designs. Scissors are designed for the versatility to change directions and make smaller incisions. Guillotine Cutters are designed for uniform, large incisions for stacks of materials, its efficiency is their speed for simple but large tasks. 
+
+Laser cutters perform a similar task to scissors by cutting materials using a highly focused light instead of simple blades. Its applications primarily are with materials that would be considered too harsh for scissors to be able to properly cut, such as metals like aluminum or stainless steel. It carries immense precision with the cuts it performs, with the major downsides being the wattage required to function and the complexity to operate compared to scissors.
+
+
 ## Decide
 
 
