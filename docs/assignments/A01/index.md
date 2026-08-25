@@ -2,7 +2,9 @@
 
 ## Objective
 
+Develop a professional portfolio that demonstrates core engineering skills through critique, explanation, and in-depth analysis.
 
+---
 
 ## Analyze
 ### Analyzing Portfolios
