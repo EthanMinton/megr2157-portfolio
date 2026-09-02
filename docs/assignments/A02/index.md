@@ -67,7 +67,7 @@ Within this set of calculations, I went out of my way to also calculate the diam
 
 #### Weight of the Pins
 
-To calculate the weight of the pins, it requires us to assume how we define their length. Generally, when designing a truss structure, the pins must stick out on the surface edge to ensure fasteners can be attached. I created a function that takes into account the width of the members by multiplying by 2 and then by 20% more to allow the pins to stick out. NEED TO FINISH
+To calculate the weight of the pins, it requires us to assume how we define their length. Generally, when designing a truss structure, the pins must stick out on the surface edge to ensure fasteners can be attached. I created a simple function that takes into account the width of the members by multiplying by 2 and then by 20% more to allow the pins to stick out. 
 
 
 ## Decide
