@@ -51,21 +51,29 @@ After Joint B, I moved on to Joint C, where I found a significant piece of infor
 
 Taking the highest internal force within the truss, we can calculate the minimum area that is required for it to function without failure. To solve for area immediately, we have to combine 2 equations. These equations involve stress_allow being equal to stress_yield / Factor of Safety, and Stress_allow also being equal to maximum internal force / minimum area. Plugging these equations into each other allows for us to isolate the minimum area and solve for it. Giving us an area of 288.4 mm^2. Square rooting this value gives us 16.7 mm, the width of the beams and the amount the beam will be extruded.
 
+<img width="820" height="567" alt="Math Scratch Paper (7)" src="https://github.com/user-attachments/assets/effeaa9b-cbb4-43bc-bb3e-fbc9888f93df" />
 
 #### Weight of the Truss 
 
 Calculating the weight of the entire truss requires a collection of values previously grabbed, such as a summation of all of the lengths of each of the truss being multiplied by our now found cross sectional giving us the volume of the truss. Afterwards, you multiply the volume by the density to get the mass of the truss, which you can then multiply by gravity to obtain the given weight of 63.09 N.
 
+<img width="820" height="397" alt="Math Scratch Paper (8)" src="https://github.com/user-attachments/assets/eadffd27-249c-4bb3-b115-5d5030ca2de8" />
+
 Outside of calculations being relatively straightforward to set up and solve, a couple of assumptions about the nuances had to be made. Due to Creo, the CAD software I am using, lacking a standard material for A500 Steel, I was instructed to use another material with a similar density and properties. I decided to use SolidWorks ASTM A36 Steel as it had the same density as A500, with 7,850 Kg/m^3. Another assumption made is the nuance you have to take with how much detail you choose to go into. Do you include the holes from the pins in the area calculation? What about the possible overlap in the CAD modeling that will affect its weight calculations? There are so many intricate details you could consider with each of these calculations; I decided to keep it simple as the general goal here is to get it within earshot of what the CAD model itself computes.
 
-Image of solidworks ASTM A35 Steel info
-Image of weight calc
+NEED IMAGE OF SOLIDWORKS 
 
 #### Shear Force on the Pins
 
 NOTE: To preface this section, I want to mention the fact that I initially solved shear stthe ress wrong by making an incorrect assumption that the shear force was  just the highest load applied to the joint, which had completely thrown off my calculations for the pins' area and diameter. Thankfully, I noticed the document on the assignment itself that helped break down how to actually calculate the shear load applied to the pin. The image below is my original incorrect calculations.
 
+<img width="820" height="711" alt="Math Scratch Paper (9)" src="https://github.com/user-attachments/assets/12c61f1a-8e68-4098-817d-bd1e35fd29e9" />
+
 Correcting my work, I began by converting the given constraint values of hardened tool steel from the assignment from imperial to metric for the sake of consistency with the rest of the document. The yield shear stress of 170 ksi was roughly 1.172 GPa, and the density was converted from 0.278 lb/in^3 to 7.695 x 10^-6 kg/mm^3. To properly calculate an accurate shear force, we must break down the joint into the highest possible components within the x direction and y direction. Choosing Joint C, we break down the component forces of members CE and BC using the angles we calculated previously. We find that after combining like directions, we have a y force of 25,000 N acting in compression and an x force of 11,111 N acting in compression. We take both of these values and calculate the magnitude of the shear force vector, computing it to be 27,357.9 N.
+
+<img width="1640" height="707" alt="IMG_0028 (2)" src="https://github.com/user-attachments/assets/b9fb22a2-9229-4e9b-8a80-44bf8bc5d7b3" />
+
+<img width="820" height="856" alt="Math Scratch Paper (11)" src="https://github.com/user-attachments/assets/a204020a-3f1f-4314-a5fd-28c8571e9976" />
 
 #### Cross Sectional Area of the Pin
 
@@ -73,11 +81,15 @@ Deriving the equation to solve for the cross-sectional area of the pin was simil
 
 Within this set of calculations, I went out of my way to also calculate the diameter, as it would provide use when modeling the truss within CAD.
 
+<img width="820" height="856" alt="Math Scratch Paper (11)" src="https://github.com/user-attachments/assets/c3e924c7-762d-4b6f-b612-060035cf62c7" />
+
 #### Weight of the Pins
 
 To calculate the weight of the pins, we need to assume how we define their length. Generally, when designing a truss structure, the pins must stick out on the surface edge to ensure fasteners can be attached. I created a simple function that essentially calculates a pin length that is able to stick out through 2 members but also contains extra length that will allow for fasteners to be applied. The math you find below results in a length of around 40.08 mm. 
 
 Now that we have all of our variables, we are able to calculate the weight of all 5 of the pins similarly to how we calculated the truss's weight. Taking our converted density of hardened tool steel, our pin cross-sectional area, the recently calculated pin length, gravity, and the number of pins we find that the entire truss roughly weighs about 1.412 N.
+
+<img width="820" height="715" alt="Math Scratch Paper (12)" src="https://github.com/user-attachments/assets/2848650b-503d-4523-961b-0b8bd562c35b" />
 
 ### CAD Model 
 
