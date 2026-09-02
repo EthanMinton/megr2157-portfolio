@@ -55,7 +55,7 @@ Image of weight calc
 
 #### Shear Force on the Pins
 
-NOTE: To preface this section, I want to mention the fact that I initially solved the shear stress wrong by making an incorrect assumption that the shear force was  just the highest load applied to the joint, which had completely thrown off my calculations for the pins' area and diameter. Thankfully, I noticed the document on the assignment itself that helped break down how to actually calculate the shear load applied to the pin. The image below is my original incorrect calculations.
+NOTE: To preface this section, I want to mention the fact that I initially solved shear stthe ress wrong by making an incorrect assumption that the shear force was  just the highest load applied to the joint, which had completely thrown off my calculations for the pins' area and diameter. Thankfully, I noticed the document on the assignment itself that helped break down how to actually calculate the shear load applied to the pin. The image below is my original incorrect calculations.
 
 Correcting my work, I began by converting the given constraint values of hardened tool steel from the assignment from imperial to metric for the sake of consistency with the rest of the document. The yield shear stress of 170 ksi was roughly 1.172 GPa, and the density was converted from 0.278 lb/in^3 to 7.695 x 10^-6 kg/mm^3. To properly calculate an accurate shear force, we must break down the joint into the highest possible components within the x direction and y direction. Choosing Joint C, we break down the component forces of members CE and BC using the angles we calculated previously. We find that after combining like directions, we have a y force of 25,000 N acting in compression and an x force of 11,111 N acting in compression. We take both of these values and calculate the magnitude of the shear force vector, computing it to be 27,357.9 N.
 
@@ -67,8 +67,11 @@ Within this set of calculations, I went out of my way to also calculate the diam
 
 #### Weight of the Pins
 
-To calculate the weight of the pins, it requires us to assume how we define their length. Generally, when designing a truss structure, the pins must stick out on the surface edge to ensure fasteners can be attached. I created a simple function that takes into account the width of the members by multiplying by 2 and then by 20% more to allow the pins to stick out. 
+To calculate the weight of the pins, we need to assume how we define their length. Generally, when designing a truss structure, the pins must stick out on the surface edge to ensure fasteners can be attached. I created a simple function that essentially calculates a pin length that is able to stick out through 2 members but also contains extra length that will allow for fasteners to be applied. The math you find below results in a length of around 40.08 mm. 
 
+Now that we have all of our variables, we are able to calculate the weight of all 5 of the pins similarly to how we calculated the truss's weight. Taking our converted density of hardened tool steel, our pin cross-sectional area, the recently calculated pin length, gravity, and the number of pins we find that the entire truss roughly weighs about 1.412 N.
+
+### CAD Model 
 
 ## Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
