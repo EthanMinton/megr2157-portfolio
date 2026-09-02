@@ -98,3 +98,30 @@ _Which geometry did you select, and why? This is your first open design choice i
 
 ## Communicate
 
+### Member BC, Member AE, Member CE
+
+**Identify** : All of the listed members above are found under compression, making elastic buckling the governing failure prior to any possible material yielding or fracture.
+
+**State** : ASTM A36 steel is a ductile material, characterized by high elongation capacity and significant plastic/permanent deformation before fracture. For these members, though, that ductility never really comes into play, since buckling happens before the material gets anywhere near yield.
+
+**Support** : Because member BC is relatively long and slender, its structural capacity is limited by elastic instability rather than pure axial strength. Under compressive loading, the critical buckling load produces a critical stress that is lower than the material's yield strength. Consequently, member BC will buckle laterally before the material ever reaches its yield strength. AE and CE follow the same reasoning, since they share the same slenderness-driven vulnerability.
+
+**Propose** : Introduce lateral bracing; in my Solid Mechanics course, we were taught methods of reducing the likelihood of buckling by adding braces to a column. Within the equation for calculating the critical load for buckling, we find that adding a single lateral brace to a member divides the length by half, causing a quadruple of our critical load. Other methods require changing the actual geometry of the member itself, which would then introduce complications to the structure itself.
+
+### Member BE, Member AD, Member DE
+
+**Identify:** All of the listed members above are found under tension, making yielding the governing failure in this case. Generally, a member under tension doesn't buckle, and our material properties prevent fracture.
+
+**State:** ASTM A36 steel is a ductile material, characterized by high elongation capacity and significant plastic/permanent deformation before fracture. That ductility is what lets these members give visible warning under tension instead of snapping without notice.
+
+**Support** : When handling ductile materials with intense tension loads, we find that they begin to strain in reaction to the stress applied. The fact that we're handling a ductile material is especially important here, as it's the deciding factor in whether our members fracture or yield. A brittle material has very little capacity for yielding, and once it reaches a critical load, it breaks immediately without much physical wear. Take, for example, two materials with the same ultimate strength and cross-sectional area; the brittle material shows little to no actual signs of strain, while our ductile material begins to noticeably stretch, then neck, and finally fracture.
+
+**Propose** : Unlike buckling, we have less wiggle room to prevent failure due to the axial load applied. Either the force needs to decrease, which we can manage by adding more members to our truss system, or we can increase our area. Adding more members complicates many other systems at play, meaning increasing our cross-sectional area is the better, simpler option. It would help reduce our overall stress despite the load and keep our math relatively simple.
+
+**The Pins**
+
+**Identify**: Often, when it comes to pins, we'd expect shear stress to be the governing mode of failure, but in this case it's more likely bearing stress. That's because even though A36 and tool steel have very different material strengths, bearing stress tends to accumulate faster at the contact surface between the pin and the member than shear does across the pin's cross-section.
+
+**Support** : CHI Engineers, in a model of a compression truss pin connection, showed the pin hole slowly elongating as load increases, a process called ovalization, and found that because pins are made from considerably tougher material, they're often not the governing body of failure in these connections (https://www.chi-engineers.com/post/nonlinear-inelastic-analysis-of-steel-pin-connections). Similarly, a real numeric example from AIAA showed a lug failing due to bearing at 11.25 kip vs. 13.08 kip for tension, with bearing coming in lower and acting as the governing mode of failure (https://www.aiaa-uq4cba.org/ref/calculation_example_simple_model.pdf). When researching, I kept finding that the governing failure mode was unexpectedly bearing in these cases, especially when dealing with a material that has considerably more strength than the members around it.
+
+**Propose** : A design modification that would help reduce the likelihood of failure with both shear stress and bearing stress is to increase the diameter of the pin being used. Bearing stress depends on diameter times length for its cross-sectional area, while shear stress depends on the area of the pin's circular cross-section, so a larger diameter reduces both at once, without needing to change the pin material.
