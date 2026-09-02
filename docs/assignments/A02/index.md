@@ -81,7 +81,7 @@ Deriving the equation to solve for the cross-sectional area of the pin was simil
 
 Within this set of calculations, I went out of my way to also calculate the diameter, as it would provide use when modeling the truss within CAD.
 
-<img width="820" height="856" alt="Math Scratch Paper (11)" src="https://github.com/user-attachments/assets/c3e924c7-762d-4b6f-b612-060035cf62c7" />
+<img width="820" height="846" alt="Math Scratch Paper (13)" src="https://github.com/user-attachments/assets/ae678385-3d02-4343-9074-ff56e883f525" />
 
 #### Weight of the Pins
 
