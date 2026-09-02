@@ -33,7 +33,42 @@ When approaching a truss system with Joint analysis, it is typically recommended
 
 To prevent bloat within the explanation of each joint, I will go into detail on my solution for Joint B, with a walkthrough of the rest of the joints reporting any important findings that could be significant.
 
-Starting with Joint B 
+Joint B was the first joint that I started with mainly because of the fact Joint B has 1 known external force and only 2 internal members to solve for. It acts as a simple start. With our known value for B_y, I solved for the equilibrium equation of the forces in the y direction. Isolating BC by adding B_y to the other side and dividing by the previously calculated Sine of theta_B. Plugging in our values gives us BC = 13,888.8 N compression. Now, with member BC's load, I can solve for the equilibrium equation in the x direction by adding BC times Cosine of theta_B to the other side and plugging in all known values. Answering 11,111.03 N of tension in member BE.
+
+
+After Joint B, I moved on to Joint C, where I found a significant piece of information that impacts my overall truss geometry. When you break down the equilibrium equation to solve for member CD, there is little to no force actually being applied to the member itself. It was a complete oversight in my original sketch that the member wouldn't take on any internal force and would just act as dead weight for the design. I opted to remove it from the final geometry. Otherwise, every calculation went as expected, outside of the minor incorrect assumption of member CE's force being in tension or compression. The highest internal force was calculated to be 20,030.8 N.
+
+
+#### Cross Sectional Area of the Members 
+
+Taking the highest internal force within the truss, we can calculate the minimum area that is required for it to function without failure. To solve for area immediately, we have to combine 2 equations. These equations involve stress_allow being equal to stress_yield / Factor of Safety, and Stress_allow also being equal to maximum internal force / minimum area. Plugging these equations into each other allows for us to isolate the minimum area and solve for it. Giving us an area of 288.4 mm^2. Square rooting this value gives us 16.7 mm, the width of the beams and the amount the beam will be extruded.
+
+
+#### Weight of the Truss 
+
+Calculating the weight of the entire truss requires a collection of values previously grabbed, such as a summation of all of the lengths of each of the truss being multiplied by our now found cross sectional giving us the volume of the truss. Afterwards, you multiply the volume by the density to get the mass of the truss, which you can then multiply by gravity to obtain the given weight of 63.09 N.
+
+Outside of calculations being relatively straightforward to set up and solve, a couple of assumptions about the nuances had to be made. Due to Creo, the CAD software I am using, lacking a standard material for A500 Steel, I was instructed to use another material with a similar density and properties. I decided to use SolidWorks ASTM A36 Steel as it had the same density as A500, with 7,850 Kg/m^3. Another assumption made is the nuance you have to take with how much detail you choose to go into. Do you include the holes from the pins in the area calculation? What about the possible overlap in the CAD modeling that will affect its weight calculations? There are so many intricate details you could consider with each of these calculations; I decided to keep it simple as the general goal here is to get it within earshot of what the CAD model itself computes.
+
+Image of solidworks ASTM A35 Steel info
+Image of weight calc
+
+#### Shear Force on the Pins
+
+NOTE: To preface this section, I want to mention the fact that I initially solved the shear stress wrong by making an incorrect assumption that the shear force was  just the highest load applied to the joint, which had completely thrown off my calculations for the pins' area and diameter. Thankfully, I noticed the document on the assignment itself that helped break down how to actually calculate the shear load applied to the pin. The image below is my original incorrect calculations.
+
+Correcting my work, I began by converting the given constraint values of hardened tool steel from the assignment from imperial to metric for the sake of consistency with the rest of the document. The yield shear stress of 170 ksi was roughly 1.172 GPa, and the density was converted from 0.278 lb/in^3 to 7.695 x 10^-6 kg/mm^3. To properly calculate an accurate shear force, we must break down the joint into the highest possible components within the x direction and y direction. Choosing Joint C, we break down the component forces of members CE and BC using the angles we calculated previously. We find that after combining like directions, we have a y force of 25,000 N acting in compression and an x force of 11,111 N acting in compression. We take both of these values and calculate the magnitude of the shear force vector, computing it to be 27,357.9 N.
+
+#### Cross Sectional Area of the Pin
+
+Deriving the equation to solve for the cross-sectional area of the pin was similar to the member's calculation; we took tau_allow, which is equal to tau_yield / factor of safety, and tau_allow = shear force / minimum area. Combining these 2 equations, we can isolate area to equal the shear stress multiplied by the factor of safety, all divided by tau_yield. Plugging in our known values provides a pin area of 93.37 mm^2.
+
+Within this set of calculations, I went out of my way to also calculate the diameter, as it would provide use when modeling the truss within CAD.
+
+#### Weight of the Pins
+
+To calculate the weight of the pins, it requires us to assume how we define their length. Generally, when designing a truss structure, the pins must stick out on the surface edge to ensure fasteners can be attached. I created a function that takes into account the width of the members by multiplying by 2 and then by 20% more to allow the pins to stick out. NEED TO FINISH
+
 
 ## Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
