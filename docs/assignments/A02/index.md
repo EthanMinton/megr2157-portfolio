@@ -18,10 +18,13 @@ After analyzing the given constraints provided, I decided to resketch it all wit
 
 Before continuing, I decided to calculate all of the geometry that would be important later on within the system itself to prevent any issues and extra complications once we reach the internal force calculations. Starting by calculating the 2 angles that would impact the angled members within the truss, theta_b was calculated using the ratio (0.3/0.4) and plugging it into arctangent, resulting in an angle of 36.87 degrees. This angle will be important when calculating the internal forces for members BC and AD. Then theta_c was calculated using the ratio (0.3/0.2); 0.2 was used because Joint E was found to be directly in the middle of the given 0.4 measurement. Once it was plugged into arctangent, the angle given was 56.31 degrees, providing use to the members CE and DE.
 
-<img width="467" height="301" alt="image" src="https://github.com/user-attachments/assets/5a0276e2-ad1f-4755-89d9-4ee1af69e771" />
+<img width="1640" height="1601" alt="IMG_0018" src="https://github.com/user-attachments/assets/c81600dd-22b9-4f45-a452-a058868948ba" />
 
 
 Moving toward the lengths of each of the members, I started by calculating the length of members BE and AE. Using the provided geometry, I combined the value of a over itself 3 times and divided it by half, as each member bisected the entire length, giving the length to be 0.6 meters. The members CE and DE were a little more complicated, as they required the use of rearranging the trigonometric ratio in order to solve for the hypotenuse. A considerably simpler way that I could have used was to calculate the hypotenuse of the triangle, which provides the same result of 0.361 meters. The members AD and BC were calculated similarly to the previous 2 members, with the rearranging of the sine trigonometric ratio to solve for the length, which gave 0.5 meters. Due to symmetry, there were only 3 calculations needed over 6.
+
+<img width="1640" height="1738" alt="IMG_0019" src="https://github.com/user-attachments/assets/2bf4ef7b-8476-4ebd-870b-3c50ef42967f" />
+
 
 ### Calculating the Forces
 
@@ -29,17 +32,22 @@ Moving toward the lengths of each of the members, I started by calculating the l
 
 When approaching a truss system with Joint analysis, it is typically recommended to solve for all of the external forces present before continuing to the internal forces. The given constraints have 2 applied forces: 25 KN pushing upward at C and 25 KN pulling downward at D. Joint B is a roller, meaning it only has a force in the y-direction labeled B_y, and the Joint at A is a pin connection, giving it a force in both the x-direction and y-direction labeled A_x and A_y, respectively. Using statics and the equilibrium of F_x, we found that no other force is in the x-direction, resulting in A_x being equal to 0. Finding the moment about B allows us to solve for the force in A_y, giving us 8,333.3 N upward, and the resulting forces in the y-direction give us B_y at 8,333.3 N downward. In this case, I had assumed the direction of B was wrong, resulting in the negative solution. These results make sense due to the symmetrical relation of the truss.
 
+<img width="820" height="400" alt="Math Scratch Paper (1)" src="https://github.com/user-attachments/assets/59012c28-7740-4280-9423-308b0ab43f54" />
+
 #### Internal Forces 
 
 To prevent bloat within the explanation of each joint, I will go into detail on my solution for Joint B, with a walkthrough of the rest of the joints reporting any important findings that could be significant.
 
 Joint B was the first joint that I started with mainly because of the fact Joint B has 1 known external force and only 2 internal members to solve for. It acts as a simple start. With our known value for B_y, I solved for the equilibrium equation of the forces in the y direction. Isolating BC by adding B_y to the other side and dividing by the previously calculated Sine of theta_B. Plugging in our values gives us BC = 13,888.8 N compression. Now, with member BC's load, I can solve for the equilibrium equation in the x direction by adding BC times Cosine of theta_B to the other side and plugging in all known values. Answering 11,111.03 N of tension in member BE.
 
+<img width="820" height="548" alt="Math Scratch Paper (2)" src="https://github.com/user-attachments/assets/2c481a1d-8ca9-4017-a67d-1db33dde5adf" />
 
 After Joint B, I moved on to Joint C, where I found a significant piece of information that impacts my overall truss geometry. When you break down the equilibrium equation to solve for member CD, there is little to no force actually being applied to the member itself. It was a complete oversight in my original sketch that the member wouldn't take on any internal force and would just act as dead weight for the design. I opted to remove it from the final geometry. Otherwise, every calculation went as expected, outside of the minor incorrect assumption of member CE's force being in tension or compression. The highest internal force was calculated to be 20,030.8 N.
 
+<img width="3750" height="3580" alt="Math_Scratch_Paper_10_original" src="https://github.com/user-attachments/assets/014bfe1e-2ff4-44d4-b1e2-f02acc947c0a" />
 
-#### Cross Sectional Area of the Members 
+
+#### Cross-Sectional Area of the Members 
 
 Taking the highest internal force within the truss, we can calculate the minimum area that is required for it to function without failure. To solve for area immediately, we have to combine 2 equations. These equations involve stress_allow being equal to stress_yield / Factor of Safety, and Stress_allow also being equal to maximum internal force / minimum area. Plugging these equations into each other allows for us to isolate the minimum area and solve for it. Giving us an area of 288.4 mm^2. Square rooting this value gives us 16.7 mm, the width of the beams and the amount the beam will be extruded.
 
