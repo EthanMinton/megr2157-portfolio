@@ -93,6 +93,13 @@ Now that we have all of our variables, we are able to calculate the weight of al
 
 ### CAD Model 
 
+
+### Lessons Learned 
+
+The general lesson that I am continuing to learn is to learn how to balance what is asked of me and what I should provide within these assignments; as an engineer, it is a very rigorous degree that you have to pursue. The course load at times can take entire days to complete, and this assignment is no different. I roughly spent at least 34 hours on this assignment, with most of the time going to checking answers and documenting everything. Trying to make everything as clear as possible is not a simple task. To be an engineer, you need to be thorough with the answers and work you provide, but to what extent are you overexplaining or documenting every detail to the point where it can become overwhelming to a reader? I believe it would be a great help to whoever is grading this portfolio to provide me with an understanding of what is wanted from me and what I am doing too much of. 
+
+The engineering lessons that I have learned through the course of this assignment are the effort to go from the purely mathematical to designing a real physical system. The original problem that was provided to us was considerably simple, with 4 points of interest and 2 applied forces, asking us to create a truss design that could help diffuse the forces properly throughout the entire system. Starting with the external force calculations, then moving to the internal forces within the members, to stress calculations, applying material properties, and then eventually designing it within CAD. It's not necessarily learning anything new from prior courses that dealt with statics, solids, or CAD, but it takes them and combines them into the actual engineering design process. The entire goal of which this course aims for. Yet outside of the overarching goal of the course, the technique required to calculate the shear force applied to the pin was something I would consider entirely new. As I had never encountered it before within solids, which explains why I initially just assumed the force wrong. These lessons form over time through each assignment, many of which I don't even realize I am forming; it is important to vocalize these lessons as they are learned to reflect upon them.
+
 ## Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
 
