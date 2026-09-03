@@ -96,7 +96,9 @@ Now that we have all of our variables, we are able to calculate the weight of al
 
 ### CAD Model using CREO
 
-Opening the CAD file, I decided to start with establishing the position of the joints as a starting point, constraining them with the given initial geometry from the very beginning. Using the symmetry constraint to keep the true symmetry. 
+#### The Truss CAD
+
+Opening the CAD file, I decided to start by establishing the position of the joints as a starting point, constraining them with the given initial geometry from the very beginning. Using the symmetry constraint to maintain true symmetry. 
 
 <img width="1917" height="1006" alt="Screenshot 2026-08-31 191333" src="https://github.com/user-attachments/assets/571c1dc9-9efc-42e6-969d-d5a92018d585" />
 
@@ -139,13 +141,16 @@ After confirming the true sketch, I then symmetrically extruded the model by 0.0
 
 <img width="1919" height="1003" alt="Screenshot 2026-08-31 200941" src="https://github.com/user-attachments/assets/911aa802-9c01-40e1-b9e1-7711784ca6bb" />
 
+#### The Pins CAD
 Moving on to creating the pin, I began by creating a circle sketch with a diameter of 0.0109 meters, and then extruding it 0.04008 meters.
 
 <img width="1919" height="1008" alt="Screenshot 2026-09-02 193821" src="https://github.com/user-attachments/assets/6ee0b4f8-239b-48d1-b84e-1496f269f5b4" />
 <img width="1916" height="1007" alt="Screenshot 2026-09-02 192030" src="https://github.com/user-attachments/assets/bdfa8e72-9a15-4781-8a9a-e39c9cc9a5ab" />
 <img width="1917" height="1007" alt="Screenshot 2026-09-02 192744" src="https://github.com/user-attachments/assets/f9f79e30-3c39-4224-8a41-0caa579c8aa4" />
 
-After completing both the truss and the pins I then began to assemble it all into a single assembly, adding the truss first. 
+#### The Assembly CAD
+
+After completing both the truss and the pins, I then began to assemble it all into a single assembly, adding the truss first. 
 
 <img width="1919" height="1009" alt="Screenshot 2026-09-02 193146" src="https://github.com/user-attachments/assets/723ab447-4b1c-4ccc-b94a-c2e3caf97a05" />
 
