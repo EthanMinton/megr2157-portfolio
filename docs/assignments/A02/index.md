@@ -213,6 +213,6 @@ To prevent re-explanations over each of the members and how they react to compre
 **Propose** : A design modification that would help reduce the likelihood of failure with both shear stress and bearing stress is to increase the diameter of the pin being used. Bearing stress depends on diameter times length for its cross-sectional area, while shear stress depends on the area of the pin's circular cross-section, so a larger diameter reduces both at once, without needing to change the pin material.
 
 ### CAD File Downloads
-
+Assembly Download: [truss_system.asm.2](truss_system.asm.2)
 
 
