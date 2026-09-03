@@ -68,7 +68,7 @@ Outside of calculations being relatively straightforward to set up and solve, a 
 
 #### Shear Force on the Pins
 
-NOTE: To preface this section, I want to mention the fact that I initially solved shear stthe ress wrong by making an incorrect assumption that the shear force was  just the highest load applied to the joint, which had completely thrown off my calculations for the pins' area and diameter. Thankfully, I noticed the document on the assignment itself that helped break down how to actually calculate the shear load applied to the pin. The image below is my original incorrect calculations.
+NOTE: To preface this section, I want to mention the fact that I initially solved the shear stress wrong by making an incorrect assumption that the shear force was  just the highest load applied to the joint, which had completely thrown off my calculations for the pins' area and diameter. Thankfully, I noticed the document on the assignment itself that helped break down how to actually calculate the shear load applied to the pin. The image below is my original incorrect calculations.
 
 <img width="820" height="711" alt="Math Scratch Paper (9)" src="https://github.com/user-attachments/assets/12c61f1a-8e68-4098-817d-bd1e35fd29e9" />
 
