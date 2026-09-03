@@ -179,9 +179,11 @@ The general lesson that I am continuing to learn is to learn how to balance what
 
 The engineering lessons that I have learned through the course of this assignment are the effort to go from the purely mathematical to designing a real physical system. The original problem that was provided to us was considerably simple, with 4 points of interest and 2 applied forces, asking us to create a truss design that could help diffuse the forces properly throughout the entire system. Starting with the external force calculations, then moving to the internal forces within the members, to stress calculations, applying material properties, and then eventually designing it within CAD. It's not necessarily learning anything new from prior courses that dealt with statics, solids, or CAD, but it takes them and combines them into the actual engineering design process. The entire goal of this course. Yet outside of the overarching goal of the course, the technique required to calculate the shear force applied to the pin was something I would consider entirely new. As I had never encountered it before within solids, which explains why I initially just assumed the force was wrong. These lessons form over time through each assignment, many of which I don't even realize I am forming; it is important to vocalize these lessons as they are learned to reflect upon them.
 
+### Likelihood of Failure Modes in Truss Components
 
+To prevent re-explanations over each of the members and how they react to compression and tension forces, I thought it would be best to place
 
-### Member BC, Member AE, Member CE
+#### Member BC, Member AE, Member CE
 
 **Identify** : All of the listed members above are found under compression, making elastic buckling the governing failure prior to any possible material yielding or fracture.
 
@@ -191,7 +193,7 @@ The engineering lessons that I have learned through the course of this assignmen
 
 **Propose** : Introduce lateral bracing; in my Solid Mechanics course, we were taught methods of reducing the likelihood of buckling by adding braces to a column. Within the equation for calculating the critical load for buckling, we find that adding a single lateral brace to a member divides the length by half, causing a quadruple of our critical load. Other methods require changing the actual geometry of the member itself, which would then introduce complications to the structure itself.
 
-### Member BE, Member AD, Member DE
+#### Member BE, Member AD, Member DE
 
 **Identify:** All of the listed members above are found under tension, making yielding the governing failure in this case. Generally, a member under tension doesn't buckle, and our material properties prevent fracture.
 
@@ -201,10 +203,14 @@ The engineering lessons that I have learned through the course of this assignmen
 
 **Propose** : Unlike buckling, we have less wiggle room to prevent failure due to the axial load applied. Either the force needs to decrease, which we can manage by adding more members to our truss system, or we can increase our area. Adding more members complicates many other systems at play, meaning increasing our cross-sectional area is the better, simpler option. It would help reduce our overall stress despite the load and keep our math relatively simple.
 
-### The Pins
+#### The Pins
 
 **Identify**: Often, when it comes to pins, we'd expect shear stress to be the governing mode of failure, but in this case it's more likely bearing stress. That's because even though A36 and tool steel have very different material strengths, bearing stress tends to accumulate faster at the contact surface between the pin and the member than shear does across the pin's cross-section.
 
 **Support** : CHI Engineers, in a model of a compression truss pin connection, showed the pin hole slowly elongating as load increases, a process called ovalization, and found that because pins are made from considerably tougher material, they're often not the governing body of failure in these connections (https://www.chi-engineers.com/post/nonlinear-inelastic-analysis-of-steel-pin-connections). Similarly, a real numeric example from AIAA showed a lug failing due to bearing at 11.25 kip vs. 13.08 kip for tension, with bearing coming in lower and acting as the governing mode of failure (https://www.aiaa-uq4cba.org/ref/calculation_example_simple_model.pdf). When researching, I kept finding that the governing failure mode was unexpectedly bearing in these cases, especially when dealing with a material that has considerably more strength than the members around it.
 
 **Propose** : A design modification that would help reduce the likelihood of failure with both shear stress and bearing stress is to increase the diameter of the pin being used. Bearing stress depends on diameter times length for its cross-sectional area, while shear stress depends on the area of the pin's circular cross-section, so a larger diameter reduces both at once, without needing to change the pin material.
+
+### CAD File Downloads
+[Download Creo Assembly File (010truss_system.asm)](https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/cad/source/010truss_system.asm?download=1)
+
