@@ -12,6 +12,8 @@ The image below was given as the starting point for this assignment for us to cr
 
 <img width="467" height="301" alt="image" src="https://github.com/user-attachments/assets/69652f21-18dc-4320-84b5-1215811e07e9" />
 
+## Decide
+
 After analyzing the given constraints provided, I decided to resketch it all within my notetaker to ensure the process continues properly. Once sketched, I decided to get the general outline of the truss system to see how I could attempt to properly balance the forces through it. After which, I then created a new Joint, labeled as Joint E below, to help prevent possible concentration of stresses within the truss system.
 
 <img width="1640" height="1952" alt="IMG_0012" src="https://github.com/user-attachments/assets/a498752f-fdaa-4635-a3f9-80d9ae3531a9" />
@@ -55,13 +57,14 @@ Taking the highest internal force within the truss, we can calculate the minimum
 
 #### Weight of the Truss 
 
-Calculating the weight of the entire truss requires a collection of values previously grabbed, such as a summation of all of the lengths of each of the truss being multiplied by our now found cross sectional giving us the volume of the truss. Afterwards, you multiply the volume by the density to get the mass of the truss, which you can then multiply by gravity to obtain the given weight of 63.09 N.
+Calculating the weight of the entire truss requires a collection of values previously grabbed, such as a summation of all of the lengths of each of the truss members being multiplied by our now found cross sectional giving us the volume of the truss. Afterwards, you multiply the volume by the density to get the mass of the truss, which you can then multiply by gravity to obtain the given weight of 63.09 N.
 
 <img width="820" height="397" alt="Math Scratch Paper (8)" src="https://github.com/user-attachments/assets/eadffd27-249c-4bb3-b115-5d5030ca2de8" />
 
 Outside of calculations being relatively straightforward to set up and solve, a couple of assumptions about the nuances had to be made. Due to Creo, the CAD software I am using, lacking a standard material for A500 Steel, I was instructed to use another material with a similar density and properties. I decided to use SolidWorks ASTM A36 Steel as it had the same density as A500, with 7,850 Kg/m^3. Another assumption made is the nuance you have to take with how much detail you choose to go into. Do you include the holes from the pins in the area calculation? What about the possible overlap in the CAD modeling that will affect its weight calculations? There are so many intricate details you could consider with each of these calculations; I decided to keep it simple as the general goal here is to get it within earshot of what the CAD model itself computes.
 
-NEED IMAGE OF SOLIDWORKS 
+<img width="484" height="556" alt="Screenshot 2026-09-02 204554" src="https://github.com/user-attachments/assets/1139d665-8050-4dfe-9960-22b70878d840" />
+
 
 #### Shear Force on the Pins
 
@@ -91,19 +94,87 @@ Now that we have all of our variables, we are able to calculate the weight of al
 
 <img width="820" height="715" alt="Math Scratch Paper (12)" src="https://github.com/user-attachments/assets/2848650b-503d-4523-961b-0b8bd562c35b" />
 
-### CAD Model 
+### CAD Model using CREO
 
+Opening the CAD file, I decided to start with establishing the position of the joints as a starting point, constraining them with the given initial geometry from the very beginning. Using the symmetry constraint to keep the true symmetry. 
+
+<img width="1917" height="1006" alt="Screenshot 2026-08-31 191333" src="https://github.com/user-attachments/assets/571c1dc9-9efc-42e6-969d-d5a92018d585" />
+
+Originally, I was tinkering with how I could CAD the model itself but kept running into issues with overlapping geometry that would impede my work, so I decided that the best course of action was to utilize the Construction lines. Beginning the sketch, I started by utilizing the diagonal rectangle shape, aligning it to the end of the joints previously placed. I then angled the bottom side of the beam to 36.87 degrees off the base, giving it a length of 0.5 meters and a width of 0.0167 meters.
+
+<img width="1919" height="1008" alt="Screenshot 2026-08-31 191917" src="https://github.com/user-attachments/assets/72cae830-b79b-4d60-a173-082a9d874cb7" />
+
+After completing member BC, I moved on to member AD. It is the symmetrical member to BC. I was able to utilize the equal constraint to maintain simplicity with the design and constraints. 
+
+<img width="1919" height="1005" alt="Screenshot 2026-08-31 192959" src="https://github.com/user-attachments/assets/0bb9580d-c8c8-46f9-87d3-72cb71ba9727" />
+
+Then I began to work on member CE, aligning the midpoint of the rectangle directly to joint C and angling it 56.31 degrees from the base. I then gave it a length of 0.361 meters. Using the equal constrain I then equalized it with the original member.
+
+<img width="1919" height="1008" alt="Screenshot 2026-08-31 193705" src="https://github.com/user-attachments/assets/cfd6fd75-f54d-4f42-868d-6cf3d6d5d0ee" />
+
+Similar to the previous set of members, I was able to create member DE utilizing the equation constraint and using member CE as a base to work off of, giving it the same angle, length, and width. Complete BE and AE members were relatively simple as I combined them as one long member, using 1.2 meters as our length and then the equal constraint for our width. After completing all the members, I then moved on to the pin holes and adjustments that had to be made to maintain the cross-sectional area. To elaborate, I calculated the area of what the pins would subtract from the entire member system and found the area of a circle that would compensate. That is the larger circle around the pin holes in this context.
+
+<img width="820" height="647" alt="Math Scratch Paper (14)" src="https://github.com/user-attachments/assets/61b718cd-42b7-4cd8-9a90-af840972e8e5" />
+
+I began by creating the first outline of the pin hole using the circle constraint, giving it a diameter of 0.0109 meters.
+
+<img width="1919" height="1004" alt="Screenshot 2026-09-02 190449" src="https://github.com/user-attachments/assets/2a4d378a-ed41-49a0-b115-708c5162ca67" />
+
+Then creating the second outline for the pinhole compensation, giving it a diameter of 0.02181 meters.
+
+<img width="1919" height="1003" alt="Screenshot 2026-09-02 190633" src="https://github.com/user-attachments/assets/e1a80f82-338c-4530-8e18-6b56da7db577" />
+
+After creating the initial circles, I used the equal constraint through the entire truss system to create the pin and pin compensation holes.
+
+<img width="1919" height="1007" alt="Screenshot 2026-09-02 190750" src="https://github.com/user-attachments/assets/1e1e47c8-7560-4852-9460-954119dc0b3e" />
+<img width="1919" height="1004" alt="Screenshot 2026-09-02 190737" src="https://github.com/user-attachments/assets/b4834dea-dd94-4002-a27c-c91266caf042" />
+
+Finishing up all of the construction lines allows me to overlay the true lines to outline the true shape of the truss.
+
+<img width="1919" height="1004" alt="Screenshot 2026-09-02 190913" src="https://github.com/user-attachments/assets/4decaba4-a6b0-41bc-a1a3-755d04bfb092" />
+<img width="1919" height="1006" alt="Screenshot 2026-09-02 191107" src="https://github.com/user-attachments/assets/f04d7397-9c30-42ea-9f12-6020673aa958" />
+<img width="1919" height="1005" alt="Screenshot 2026-09-02 191230" src="https://github.com/user-attachments/assets/5d7b4ed7-089e-4029-a6c0-dd475086b368" />
+
+After confirming the true sketch, I then symmetrically extruded the model by 0.0167 meters, giving it the proper cross-sectional area that I had calculated.
+
+<img width="1919" height="1003" alt="Screenshot 2026-08-31 200941" src="https://github.com/user-attachments/assets/911aa802-9c01-40e1-b9e1-7711784ca6bb" />
+
+Moving on to creating the pin, I began by creating a circle sketch with a diameter of 0.0109 meters, and then extruding it 0.04008 meters.
+
+<img width="1919" height="1008" alt="Screenshot 2026-09-02 193821" src="https://github.com/user-attachments/assets/6ee0b4f8-239b-48d1-b84e-1496f269f5b4" />
+<img width="1916" height="1007" alt="Screenshot 2026-09-02 192030" src="https://github.com/user-attachments/assets/bdfa8e72-9a15-4781-8a9a-e39c9cc9a5ab" />
+<img width="1917" height="1007" alt="Screenshot 2026-09-02 192744" src="https://github.com/user-attachments/assets/f9f79e30-3c39-4224-8a41-0caa579c8aa4" />
+
+After completing both the truss and the pins I then began to assemble it all into a single assembly, adding the truss first. 
+
+<img width="1919" height="1009" alt="Screenshot 2026-09-02 193146" src="https://github.com/user-attachments/assets/723ab447-4b1c-4ccc-b94a-c2e3caf97a05" />
+
+I then added the pin and constrained it circumfrience to the inner circumference of the truss.
+
+<img width="1919" height="1003" alt="Screenshot 2026-09-02 193332" src="https://github.com/user-attachments/assets/ac27e750-2056-4694-91c1-d21779240070" />
+
+After that, I constrained its central dataplane to the truss central dataplane to ensure that the pin sits right in the middle.
+
+<img width="1919" height="1005" alt="Screenshot 2026-09-02 193258" src="https://github.com/user-attachments/assets/a0f0f0ba-b595-46d2-892f-09b58e5def04" />
+
+Performing this one by one for each of the pins created the final result you see below.
+
+<img width="1919" height="1009" alt="Screenshot 2026-09-02 193349" src="https://github.com/user-attachments/assets/1ee993d1-92c6-41cd-bcdd-62fa7f2488ce" />
+<img width="1919" height="1004" alt="Screenshot 2026-09-02 194914" src="https://github.com/user-attachments/assets/391cb492-2472-498e-91ba-d75356a4afb8" />
+
+Using the material properties from SolidWorks and plugging them into Creo's material properties, we were able to find the approximate weights of 61.72 N for the truss and 1.29 N for the pins combined. This is extremely close to my calculated values of 63.09 N and 1.412 N.
+
+<img width="820" height="647" alt="Math Scratch Paper (16)" src="https://github.com/user-attachments/assets/712f7eda-4bf1-408c-9171-7a4e09ef927a" />
+
+## Communicate
 
 ### Lessons Learned 
 
 The general lesson that I am continuing to learn is to learn how to balance what is asked of me and what I should provide within these assignments; as an engineer, it is a very rigorous degree that you have to pursue. The course load at times can take entire days to complete, and this assignment is no different. I roughly spent at least 34 hours on this assignment, with most of the time going to checking answers and documenting everything. Trying to make everything as clear as possible is not a simple task. To be an engineer, you need to be thorough with the answers and work you provide, but to what extent are you overexplaining or documenting every detail to the point where it can become overwhelming to a reader? I believe it would be a great help to whoever is grading this portfolio to provide me with an understanding of what is wanted from me and what I am doing too much of. 
 
-The engineering lessons that I have learned through the course of this assignment are the effort to go from the purely mathematical to designing a real physical system. The original problem that was provided to us was considerably simple, with 4 points of interest and 2 applied forces, asking us to create a truss design that could help diffuse the forces properly throughout the entire system. Starting with the external force calculations, then moving to the internal forces within the members, to stress calculations, applying material properties, and then eventually designing it within CAD. It's not necessarily learning anything new from prior courses that dealt with statics, solids, or CAD, but it takes them and combines them into the actual engineering design process. The entire goal of which this course aims for. Yet outside of the overarching goal of the course, the technique required to calculate the shear force applied to the pin was something I would consider entirely new. As I had never encountered it before within solids, which explains why I initially just assumed the force wrong. These lessons form over time through each assignment, many of which I don't even realize I am forming; it is important to vocalize these lessons as they are learned to reflect upon them.
+The engineering lessons that I have learned through the course of this assignment are the effort to go from the purely mathematical to designing a real physical system. The original problem that was provided to us was considerably simple, with 4 points of interest and 2 applied forces, asking us to create a truss design that could help diffuse the forces properly throughout the entire system. Starting with the external force calculations, then moving to the internal forces within the members, to stress calculations, applying material properties, and then eventually designing it within CAD. It's not necessarily learning anything new from prior courses that dealt with statics, solids, or CAD, but it takes them and combines them into the actual engineering design process. The entire goal of this course. Yet outside of the overarching goal of the course, the technique required to calculate the shear force applied to the pin was something I would consider entirely new. As I had never encountered it before within solids, which explains why I initially just assumed the force was wrong. These lessons form over time through each assignment, many of which I don't even realize I am forming; it is important to vocalize these lessons as they are learned to reflect upon them.
 
-## Decide
-_Which geometry did you select, and why? This is your first open design choice in the course — defend it._
 
-## Communicate
 
 ### Member BC, Member AE, Member CE
 
@@ -125,7 +196,7 @@ _Which geometry did you select, and why? This is your first open design choice i
 
 **Propose** : Unlike buckling, we have less wiggle room to prevent failure due to the axial load applied. Either the force needs to decrease, which we can manage by adding more members to our truss system, or we can increase our area. Adding more members complicates many other systems at play, meaning increasing our cross-sectional area is the better, simpler option. It would help reduce our overall stress despite the load and keep our math relatively simple.
 
-**The Pins**
+### The Pins
 
 **Identify**: Often, when it comes to pins, we'd expect shear stress to be the governing mode of failure, but in this case it's more likely bearing stress. That's because even though A36 and tool steel have very different material strengths, bearing stress tends to accumulate faster at the contact surface between the pin and the member than shear does across the pin's cross-section.
 
