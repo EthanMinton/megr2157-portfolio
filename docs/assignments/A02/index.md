@@ -214,6 +214,8 @@ To prevent re-explanations over each of the members and how they react to compre
 
 ### CAD File Downloads
 Assembly Download: [truss_system.asm.2](truss_system.asm.2)
+
 Truss Individual Download: [a2_truss.prt.4](a2_truss.prt.4)
+
 Pin Individual Download: [a2_pins.prt.5](a2_pins.prt.5)
 
