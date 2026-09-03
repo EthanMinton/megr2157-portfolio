@@ -170,7 +170,7 @@ Performing this one by one for each of the pins created the final result you see
 
 Using the material properties from SolidWorks and plugging them into Creo's material properties, we were able to find the approximate weights of 61.72 N for the truss and 1.29 N for the pins combined. This is extremely close to my calculated values of 63.09 N and 1.412 N.
 
-<img width="820" height="647" alt="Math Scratch Paper (16)" src="https://github.com/user-attachments/assets/712f7eda-4bf1-408c-9171-7a4e09ef927a" />
+<img width="820" height="501" alt="Math Scratch Paper (17)" src="https://github.com/user-attachments/assets/eebd8d70-c240-4f94-9961-3613fcb43949" />
 
 ## Communicate
 
