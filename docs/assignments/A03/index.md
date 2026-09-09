@@ -93,3 +93,16 @@ After calculating the percent difference below, it was roughly found that they w
 Since these calculations are nearly exact, the choice of which one I trust more is less impactful than if they differed. I would say that personally I trust the Finite Element Analysis just a little bit more, as it is able to take into account more geometric information of the body itself using the mesh. In most real-world situations, values such as these can vary from the theoretical to the real; taking in more details and properties can introduce some of the factors that may not be included within a purely theoretical calculation.
 
 <img width="820" height="450" alt="Math Scratch Paper (20)" src="https://github.com/user-attachments/assets/2e510c11-b85b-43a3-9d9a-6f7066dfd846" />
+
+### Modify Parameters of FEA (2157)
+
+We understand that using the equation "("defl" * "A" * "E") / "F"" we can solve for the total length. I chose to change the values of the outer diameter, "do", to 0.75 inches, the inner diameter, "di", to 0.2 inches, and the force, "F", to 300 lbf. I specifically chose these 3 values to make it easier to predict. A larger outer diameter and smaller inner diameter create a much larger cross-sectional area. Being paired with a smaller force should mean that the produced length should be considerably longer than the initial length with our original values. To note we were instructed to keep our values for the material properties and fixtures the same. 
+
+<img width="1116" height="421" alt="Screenshot 2026-09-09 174207" src="https://github.com/user-attachments/assets/caac9268-405f-48e7-843a-a0001ba1fb7d" />
+<img width="876" height="602" alt="image" src="https://github.com/user-attachments/assets/7a213b73-adb4-4112-924e-c9d861836585" />
+<img width="1821" height="832" alt="image" src="https://github.com/user-attachments/assets/24facb58-9689-43ee-8948-482512c736ef" />
+
+After rebuilding the beam and reconfiguring a new study, we obtained the results found below. Note that performing the simple calculation of our yield strength of 40,000 psi divided by the max stress of 7.732 e^+2, 773.2 psi. We obtain a shear factor of around 51.7 or 52. An even greater value than previously found.
+<img width="1917" height="966" alt="image" src="https://github.com/user-attachments/assets/97e0ecee-785b-45e6-aa75-87d99a214b63" />
+<img width="1915" height="981" alt="image" src="https://github.com/user-attachments/assets/27aa0cd8-84af-430f-8716-97e16315b7e0" />
+
