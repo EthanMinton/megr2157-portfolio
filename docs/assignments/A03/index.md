@@ -1,12 +1,12 @@
 # A3 – Parametric and FEA
 
-## Objective
+## 1.0 Objective
 
 The core objective of the A3 assignment is to design a cylindrical cross-section aluminum beam using parametric CAD software, then simulate the impacts of a direct tensile force applied to one end using Finite Element Analysis (FEA).
 
-## Parametric Design
+## 2.0 Parametric Design
 
-### Establishing Global Variables 
+### 2.1 Establishing Global Variables 
 
 To preface, I am using the software "SOLIDWORKS Design" for both the CAD modeling and the FEA. After opening a new file, I immediately navigated to the left sidebar of the screen to access the "Equations" by right-clicking and then the "Manage Equations" tab.
 <img width="272" height="175" alt="Screenshot 2026-09-08 154240" src="https://github.com/user-attachments/assets/541db855-210d-41b7-857e-57b3f229d2e3" />
@@ -17,7 +17,7 @@ After accessing the equations, I began to input each value to their assigned var
 
 <img width="820" height="278" alt="Math Scratch Paper (18)" src="https://github.com/user-attachments/assets/728aa930-d33e-4163-bdc9-3d8d4fdcfac0" />
 
-### Parametric Modeling
+### 2.2 Parametric Modeling
 
 After exiting the Sketch, we then move on to modeling, sketching off of the "Right Plane" view.
 <img width="1917" height="1137" alt="Screenshot 2026-09-08 160017" src="https://github.com/user-attachments/assets/6ac4d78f-d609-4ef7-a14c-8915f7766da5" />
@@ -35,8 +35,8 @@ After establishing the diameter values, I moved on to extrude the sketch using t
 <img width="475" height="541" alt="Screenshot 2026-09-09 144124" src="https://github.com/user-attachments/assets/02a72b7b-2335-4bdd-a337-f22ac6468cc8" />
 <img width="1632" height="908" alt="Screenshot 2026-09-09 144204" src="https://github.com/user-attachments/assets/58fac47d-0608-41b0-8390-e54692a61e39" />
 
-## Finite Element Analysis
-### Setup
+### 2.3 Finite Element Analysis
+#### 2.31 Setup
 
 Moving towards the materials on the left sidebar, I began to search for an aluminum alloy that had the most similar Young's Modulus to the chosen value of 10,000,000 psi (10^7 psi). I eventually settled on the SolidWorks preset of "6061-T6 (SS)," an aluminum alloy with a Young's Modulus of "10,007,604 psi," mainly due to the proximity it has to the selected value. 
 
@@ -68,27 +68,27 @@ Once the mesh is completed, you got the top of the tab and click on "Run This St
 
 <img width="1033" height="157" alt="Screenshot 2026-09-08 161717" src="https://github.com/user-attachments/assets/0eada21d-8353-4cd3-ba2d-c9a8654085c6" />
 
-### Finite Element Analysis Results
+#### 2.32 Finite Element Analysis Results
 
 To observe our FEA, we must change the units used to ensure that our data can be easily legible and compared. To do this, we must right-click on the specific Simulation and select "Edit Definition". In the new sidebar on the left, you select the "Unit" and choose the unit you want accordingly. In this case, "psi" was selected for the Von Mises Simulation, and "inches" was selected for the Displacement Simulation.
 
 <img width="358" height="225" alt="Screenshot 2026-09-09 151734" src="https://github.com/user-attachments/assets/ee31b868-4831-4d2e-b7ad-10172425d6b8" />
 <img width="271" height="307" alt="Screenshot 2026-09-09 152000" src="https://github.com/user-attachments/assets/8024d478-7299-473f-bf48-4c220f458790" />
 
-#### Von Mises Stress Map
+##### Von Mises Stress Map
 <img width="1915" height="962" alt="Screenshot 2026-09-09 152532" src="https://github.com/user-attachments/assets/7d343997-27fd-4779-86b5-f989e1a8385c" />
 
-#### Deflection Map
+##### Deflection Map
 <img width="1906" height="1012" alt="Screenshot 2026-09-09 152627" src="https://github.com/user-attachments/assets/25224aa2-ee5c-4d9b-86f4-2e469b2ea27f" />
 
-### FEA Reflection
-#### Factor of Safety 
+## 3.0 FEA Reflection
+### 3.1 Factor of Safety 
 
 Calculating the factor of safety requires us to take the given strength of aluminium, which is 40 ksi, and divide it by the maximum stress observed within the Von Mises Stress Map, which is the value found at the very top of the legend, "2.920e +3" or 2.920 ksi. This gives us a value of around 13.7, rounding it to a safety factor of 14. This is a considerably large safety factor for the designed beam and conveys that the beam is overdesigned for axial tension applied to it. Obnoxious values can be expected here, as the design process prioritized achieving a specific deflection value over a value of stress. If we had prioritized obtaining a specific Factor of safety here it is likely that the deflection value would be nowhere near the asked-for value. As an engieer often you have to figure out how to achieve both without getting in the way of the other.
 
 <img width="820" height="670" alt="Math Scratch Paper (19)" src="https://github.com/user-attachments/assets/c913bf38-55c0-47ff-99d0-cf43379d2646" />
 
-#### Displacement Difference  
+### 3.2 Displacement Difference  
 
 After calculating the percent difference below, it was roughly found that they were 0.078% different. An extremely small magnitude of difference; they could be considered essentially the same. The reason for this is likely due to the uniform geometry of the beam that prevents any complications within it internally. CAD Finite Element Analysis has the benefit of assuming the lack of stress concentrations due to the absence of geometries such as fillets, holes, or cracks within the structure and, being paired with the simple geometry of the tube, we can assume that the tension applied to the end of the structure should perform nearly exactly as predicted by our hand calculations.
 
@@ -96,7 +96,7 @@ Since these calculations are nearly exact, the choice of which one I trust more 
 
 <img width="820" height="450" alt="Math Scratch Paper (20)" src="https://github.com/user-attachments/assets/2e510c11-b85b-43a3-9d9a-6f7066dfd846" />
 
-### Modify Parameters of FEA (2157)
+### 3.3 Modify Parameters of FEA (2157)
 
 We understand that using the equation "("defl" * "A" * "E") / "F"" we can solve for the total length. I chose to change the values of the outer diameter, "do", to 0.75 inches, the inner diameter, "di", to 0.2 inches, and the force, "F", to 300 lbf. I specifically chose these 3 values to make it easier to predict. A larger outer diameter and smaller inner diameter create a much larger cross-sectional area. Being paired with a smaller force should mean that the produced length should be considerably longer than the initial length with our original values. To note, the instructions mention altering the "load, thickness, height and width" as if we were handling a different shape like a triangular beam from the previous semester; I assume that the instructions want us to go out of our way to change the primary geometric constraints and axial force being applied to our beam. We were also instructed to keep our values for the material properties and fixtures the same. 
 
@@ -109,7 +109,7 @@ After rebuilding the beam and reconfiguring a new study, we obtained the results
 <img width="1917" height="966" alt="image" src="https://github.com/user-attachments/assets/97e0ecee-785b-45e6-aa75-87d99a214b63" />
 <img width="1915" height="981" alt="image" src="https://github.com/user-attachments/assets/27aa0cd8-84af-430f-8716-97e16315b7e0" />
 
-### Lessons Learned 
+## 4.0 Lessons Learned 
 
 The single greatest mistake that I made in this assignment is the implementation of global variables to create the geometry of the beams. For the sake of documentation, I have left the screenshots of the implementation within the preceeding text above, as they don't contradict anything explained throughout the process and still allowed for the needed maps and information to be produced. I will attach the fixed screenshots below as recorded proof that the issue was fixed. The issue stems from the implementation of the global variables in the dimensional constraints, specifically the outer diameter ("do"), the inner diameter ("di"), and the length ("L"). When I initially input the values, I had merely looked up the global variables and selected the value, assuming this meant that the variable was actually being used and not just the value currently attributed to it. This is incorrect; to properly implement the global variable, you must do it by inputting " ="(variable Name)"" a little globe should appear, as well as a summation symbol beside the numerical value beside the constraint. Every time you change the variable, you should rebuild the model to ensure that it updates itself. Thankfully, when attempting the 2157 bonus section, I was able to catch this mistake and fix it. 
 
