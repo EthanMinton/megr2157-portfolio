@@ -136,4 +136,4 @@ The single greatest mistake that I made in this assignment is the implementation
 
 Otherwise, there was little issue with performing all of the tasks asked of us. It roughly took me 5 hours and 30 minutes, which I expected when trying out SolidWorks in depth for the first time. 
 
-Link to CAD: [A3_Main.SLDPRT](A3_Main.SLDPRT)
+Download Link to CAD: [A3_Main.SLDPRT](A3_Main.SLDPRT)
