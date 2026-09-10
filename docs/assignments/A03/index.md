@@ -58,7 +58,7 @@ The next step is to right-click on the "External Load" and select the "Force" ta
 <img width="287" height="677" alt="Screenshot 2026-09-08 161207" src="https://github.com/user-attachments/assets/77442178-84e1-4cca-8c3f-759f0c4019ce" />
 <img width="1861" height="851" alt="Screenshot 2026-09-09 144719" src="https://github.com/user-attachments/assets/c00dde17-b9d8-42ef-bbf5-0121b8b477e4" />
 
-The final step for setting up the Final element analysis is creating the mesh. Going to the "Mesh" tab and selecting "Create Mesh," I was able to create a mesh for the model that came out looking like below. I opted to not touch any of the mesh settings, as the follow-along video avoids touching anything as well. 
+The final step for setting up the Finite element analysis is creating the mesh. Going to the "Mesh" tab and selecting "Create Mesh," I was able to create a mesh for the model that came out looking like below. I opted to not touch any of the mesh settings, as the follow-along video avoids touching anything as well. 
 
 <img width="322" height="650" alt="Screenshot 2026-09-08 161507" src="https://github.com/user-attachments/assets/5ce5a409-478c-42e2-9597-49e4fd1bcbc9" />
 <img width="270" height="495" alt="Screenshot 2026-09-08 161535" src="https://github.com/user-attachments/assets/fa7b8e85-fb53-4cae-8859-16684810624e" />
@@ -84,7 +84,7 @@ To observe our FEA, we must change the units used to ensure that our data can be
 ## 3.0 FEA Reflection
 ### 3.1 Factor of Safety 
 
-Calculating the factor of safety requires us to take the given strength of aluminium, which is 40 ksi, and divide it by the maximum stress observed within the Von Mises Stress Map, which is the value found at the very top of the legend, "2.920e +3" or 2.920 ksi. This gives us a value of around 13.7, rounding it to a safety factor of 14. This is a considerably large safety factor for the designed beam and conveys that the beam is overdesigned for axial tension applied to it. Obnoxious values can be expected here, as the design process prioritized achieving a specific deflection value over a value of stress. If we had prioritized obtaining a specific Factor of safety here, it is likely that the deflection value would be nowhere near the asked-for value. As an engieer often you have to figure out how to achieve both without getting in the way of the other.
+Calculating the factor of safety requires us to take the given strength of aluminium, which is 40 ksi, and divide it by the maximum stress observed within the Von Mises Stress Map, which is the value found at the very top of the legend, "2.920e +3" or 2.920 ksi. This gives us a value of around 13.7, rounding it to a safety factor of 14. This is a considerably large safety factor for the designed beam and conveys that the beam is overdesigned for axial tension applied to it. Relatively high values can be expected here, as the design process prioritized achieving a specific deflection value over a value of stress. If we had prioritized obtaining a specific Factor of safety here, it is likely that the deflection value would be nowhere near the asked-for value. As an engineer often you have to figure out how to achieve both without getting in the way of the other.
 
 <img width="820" height="670" alt="Math Scratch Paper (19)" src="https://github.com/user-attachments/assets/c913bf38-55c0-47ff-99d0-cf43379d2646" />
 
@@ -102,13 +102,13 @@ I want to preface this section by noting that, when using the "Machinery's Handb
 
 Source: [https://mechsimulator.com/tools/stress-concentration/](https://mechsimulator.com/tools/stress-concentration/)
 
-I began by making the choice of determining our ratio of the diameter of the pin hole to the width of the rectangular beam; the prompt specifically asks for a significant hole within the beam. So I chose the values of 0.5 inches for the width of the beam, paired with 0.2 inches for the diameter of the pin hole. The nominal stress that I will be using is the max stress value obtained through the Finite Element Analysis, 2.92 ksi. Using the equation provided, we can solve for our Kt value, which comes out to around 2.236. We can take this value and multiply it by the nominal stress value we mentioned prior to find our maximum stress value of 6.53 ksi. This would definitely fall below the threshold of 40 ksi from the aluminum yield strength, giving us a factor of safety of around 6.13. This sliced our safety factor in half. It communicates how, despite how overdesigned the original beam was, a simple pinhole within its structure could significantly affect our factor of safety.
+I began by making the choice of determining our ratio of the diameter of the pin hole to the width of the rectangular beam; the prompt specifically asks for a significant hole within the beam. So I chose the values of 0.5 inches for the width of the beam, paired with 0.2 inches for the diameter of the pin hole. Because the original bar has a uniform cross section and no hole, I used the FEA stress of 2.92 ksi as the nominal stress away from the hypothetical hole. Using the equation provided, we can solve for our Kt value, which comes out to around 2.236. We can take this value and multiply it by the nominal stress value we mentioned prior to find our maximum stress value of 6.53 ksi. This would definitely fall below the threshold of 40 ksi from the aluminum yield strength, giving us a factor of safety of around 6.13. This sliced our safety factor in half. It communicates how, despite how overdesigned the original beam was, a simple pinhole within its structure could significantly affect our factor of safety.
 
 <img width="820" height="492" alt="Math Scratch Paper (21)" src="https://github.com/user-attachments/assets/18bf3256-b501-43d4-82c4-9f49b59d62d5" />
 
 ### 3.4 Modify Parameters of FEA (2157)
 
-To preface, the instructions mention altering the "load, thickness, height and width" as if we were handling a different shape like a triangular beam from the previous semester; I assume that the instructions want us to go out of our way to change the primary geometric constraints and axial force being applied to our beam. We were also instructed to keep our values for the material properties and fixtures the same. 
+To preface, the instructions mention altering the "load, thickness, height and width" as if we were handling a different shape, like a triangular beam from the previous semester; I assume that the instructions want us to go out of our way to change the primary geometric constraints and axial force being applied to our beam. We were also instructed to keep our values for the material properties and fixtures the same. 
 
 We understand that using the equation "("defl" * "A" * "E") / "F"" we can solve for the total length. I chose to change the values of the outer diameter, "do", to 0.75 inches, the inner diameter, "di", to 0.2 inches, and the force, "F", to 300 lbf. I specifically chose these 3 values to make it easier to predict. A larger outer diameter and smaller inner diameter create a much larger cross-sectional area. Being paired with a smaller force should mean that the produced length should be considerably longer than the initial length with our original values. 
 
@@ -120,7 +120,10 @@ This is because, with the Area being found in the numerator, an increase in area
 
 After rebuilding the beam and reconfiguring a new study, we obtained the results shown below. Note that performing the simple calculation of our yield strength of 40,000 psi divided by the max stress of 7.732 e^+2, 773.2 psi. We obtain a  factor of safety of around 51.7 or 52. This is even higher than previously reported.
 
+#### Modified Von Mises Stress Map
 <img width="1917" height="966" alt="image" src="https://github.com/user-attachments/assets/97e0ecee-785b-45e6-aa75-87d99a214b63" />
+
+#### Modified Deflection Map
 <img width="1915" height="981" alt="image" src="https://github.com/user-attachments/assets/27aa0cd8-84af-430f-8716-97e16315b7e0" />
 
 ## 4.0 Lessons Learned 
