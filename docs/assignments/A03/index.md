@@ -100,6 +100,11 @@ Since these calculations are nearly exact, the choice of which one I trust more 
 
 I want to preface this section by noting that, when using the "Machinery's Handbook 32 Edition," pages 207-210 are where the plot and information pertaining to stress concentrations are held. But it seems as if the information that is contained here is limited to situations that are not asked for here. The closest example that it presents is a pinhole within a cylindrical body having a bending moment applied to it. While the assignment specifically asks for us to find the situation of a fairly substantial pinhole within a flat bar in tension. Thankfully, due to some research, I found an accurate calculator that allows us to calculate the "kt" using the equation shown in the work below.
 
+Source: [https://mechsimulator.com/tools/stress-concentration/](https://mechsimulator.com/tools/stress-concentration/)
+
+I began by making the choice of determining our ratio of the diameter of the pin hole to the width of the rectangular beam, the prompt specifically asks for a significant hole within the beam. So I chose the values of 0.5 inches for the width of the beam, paired with 0.2 inches for the diameter of the pin hole. The nominal stress that I will be using is the max stress value obtained through the Finite Element Analysis, 2.92 ksi. Using the equation provided we can solve for our Kt value, which comes out to around 2.236. We can take this value and multiply it to the nominal stress value we mentioned prior to find our maximum stress value of 6.53 ksi. This would definitely fall below the threshold of 40 ksi from the aluminum yield strength, giving us a factor of safety of around 6.13. This sliced our safety factor in half. It comminucates how despite how overdesigned the original beam was a simple pin hole within its structure could significantly affect our factor of safety.
+
+
 ### 3.4 Modify Parameters of FEA (2157)
 
 To preface, the instructions mention altering the "load, thickness, height and width" as if we were handling a different shape like a triangular beam from the previous semester; I assume that the instructions want us to go out of our way to change the primary geometric constraints and axial force being applied to our beam. We were also instructed to keep our values for the material properties and fixtures the same. 
