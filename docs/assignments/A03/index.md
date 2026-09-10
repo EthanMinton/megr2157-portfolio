@@ -98,7 +98,7 @@ Since these calculations are nearly exact, the choice of which one I trust more 
 
 ### 3.3 Pin Hole Stress Concentration Hypothetical
 
-I want to preface this section by noting that, when using the "Machinery's Handbook 32 Edition," pages 207-210 are where the plot and information pertaining to stress concentrations are held. But it seems as if the information that is contained here is limited to situations that are not asked for here. The closest example that it presents is a pinhole within a cylindrical body having a bending moment applied to it. While the assignment specifically asks for us to find the situation of a fairly substantial pinhole within a flat bar in tension. Thankfully, due to some research, I found an accurate calculator that allows us to calculate the "kt" using the equation shown in the work below.
+I want to preface this section by noting that, when using the "Machinery's Handbook 32 Edition," pages 207-210 are where the plot and information pertaining to stress concentrations are held. But it seems as if the information that is contained here is limited to situations that are not asked for here. The closest example that it presents is a pinhole within a cylindrical body having a bending moment applied to it. While the assignment specifically asks for us to find the situation of a fairly substantial pinhole within a flat bar in tension. Thankfully, due to some research, I found an accurate calculator that allows us to calculate the "kt" using the equation shown in the work below. This calculator directly sources the given kt equation "Kt = 3.0 - 3.13(d/D) + 3.66(d/D)^2 - 1.53(d/D)^3" from the Peterson's Stress Concentration Charts.
 
 Source: [https://mechsimulator.com/tools/stress-concentration/](https://mechsimulator.com/tools/stress-concentration/)
 
@@ -126,4 +126,10 @@ After rebuilding the beam and reconfiguring a new study, we obtained the results
 
 The single greatest mistake that I made in this assignment is the implementation of global variables to create the geometry of the beams. For the sake of documentation, I have left the screenshots of the implementation within the preceding text above, as they don't contradict anything explained throughout the process and still allowed for the needed maps and information to be produced. I will attach the fixed screenshots below as recorded proof that the issue was fixed. The issue stems from the implementation of the global variables in the dimensional constraints, specifically the outer diameter ("do"), the inner diameter ("di"), and the length ("L"). When I initially input the values, I had merely looked up the global variables and selected the value, assuming this meant that the variable was actually being used and not just the value currently attributed to it. This is incorrect; to properly implement the global variable, you must do it by inputting " ="(variable Name)"" a little globe should appear, as well as a summation symbol beside the numerical value beside the constraint. Every time you change the variable, you should rebuild the model to ensure that it updates itself. Thankfully, when attempting the 2157 bonus section, I was able to catch this mistake and fix it. 
 
+<img width="1312" height="856" alt="Screenshot 2026-09-10 061833" src="https://github.com/user-attachments/assets/7683f38d-b0d0-41d2-8af1-faa034146d57" />
+<img width="1316" height="876" alt="Screenshot 2026-09-10 061925" src="https://github.com/user-attachments/assets/3157580e-8ced-41a7-b170-10f57a3f37d7" />
+<img width="1635" height="556" alt="Screenshot 2026-09-10 062009" src="https://github.com/user-attachments/assets/14a60c87-04c6-4add-ab11-f68acadc011e" />
+
 Otherwise, there was little issue with performing all of the tasks asked of us. It roughly took me 5 hours and 30 minutes, which I expected when trying out SolidWorks in depth for the first time. 
+
+Link to CAD: 
