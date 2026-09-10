@@ -117,7 +117,7 @@ This is because, with the Area being found in the numerator, an increase in area
 <img width="876" height="602" alt="image" src="https://github.com/user-attachments/assets/7a213b73-adb4-4112-924e-c9d861836585" />
 <img width="1821" height="832" alt="image" src="https://github.com/user-attachments/assets/24facb58-9689-43ee-8948-482512c736ef" />
 
-After rebuilding the beam and reconfiguring a new study, we obtained the results found below. Note that performing the simple calculation of our yield strength of 40,000 psi divided by the max stress of 7.732 e^+2, 773.2 psi. We obtain a  factor of safety around 51.7 or 52. An even greater value than previously found.
+After rebuilding the beam and reconfiguring a new study, we obtained the results shown below. Note that performing the simple calculation of our yield strength of 40,000 psi divided by the max stress of 7.732 e^+2, 773.2 psi. We obtain a  factor of safety of around 51.7 or 52. This is even higher than previously reported.
 
 <img width="1917" height="966" alt="image" src="https://github.com/user-attachments/assets/97e0ecee-785b-45e6-aa75-87d99a214b63" />
 <img width="1915" height="981" alt="image" src="https://github.com/user-attachments/assets/27aa0cd8-84af-430f-8716-97e16315b7e0" />
@@ -132,4 +132,4 @@ The single greatest mistake that I made in this assignment is the implementation
 
 Otherwise, there was little issue with performing all of the tasks asked of us. It roughly took me 5 hours and 30 minutes, which I expected when trying out SolidWorks in depth for the first time. 
 
-Link to CAD: 
+Link to CAD: [A3_Main.SLDPRT](A3_Main.SLDPRT)
