@@ -23,7 +23,7 @@ After exiting the Sketch, we then move on to modeling, sketching off of the "Rig
 <img width="1917" height="1137" alt="Screenshot 2026-09-08 160017" src="https://github.com/user-attachments/assets/6ac4d78f-d609-4ef7-a14c-8915f7766da5" />
 <img width="1917" height="1137" alt="Screenshot 2026-09-08 160100" src="https://github.com/user-attachments/assets/e1b93023-bc97-4f38-b13c-e62dc49ed968" />
 
-I began by creating 2 Circles overlapping each other, with their centers being directly aligned with each other. I started by constraining the outer circle with the previously set global variable of "do" (value of 0.5 inches) and then setting the inner circle to "di" (value of 0.25 inches). This is to ensure that when changing the global variables, almost all possible alterations are carried throughout the entire file.
+I began by creating 2 Circles overlapping each other, with their centers being directly aligned with each other. I started by constraining the outer circle with the previously set global variable "do" (value of 0.5 inches) and then setting the inner circle to "di" (value of 0.25 inches). This is to ensure that when changing the global variables, almost all possible alterations are carried throughout the entire file.
 
 NOTE: A major mistake was made here with the implementation of the global variables. For more explanation on how to properly implement them, refer to the Lesson Learned Section at the very bottom.
 
@@ -58,13 +58,13 @@ The next step is to right-click on the "External Load" and select the "Force" ta
 <img width="287" height="677" alt="Screenshot 2026-09-08 161207" src="https://github.com/user-attachments/assets/77442178-84e1-4cca-8c3f-759f0c4019ce" />
 <img width="1861" height="851" alt="Screenshot 2026-09-09 144719" src="https://github.com/user-attachments/assets/c00dde17-b9d8-42ef-bbf5-0121b8b477e4" />
 
-The final step for setting up the Final element analysis is creating the mesh. Going to the "Mesh" tab and selecting "Create Mesh," I was able to create a mesh for the model that came out looking like below. I opted to not touch any of the mesh settings as the follow-along video avoids touching anything as well. 
+The final step for setting up the Final element analysis is creating the mesh. Going to the "Mesh" tab and selecting "Create Mesh," I was able to create a mesh for the model that came out looking like below. I opted to not touch any of the mesh settings, as the follow-along video avoids touching anything as well. 
 
 <img width="322" height="650" alt="Screenshot 2026-09-08 161507" src="https://github.com/user-attachments/assets/5ce5a409-478c-42e2-9597-49e4fd1bcbc9" />
 <img width="270" height="495" alt="Screenshot 2026-09-08 161535" src="https://github.com/user-attachments/assets/fa7b8e85-fb53-4cae-8859-16684810624e" />
 <img width="1915" height="1010" alt="Screenshot 2026-09-09 145020" src="https://github.com/user-attachments/assets/eabded8c-ed96-4a21-ae8b-dc3e05041c67" />
 
-Once the mesh is completed, you got the top of the tab and click on "Run This Study" to achieve your results.
+Once the mesh is completed, you get to the top of the tab and click on "Run This Study" to achieve your results.
 
 <img width="1033" height="157" alt="Screenshot 2026-09-08 161717" src="https://github.com/user-attachments/assets/0eada21d-8353-4cd3-ba2d-c9a8654085c6" />
 
@@ -84,13 +84,13 @@ To observe our FEA, we must change the units used to ensure that our data can be
 ## 3.0 FEA Reflection
 ### 3.1 Factor of Safety 
 
-Calculating the factor of safety requires us to take the given strength of aluminium, which is 40 ksi, and divide it by the maximum stress observed within the Von Mises Stress Map, which is the value found at the very top of the legend, "2.920e +3" or 2.920 ksi. This gives us a value of around 13.7, rounding it to a safety factor of 14. This is a considerably large safety factor for the designed beam and conveys that the beam is overdesigned for axial tension applied to it. Obnoxious values can be expected here, as the design process prioritized achieving a specific deflection value over a value of stress. If we had prioritized obtaining a specific Factor of safety here it is likely that the deflection value would be nowhere near the asked-for value. As an engieer often you have to figure out how to achieve both without getting in the way of the other.
+Calculating the factor of safety requires us to take the given strength of aluminium, which is 40 ksi, and divide it by the maximum stress observed within the Von Mises Stress Map, which is the value found at the very top of the legend, "2.920e +3" or 2.920 ksi. This gives us a value of around 13.7, rounding it to a safety factor of 14. This is a considerably large safety factor for the designed beam and conveys that the beam is overdesigned for axial tension applied to it. Obnoxious values can be expected here, as the design process prioritized achieving a specific deflection value over a value of stress. If we had prioritized obtaining a specific Factor of safety here, it is likely that the deflection value would be nowhere near the asked-for value. As an engieer often you have to figure out how to achieve both without getting in the way of the other.
 
 <img width="820" height="670" alt="Math Scratch Paper (19)" src="https://github.com/user-attachments/assets/c913bf38-55c0-47ff-99d0-cf43379d2646" />
 
 ### 3.2 Displacement Difference  
 
-After calculating the percent difference below, it was roughly found that they were 0.078% different. An extremely small magnitude of difference; they could be considered essentially the same. The reason for this is likely due to the uniform geometry of the beam that prevents any complications within it internally. CAD Finite Element Analysis has the benefit of assuming the lack of stress concentrations due to the absence of geometries such as fillets, holes, or cracks within the structure and, being paired with the simple geometry of the tube, we can assume that the tension applied to the end of the structure should perform nearly exactly as predicted by our hand calculations.
+After calculating the percent difference below using 0.009 inches as our given and 0.00899 inches as our CAD-produced, it was found that they were roughly 0.078% different. An extremely small magnitude of difference; they could be considered essentially the same. The reason for this is likely due to the uniform geometry of the beam that prevents any complications within it internally. CAD Finite Element Analysis has the benefit of assuming the lack of stress concentrations due to the absence of geometries such as fillets, holes, or cracks within the structure and, being paired with the simple geometry of the tube, we can assume that the tension applied to the end of the structure should perform nearly exactly as predicted by our hand calculations.
 
 Since these calculations are nearly exact, the choice of which one I trust more is less impactful than if they differed. I would say that personally I trust the Finite Element Analysis just a little bit more, as it is able to take into account more geometric information of the body itself using the mesh. In most real-world situations, values such as these can vary from the theoretical to the real; taking in more details and properties can introduce some of the factors that may not be included within a purely theoretical calculation.
 
@@ -98,13 +98,17 @@ Since these calculations are nearly exact, the choice of which one I trust more 
 
 ### 3.3 Modify Parameters of FEA (2157)
 
-We understand that using the equation "("defl" * "A" * "E") / "F"" we can solve for the total length. I chose to change the values of the outer diameter, "do", to 0.75 inches, the inner diameter, "di", to 0.2 inches, and the force, "F", to 300 lbf. I specifically chose these 3 values to make it easier to predict. A larger outer diameter and smaller inner diameter create a much larger cross-sectional area. Being paired with a smaller force should mean that the produced length should be considerably longer than the initial length with our original values. To note, the instructions mention altering the "load, thickness, height and width" as if we were handling a different shape like a triangular beam from the previous semester; I assume that the instructions want us to go out of our way to change the primary geometric constraints and axial force being applied to our beam. We were also instructed to keep our values for the material properties and fixtures the same. 
+To preface, the instructions mention altering the "load, thickness, height and width" as if we were handling a different shape like a triangular beam from the previous semester; I assume that the instructions want us to go out of our way to change the primary geometric constraints and axial force being applied to our beam. We were also instructed to keep our values for the material properties and fixtures the same. 
+
+We understand that using the equation "("defl" * "A" * "E") / "F"" we can solve for the total length. I chose to change the values of the outer diameter, "do", to 0.75 inches, the inner diameter, "di", to 0.2 inches, and the force, "F", to 300 lbf. I specifically chose these 3 values to make it easier to predict. A larger outer diameter and smaller inner diameter create a much larger cross-sectional area. Being paired with a smaller force should mean that the produced length should be considerably longer than the initial length with our original values. 
+
+This is because, with the Area being found in the numerator, an increase in area would increase the length. The force is found within the denominator, meaning a small force is going to divide our numerator by a smaller value.
 
 <img width="1116" height="421" alt="Screenshot 2026-09-09 174207" src="https://github.com/user-attachments/assets/caac9268-405f-48e7-843a-a0001ba1fb7d" />
 <img width="876" height="602" alt="image" src="https://github.com/user-attachments/assets/7a213b73-adb4-4112-924e-c9d861836585" />
 <img width="1821" height="832" alt="image" src="https://github.com/user-attachments/assets/24facb58-9689-43ee-8948-482512c736ef" />
 
-After rebuilding the beam and reconfiguring a new study, we obtained the results found below. Note that performing the simple calculation of our yield strength of 40,000 psi divided by the max stress of 7.732 e^+2, 773.2 psi. We obtain a shear factor of around 51.7 or 52. An even greater value than previously found.
+After rebuilding the beam and reconfiguring a new study, we obtained the results found below. Note that performing the simple calculation of our yield strength of 40,000 psi divided by the max stress of 7.732 e^+2, 773.2 psi. We obtain a  factor of safety around 51.7 or 52. An even greater value than previously found.
 
 <img width="1917" height="966" alt="image" src="https://github.com/user-attachments/assets/97e0ecee-785b-45e6-aa75-87d99a214b63" />
 <img width="1915" height="981" alt="image" src="https://github.com/user-attachments/assets/27aa0cd8-84af-430f-8716-97e16315b7e0" />
