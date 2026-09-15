@@ -24,6 +24,28 @@ The next group of assumptions that are required is the basic geometric assumptio
 The graphic provided visually shows how the Force P is applied to the shaft of the Motor mount, but due to its simplistic nature, it makes it considerably difficult to determine the actual distance at which the force is applied. To ensure that an underestimation is not made of the design, I decided to use the 18 mm dimension of the entire shaft, including the lip section prior to the 28 diameter section (s = 18 mm).
 
 <img width="891" height="168" alt="image" src="https://github.com/user-attachments/assets/66a03692-c2aa-4069-b314-dbd8c614c90b" />
+
+### Free Body Diagram 1 
+
+Feature 1 is the portion of the Motor Mount that will be housing the Motor itself. We are instructed by Appendix B that when solving for the height, we treat the specific section as a cantilever beam when creating our free body diagram. 
+
+<img width="807" height="192" alt="image" src="https://github.com/user-attachments/assets/5d00e513-6d82-4c49-bde2-9400ccaf3459" />
+
+The 2 free-body diagrams below are each designed to communicate important information to move through. The first, found at the top, is to communicate how exactly we calculate the moment applied to the feature. With 300 newtons being applied in the parallel direction to the beam itself, we multiply it by our assumed distance of the shaft of 18 mm. Giving a result of 5400 N mm. Performing the other equilibrium equations gives us a little more insight into the other forces created by the feature, although they will not be of any further use.
+
+The second free body diagram is designed to show the applied moment and the reactions from the cantilever beam.
+
+remind: image of fbd 1 ( need to do one last check of variables)
+
+### Solving for Feature 1's Height
+
+The image below shows the derivation and the calculated solution for finding the height, the reasoning and logic we apply to solving for the height 
+#### F1 Stress Analysis
+
+
+
+#### F1 Deflection Analysis
+
 ## Decide
 
 
