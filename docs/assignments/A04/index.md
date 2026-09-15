@@ -39,12 +39,30 @@ remind: image of fbd 1 ( need to do one last check of variables)
 
 ### Solving for Feature 1's Height
 
-The image below shows the derivation and the calculated solution for finding the height, the reasoning and logic we apply to solving for the height 
+
 #### F1 Stress Analysis
 
+The image below shows the derivation and the calculated solution for finding the height. The reasoning and logic we apply to solving for the height or the thickness of the feature is that it provides the greatest impact when reducing deflection and stress within a structure. As the 2nd Area Moment of Inertia is found within the denominators of both calculations. With the other geometric values such as base and length being determined primarily by the motor's dimensions itself, it leaves us to solve for the geometry's height. 
 
+You can observe that all of the initially grabbed equations are found on the left; taking these equations and plugging them into each other we receive the product where the blue arrows meet. The next step was to isolate for the height h. Following the red arrows, we begin to simplify values and variables until we are able to have the height squared on the right. Square rooting both sides, we now have our algebraic equation to solve for height. The green arrows follow the plugging in of our known values to receive our result with 8.47 mm of height required to satisfy the stress constraint.
+
+remind: image of feature 1 stress height calc (the one with the green arrows)
 
 #### F1 Deflection Analysis
+
+Similarly to the previous logic and reasoning, height was also chosen as the value to solve for due to all other constraints being satisfied by the dimensions of the motor or the material properties selected. Height is the variable that both gives us the most ability to alter the geometry with the most impact on deflection and also isn't satisfied by any other geometric constraint.
+
+You can observe that when solving, we only require the equation for solving deflection max and the 2nd Area Moment of Inertia. Plugging these equations into each other, following the blue arrows. We then begin to isolate the height, following the red arrows. Following the green arrows we begin to plug in our known values to solve for height which is calculated to be 14.58 mm of height required to satisfy the deflection constraints.
+
+remind: image of the feature 1 deflection height calc (the one with green arrow)
+
+#### F1 Governing Height and Cross Sectional Area Calculation 
+
+After completing our calculations, we determined that the height required to satisfy the stress and deflection constraints is 8.47 mm and 14.58 mm, respectively. Under this consideration, the governing height MUST be 14.58 mm, as any value below would violate the maximum allowed deflection. The stress would only become a concern once we reached a height below 8.47 mm, but in order to do that would have already violated the deflection constraint. With our governing height, we can now calculate the cross-sectional area of feature 1 by taking the height and multiplying it by our base of 30 mm, producing the result of 437.4 mm^2.
+
+remind: image of governing height and cross sectional area
+
+### Solving for Feature 2's Height 
 
 ## Decide
 
