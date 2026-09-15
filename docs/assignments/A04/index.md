@@ -25,7 +25,9 @@ The graphic provided visually shows how the Force P is applied to the shaft of t
 
 <img width="891" height="168" alt="image" src="https://github.com/user-attachments/assets/66a03692-c2aa-4069-b314-dbd8c614c90b" />
 
-### Free Body Diagram 1 
+### Solving for Feature 1's Height
+
+#### F1 Free Body Diagram 
 
 Feature 1 is the portion of the Motor Mount that will be housing the Motor itself. We are instructed by Appendix B that when solving for the height, we treat the specific section as a cantilever beam when creating our free body diagram. 
 
@@ -36,9 +38,6 @@ The 2 free-body diagrams below are each designed to communicate important inform
 The second free body diagram is designed to show the applied moment and the reactions from the cantilever beam.
 
 remind: image of fbd 1 ( need to do one last check of variables)
-
-### Solving for Feature 1's Height
-
 
 #### F1 Stress Analysis
 
@@ -58,11 +57,16 @@ remind: image of the feature 1 deflection height calc (the one with green arrow)
 
 #### F1 Governing Height and Cross Sectional Area Calculation 
 
-After completing our calculations, we determined that the height required to satisfy the stress and deflection constraints is 8.47 mm and 14.58 mm, respectively. Under this consideration, the governing height MUST be 14.58 mm, as any value below would violate the maximum allowed deflection. The stress would only become a concern once we reached a height below 8.47 mm, but in order to do that would have already violated the deflection constraint. With our governing height, we can now calculate the cross-sectional area of feature 1 by taking the height and multiplying it by our base of 30 mm, producing the result of 437.4 mm^2.
+After completing our calculations, we determined that the height required to satisfy the stress and deflection constraints is 8.47 mm and 14.58 mm, respectively. Under this consideration, the governing height MUST be 14.58 mm, as any value below would violate the maximum allowed deflection. Stress would only become a concern below 8.47 mm, but by then we would have already violated the deflection constraint. With our governing height, we can now calculate the cross-sectional area of feature 1 by multiplying the height by our base of 30 mm, giving 437.4 mm^2.
 
 remind: image of governing height and cross sectional area
 
 ### Solving for Feature 2's Height 
+
+T
+#### F2 Free Body Diagram
+
+
 
 ## Decide
 
