@@ -3,17 +3,32 @@
 
 ## Objective
 
-This assignment asks you to design a motor mount for a Brushed 24V DC gear motor (3.6 kg · cm/46 RPM) with a 99.5:1 planetary gearbox, with its edge attached to a rigid wall. This involves a 2-step process that must account for a maximum deflection of around 0.3 mm and the maximum yield strength of your chosen material for both features involved. The first image below is a figure that details all of the dimensions of the listed motor. This will be utilized throughout the design process. The second image is the give image showing the location where the force P = 300 N is applied. Both of these images will be utilized to create the motor mount.
+This assignment asks you to design a motor mount for a Brushed 24V DC gear motor (3.6 kg · cm/46 RPM) with a 99.5:1 planetary gearbox, with its edge attached to a rigid wall. This involves a 2-step process that must account for a maximum deflection of around 0.3 mm and the maximum yield strength of your chosen material for both features involved. The first image below is a figure that details all of the dimensions of the listed motor. This will be utilized throughout the design process. The second image is the given image showing the location where the force P = 300 N is applied. Both of these images will be utilized to create the motor mount.
 
 <img width="937" height="312" alt="image" src="https://github.com/user-attachments/assets/5511ea02-e7cc-4998-8b00-ff651b99743f" />
 
 <img width="891" height="168" alt="image" src="https://github.com/user-attachments/assets/66a03692-c2aa-4069-b314-dbd8c614c90b" />
 
-## Analyze
+## Feature 1 Calculations
 
+### Assumptions 
 
+The directions give us a multitude of variables that we are required to utilize through this assignment. These variables include the Force applied, P = 300 N; the max allowable deflection, defl_max = 0.3 mm; and the Factor of safety, FOS = 3. There are then a handful of variables that we must make assumptions about based on our own decisions. For material properties, I chose PLA plastic, as it is considered a common and reliable standard for 3D print design. Using MatWeb (link within resources), I was able to find information on its mechanical properties that are required to perform later calculations. For its yield strength, I decided to utilize the average value listed under "Tensile Strength, Yield," which was 45.2 MPa (Stress_yield = 45.2 MPa). I then grabbed the Modulus of Elasticity average, which was valued at 2.35 GPa, or as I had listed within my work, 2,350 MPa (defl_max = 2350 MPa)
+
+<img width="1890" height="595" alt="image" src="https://github.com/user-attachments/assets/b99c77c4-6462-40d7-8af9-c3a75cb5c07d" />
+
+The next group of assumptions that are required is the basic geometric assumption. Using the provided dimensions of the Motor above, I roughly determined the Length of feature 1 as 45 mm (L_1 = 45 mm). The logic behind this value is taking the greatest diameter value of the motor, which in this case is the midsection at 28 mm, and adding a rough tolerance of 15 mm that will enable me to include adaptations that will help prevent deflections. Such as a chamfer that can support the elbow more. The next was the base/width of the structure for both feature 1 and feature 2. Using the same diameter value from the motor, 28 mm, I decided to set the base to be 30 mm, as it makes calculations easier and provides a short tolerance that encompasses the entire motor mount (b = 30 mm). The last step was determining the distance at which the force P is applied to the shaft and then generates a moment on feature 1. 
+
+<img width="937" height="312" alt="image" src="https://github.com/user-attachments/assets/5511ea02-e7cc-4998-8b00-ff651b99743f" />
+
+The graphic provided visually shows how the Force P is applied to the shaft of the Motor mount, but due to its simplistic nature, it makes it considerably difficult to determine the actual distance at which the force is applied. To ensure that an underestimation is not made of the design, I decided to use the 18 mm dimension of the entire shaft, including the lip section prior to the 28 diameter section (s = 18 mm).
+
+<img width="891" height="168" alt="image" src="https://github.com/user-attachments/assets/66a03692-c2aa-4069-b314-dbd8c614c90b" />
 ## Decide
 
 
 ## Communicate
 
+
+
+https://www.matweb.com/search/DataSheet.aspx?MatGUID=ab96a4c0655c4018a8785ac4031b9278&ckck=1
