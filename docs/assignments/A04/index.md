@@ -45,7 +45,7 @@ The image below shows the derivation and the calculated solution for finding the
 
 You can observe that all of the initially grabbed equations are found on the left; taking these equations and plugging them into each other we receive the product where the blue arrows meet. The next step was to isolate for the height h. Following the red arrows, we begin to simplify values and variables until we are able to have the height squared on the right. Square rooting both sides, we now have our algebraic equation to solve for height. The green arrows follow the plugging in of our known values to receive our result with 8.47 mm of height required to satisfy the stress constraint.
 
-<img width="1561" height="1537" alt="IMG_0061" src="https://github.com/user-attachments/assets/53f82558-3de7-4cb5-81b1-17b2007b6805" />
+<img width="1640" height="1725" alt="IMG_0067 jpg" src="https://github.com/user-attachments/assets/a91617af-6770-488b-87c8-7f64eb161009" />
 
 
 #### F1 Deflection Analysis
@@ -54,9 +54,9 @@ Similarly to the previous logic and reasoning, height was also chosen as the val
 
 You can observe that when solving, we only require the equation for solving deflection max and the 2nd Area Moment of Inertia. Plugging these equations into each other, following the blue arrows. We then begin to isolate the height, following the red arrows. Following the green arrows, we begin to plug in our known values to solve for height, which is calculated to be 14.58 mm of height required to satisfy the deflection constraints.
 
-<img width="1640" height="1635" alt="IMG_0062" src="https://github.com/user-attachments/assets/dd133208-2af8-4a08-b261-d6fed077b522" />
+<img width="1640" height="1522" alt="IMG_0068 jpg" src="https://github.com/user-attachments/assets/520a82c2-2407-46ec-a501-fd89cc996c2c" />
 
-#### F1 Governing Height and Cross Sectional Area Calculation 
+#### F1 Governing Height and Cross-Sectional Area Calculation 
 
 After completing our calculations, we determined that the height required to satisfy the stress and deflection constraints is 8.47 mm and 14.58 mm, respectively. Under this consideration, the governing height MUST be 14.58 mm, as any value below would violate the maximum allowed deflection. Stress would only become a concern below 8.47 mm, but by then we would have already violated the deflection constraint. With our governing height, we can now calculate the cross-sectional area of feature 1 by multiplying the height by our base of 30 mm, giving 437.4 mm^2.
 
@@ -84,25 +84,29 @@ Similar to Feature 1's stress calculations, I decided to use PLA for the materia
 
 Using the previously derived equation for finding the minimum height based on stress, we take our newly calculated moment of 32,400 N mm and apply it to find the calculated value of 20.7 mm,
 
-remind: image of stress height calc (put unknowns and knowns and derivation?)
+<img width="1640" height="1803" alt="IMG_0069 jpg (1)" src="https://github.com/user-attachments/assets/576a841f-d9c4-4a97-aefc-327a225c14ec" />
 
 #### F2 Displacement Calculations 
 
-The way that feature 2 is presented within the appendix, we find that the bottom portion of the model is the only free section that can bend, being determined by combining the height of feature 1, which is 14.58 mm, the distance of the pins from the corner where feature 1 and feature 2 meet, which is 18.65 mm, and half the diameter of the given bolts, which is 3.4 mm. This gives us a total free length of 34.93 mm.
+The way that feature 2 is presented within the appendix, we find that the bottom portion of the model is the only free section that can bend, being determined by combining the height of feature 1, which is 14.58 mm, the distance of the pins from the corner where feature 1 and feature 2 meet, which is 18.65 mm, and half the diameter of the given bolts, which is 3.4 mm. This gives us a total free length of 34.93 mm. You can see that within this calculations we find the dimenstional constraints that will be utilized when modeling the motor mount.
+
+<img width="1640" height="1362" alt="IMG_0072 jpg" src="https://github.com/user-attachments/assets/c61e9e17-147f-46d6-b790-c772d4de14e1" />
 
 To calculate the Displacement height, we take our previously derived equation, our new calculated moment of 32,400 N mm, and the length that is free to move of 34.93 mm. We find that the minimum height based on displacement is 22.38 mm.
 
-remind: image of displacement height calc (put unknowns and knowns and derivation?)
+<img width="1640" height="1751" alt="IMG_0071 jpg" src="https://github.com/user-attachments/assets/8f02ff94-ea76-49a4-a03b-c91f1aafdc7e" />
+
 
 #### F2 Governing Height and Cross-Sectional Area Calculation 
 
 After completing our calculations for Feature 2 height with the stress- and deflection-based calculations, the values attributed are 20.7 mm and 22.38 mm, respectively. Meaning that the governing height must be 22.38 mm, as choosing any height below this value will fail the deflection constraint. With our now-known governing height, we can calculate the cross-sectional area with the height of 22.38 mm and the base of 30 mm; we find the area to be 671.4 mm^2.
 
-remind: image of feature 2 governing height + cross sectional area
+<img width="1640" height="636" alt="IMG_0073 jpg (1)" src="https://github.com/user-attachments/assets/4f329b65-c349-4c31-b848-8a9b590e74f3" />
 
 ### Isometric View of Geometry 
 
-remind: sketch image in isometric view
+<img width="1112" height="1112" alt="IMG_0074 PNG" src="https://github.com/user-attachments/assets/4e5f76c6-b085-40a6-9f58-2f890319a4fa" />
+
 
 
 
