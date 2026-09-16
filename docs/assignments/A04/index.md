@@ -13,7 +13,7 @@ This assignment asks you to design a motor mount for a Brushed 24V DC gear motor
 
 ### Assumptions 
 
-The directions give us a multitude of variables that we are required to utilize through this assignment. These variables include the Force applied, P = 300 N; the max allowable deflection, defl_max = 0.3 mm; and the Factor of safety, FOS = 3. There are then a handful of variables that we must make assumptions about based on our own decisions. For material properties, I chose PLA plastic, as it is considered a common and reliable standard for 3D print design. Using MatWeb (link within resources), I was able to find information on its mechanical properties that are required to perform later calculations. For its yield strength, I decided to utilize the average value listed under "Tensile Strength, Yield," which was 45.2 MPa (Stress_yield = 45.2 MPa). I then grabbed the Modulus of Elasticity average, which was valued at 2.35 GPa, or as I had listed within my work, 2,350 MPa (defl_max = 2350 MPa)
+The directions give us a multitude of variables that we are required to utilize in this assignment. These variables include the Force applied, P = 300 N; the max allowable deflection, defl_max = 0.3 mm; and the Factor of safety, FOS = 3. There are then a handful of variables that we must make assumptions about based on our own decisions. For material properties, I chose PLA plastic, as it is considered a common and reliable standard for 3D print design. Using MatWeb (link within resources), I was able to find information on its mechanical properties that are required to perform later calculations. For its yield strength, I decided to utilize the average value listed under "Tensile Strength, Yield," which was 45.2 MPa (Stress_yield = 45.2 MPa). I then grabbed the Modulus of Elasticity average, which was valued at 2.35 GPa, or as I had listed within my work, 2,350 MPa (defl_max = 2350 MPa)
 
 <img width="1890" height="595" alt="image" src="https://github.com/user-attachments/assets/b99c77c4-6462-40d7-8af9-c3a75cb5c07d" />
 
@@ -65,23 +65,45 @@ remind: image of governing height and cross sectional area
 
 #### F2 Free Body Diagram
 
-The geometry of Feature 2 is considerably more complicated than that of Feature 1, as it involves a rigid section and a free section that is allowed to bend, as presented by the graphic below. I spent roughly an hour and a half researching how the specific moment would be applied to Feature 2 based on the force P. I was not able to locate any clear source that pertained specifically to a cantilever beam being attached in such a way pertaining to a rigid body. This required me to make an assumption with the 2 key options is considering the length to calculate the moment as either the entire length of the beam or just the length of the free body. I decided to choose the length of the entire body, as the decision to pick the free length and to be wrong about it would generate a design that isn't constrained to properly meet the required deflection and stress limits. The worst case for assuming the moment for the entire length is that the design is overengineered. In a real world senario I would deliberately simulate either in real life or within a Finite Element Analysis to consider what actually happens within the design. 
+The geometry of Feature 2 is considerably more complicated than that of Feature 1, as it involves a rigid section and a free section that is allowed to bend, as presented by the graphic below. I spent roughly an hour and a half researching how the specific moment would be applied to Feature 2 based on the force P. I was not able to locate any clear source that pertained specifically to a cantilever beam being attached in such a way pertaining to a rigid body. This required me to make an assumption with the 2 key options being to consider the length to calculate the moment as either the entire length of the beam or just the length of the free body. I decided to choose the length of the entire body, as the decision to pick the free length and to be wrong about it would generate a design that isn't constrained to properly meet the required deflection and stress limits. The worst case for assuming the moment for the entire length is that the design is overengineered. In a real world senario I would deliberately simulate either in real life or within a Finite Element Analysis to consider what actually happens within the design. 
 
 Remind: Image of feature 2 graphic given
 
-Now that the length for calculating moment has been established, we must analyze how we considered our length value. Although it isn't common for motor mounts to be designed this way, I chose to utilize the overall geometry for the motor to determine the total length. Taking into consideration the height of feature 1, as it would overlap within the corner section, at 14.58 mm. Then considering the Motor size at 38 mm and the Gearbox size at 36.3 mm. Combining these values together gives us a total length of roughly 89.18 mm. For the sake of simpler calculations and dimension values when modeling we round this value up to 90mm.
+Now that the length for calculating moment has been established, we must analyze how we considered our length value. Although it isn't common for motor mounts to be designed this way, I chose to utilize the overall geometry for the motor to determine the total length. Taking into consideration the height of feature 1, as it would overlap within the corner section, at 14.58 mm. Then considering the Motor size at 38 mm and the Gearbox size at 36.3 mm. Combining these values gives us a total length of roughly 89.18 mm. For the sake of simpler calculations and dimension values when modeling, we round this value up to 90mm.
 
 Remind: image of feature 2 length calculation graphic
 
-With the obtained total length, we can now calculate the moment about Feature 2. The original force applied, P = 300 N, is used within our calculations, being multiplied by the length of Feature 2, which is 90 mm, and the distance at which P was initially applied, 18 mm. This produces a product of 32,400 N mm of moment being generated on feature 2.
+With the obtained total length, we can now calculate the moment about Feature 2. The original force applied, P = 300 N, is used within our calculations, being multiplied by the length of Feature 2, which is 90 mm, and the distance at which P was initially applied, 18 mm. This produces a product of 32,400 N mm of moment being generated on Feature 2.
 
 Remind: Image of FBD for feature 2 
 
 #### F2 Stress Calculations
 
-Similar to feature 1's stress calculations 
+Similar to Feature 1's stress calculations, I decided to use PLA for the material of Feature 2. This is mainly because it keeps the calculations consistent, makes manufacturing easier, and lets us create Features 1 and 2 as a single part, improving strength around the connection section. If they were separate materials, it would have required us to fuse the parts in some alternative way that could complicate the manufacturing process. Because we continue to use PLA plastic, we will use the same material-property variables as feature 1: yield stress of 45.2 MPa and modulus of elasticity of 2350 MPa.
 
-REMINDER NEED TO MENTION USING SAME MATERIAL PLA FOR CONSISTENCY OF MANUFACTURE
+Using the previously derived equation for finding the minimum height based on stress, we take our newly calculated moment of 32,400 N mm and apply it to find the calculated value of 20.7 mm,
+
+remind: image of stress height calc (put unknowns and knowns and derivation?)
+
+#### F2 Displacement Calculations 
+
+The way that feature 2 is presented within the appendix, we find that the bottom portion of the model is the only free section that can bend, being determined by combining the height of feature 1, which is 14.58 mm, the distance of the pins from the corner where feature 1 and feature 2 meet, which is 18.65 mm, and half the diameter of the given bolts, which is 3.4 mm. This gives us a total free length of 34.93 mm.
+
+To calculate the Displacement height, we take our previously derived equation, our new calculated moment of 32,400 N mm, and the length that is free to move of 34.93 mm. We find that the minimum height based on displacement is 22.38 mm.
+
+remind: image of displacement height calc (put unknowns and knowns and derivation?)
+
+#### F2 Governing Height and Cross-Sectional Area Calculation 
+
+After completing our calculations for Feature 2 height with the stress- and deflection-based calculations, the values attributed are 20.7 mm and 22.38 mm, respectively. Meaning that the governing height must be 22.38 mm, as choosing any height below this value will fail the deflection constraint. With our now-known governing height, we can calculate the cross-sectional area with the height of 22.38 mm and the base of 30 mm; we find the area to be 671.4 mm^2.
+
+remind: image of feature 2 governing height + cross sectional area
+
+### Isometric View of Geometry 
+
+remind: sketch image in isometric view
+
+
 
 ## Decide
 
