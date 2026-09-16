@@ -37,7 +37,7 @@ The 2 free-body diagrams below are each designed to communicate important inform
 
 The second free body diagram is designed to show the applied moment and the reactions from the cantilever beam. 
 
-<img width="820" height="425" alt="Math Scratch Paper (24)" src="https://github.com/user-attachments/assets/3f281354-c92c-4f60-94ea-1876879edfa3" />
+<img width="1640" height="997" alt="IMG_0065" src="https://github.com/user-attachments/assets/a0622608-0086-42a6-9bb9-b95ea64555b3" />
 
 #### F1 Stress Analysis
 
@@ -54,7 +54,7 @@ Similarly to the previous logic and reasoning, height was also chosen as the val
 
 You can observe that when solving, we only require the equation for solving deflection max and the 2nd Area Moment of Inertia. Plugging these equations into each other, following the blue arrows. We then begin to isolate the height, following the red arrows. Following the green arrows, we begin to plug in our known values to solve for height, which is calculated to be 14.58 mm of height required to satisfy the deflection constraints.
 
-<img width="1561" height="1537" alt="IMG_0061 (1)" src="https://github.com/user-attachments/assets/f4401849-bad7-47d2-bee2-e2dc8e059437" />
+<img width="1640" height="1635" alt="IMG_0062" src="https://github.com/user-attachments/assets/dd133208-2af8-4a08-b261-d6fed077b522" />
 
 #### F1 Governing Height and Cross Sectional Area Calculation 
 
@@ -68,15 +68,15 @@ After completing our calculations, we determined that the height required to sat
 
 The geometry of Feature 2 is considerably more complicated than that of Feature 1, as it involves a rigid section and a free section that is allowed to bend, as presented by the graphic below. I spent roughly an hour and a half researching how the specific moment would be applied to Feature 2 based on the force P. I was not able to locate any clear source that pertained specifically to a cantilever beam being attached in such a way pertaining to a rigid body. This required me to assume, with the 2 key options being to consider the length to calculate the moment as either the entire length of the beam or just the length of the free body. I decided to choose the length of the entire body, as the decision to pick the free length and to be wrong about it would generate a design that isn't constrained to properly meet the required deflection and stress limits. The worst case for assuming the moment for the entire length is that the design is overengineered. In a real world senario I would deliberately simulate either in real life or within a Finite Element Analysis to consider what actually happens within the design. 
 
-Remind: Image of feature 2 graphic given
+<img width="803" height="307" alt="image" src="https://github.com/user-attachments/assets/eba98fe7-7a2f-472c-a0f9-08a0c2ad2809" />
 
 Now that the length for calculating moment has been established, we must analyze how we considered our length value. Although it isn't common for motor mounts to be designed this way, I chose to utilize the overall geometry for the motor to determine the total length. Taking into consideration the height of feature 1, as it would overlap within the corner section, at 14.58 mm. Then considering the Motor size at 38 mm and the Gearbox size at 36.3 mm. Combining these values gives us a total length of roughly 89.18 mm. For the sake of simpler calculations and dimension values when modeling, we round this value up to 90mm.
 
-Remind: image of feature 2 length calculation graphic
+<img width="1640" height="1682" alt="IMG_0064" src="https://github.com/user-attachments/assets/c6a7a342-b9e8-457b-9289-1f75800b31f0" />
 
 With the obtained total length, we can now calculate the moment about Feature 2. The original force applied, P = 300 N, is used within our calculations, being multiplied by the length of Feature 2, which is 90 mm, and the distance at which P was initially applied, 18 mm. This produces a product of 32,400 N mm of moment being generated on Feature 2.
 
-Remind: Image of FBD for feature 2 
+<img width="1640" height="1250" alt="IMG_0066" src="https://github.com/user-attachments/assets/303b692d-f6fd-4fef-a7b2-0c22cf437398" />
 
 #### F2 Stress Calculations
 
