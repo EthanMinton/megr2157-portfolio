@@ -159,10 +159,13 @@ The second feature was an additional double fillet found on both of the edges of
 
 <img width="1916" height="982" alt="image" src="https://github.com/user-attachments/assets/f5770db5-6d1f-487f-899e-f912c7283330" />
 
+Once I had completed the model and moved on to the Chamfer and fillet, I realized that when I was initializing the model, my scale for units had not saved with mm as the basic unit, and had instead saved with cm as the basic unit. Thankfully, utilizing the Scale feature, I was able to scale down the model by 0.1 to ensure that all units were correctly processed. I plan on attaching both the normal model that contains the incorrectly scaled units and yet the same dimensions and the scaled-down model that is appropriately sized with the Scale feature.
+
+<img width="1911" height="978" alt="image" src="https://github.com/user-attachments/assets/1e16a7bf-9eaa-48f8-b818-4b3dd6cbb461" />
+
 With the final design completed below. To note, the ring you find surrounding the bolts on feature 1 is the max diameter that the motor was dimensioned to have. I left the sketch there to signal where I could chamfer and fillet without interacting with the motor itself.
 
 <img width="1642" height="938" alt="image" src="https://github.com/user-attachments/assets/8fa66d6f-15ea-4ee8-8741-875eb72453fe" />
-
 ### Drawing (2157)
 
 
