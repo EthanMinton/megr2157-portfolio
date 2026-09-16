@@ -107,13 +107,63 @@ After completing our calculations for Feature 2 height with the stress- and defl
 
 <img width="1112" height="1112" alt="IMG_0074 PNG" src="https://github.com/user-attachments/assets/4e5f76c6-b085-40a6-9f58-2f890319a4fa" />
 
+### CAD Model
 
+#### Parametric Equations 
 
+Before establishing the model, I first began to create global variables, assigning the many given, assumed, and calculated values from the work above. Significant variables that are not immediately obvious are the "h1" and "h2" variables using the deflection equations, due to the height found being considered the governing value. The "L_t" is a create If statement that essentially takes the found value of "h1", in this case 14.58 mm, and the assumed value of "L_m" that we found by taking the measurements of the motor itself at 74.6 mm. This gives us a rounded value of 90 mm. All of the dependent equations used within the variable sheet are directly copied from the calculations above, each with a comment providing a quick description of what each variable represents and its units.
 
-## Decide
+<img width="1656" height="587" alt="image" src="https://github.com/user-attachments/assets/96bc3522-942d-476d-9b3b-72d96a07fa1c" />
 
+#### Design Process
 
-## Communicate
+Utilizing the sketch interface of the Right Plane, I created a sketch that completely outlines both features 1 and 2. Giving a L-bracket shape to work with. Using both of the height variables, "h1" = 14.58 mm and "h2" = 22.39 mm, to determine the thickness of each feature. Then, use the "L1" and "L_t" variables to define the total length of each of the features.
+
+<img width="1647" height="981" alt="image" src="https://github.com/user-attachments/assets/f08b86e6-f03c-4cd9-9d06-fb2518811ab6" />
+
+Once the sketch is established, I then moved on to extruding the sketch outwards. Due to how I planned the design, I could easily use the base variable, "b" = 30 mm, to extrude the shape outwards. You can find the variable used on the left sidebar.
+
+<img width="1915" height="982" alt="image" src="https://github.com/user-attachments/assets/b27e3d61-5943-4d29-89f1-d364ec19409d" />
+
+Now, with an established L-shape for the motor mount, I then moved to creating the cuts within the model for the motor shaft and the surrounding bolts. Centering the shaft hole in the center of feature 1 using a geometric constraint and the variable for the length of the base "b" = 30 mm, and divided it by 2. So that, in the situation of the base being changed, these holes should reorient themselves back to the center of the feature. The diameter of the shaft hole is given by the dimensions of the motor at 6 mm. The reason this is not parametrically modeled is that this diameter had no use in determining other variables, and that often is the case; motors have much different lip geometry that would require much more complex modifications to the model. To constrain these bolts, I used construction lines to create a sketched circle with a diameter of 22 mm to align them with the given geometry; this feature was not defined parametrically for the same reasons as the shaft diameter. I then used the given bolt diameter variable "4_M3" = 3.4 mm to constrain all of the outside bolt diameters. 
+
+<img width="1647" height="937" alt="image" src="https://github.com/user-attachments/assets/69372bff-30de-46d9-b4df-b56f07eb81f6" />
+
+Once the sketch had been completed, I then extruded the 5 holes to go through all the geometry below them. 
+
+<img width="1916" height="983" alt="image" src="https://github.com/user-attachments/assets/8b3ecd46-ad34-441d-85b8-fad0b93c1374" />
+
+Creating another sketch on the same feature 1 surface, I began to create a circle, aligned in the center of the shaft hole, with a diameter of 18 mm. This was not parametrically defined due to the complex geometry that would need to be modified to accomidate other motors.
+
+<img width="1647" height="937" alt="image" src="https://github.com/user-attachments/assets/bc22c37c-c17e-4edd-87fc-dbbb4e176955" />
+
+Once sketched, it was extruded downward by 2 mm, cutting the material. 
+
+<img width="1912" height="982" alt="image" src="https://github.com/user-attachments/assets/5e215a95-9f1d-4436-a333-d95368f834a7" />
+
+Once completed, I then moved on to creating the bolt holes found on the face of feature 2. I geometrically constrained the 4 of them to be vertically and horizontally aligned to ensure they are properly spaced.  I then utilized the "B_w" = 7.5 mm and the  "B_h" = 18.65 mm  variables established to constrain them from the side edges, the top edge, and the corner where feature 1 and feature 2 meet. Once their positions were constrained, I set all of their diameters to be equal to each other and then used the "4_M3" = 3.4 mm to dimension their diameters.
+
+<img width="1642" height="938" alt="image" src="https://github.com/user-attachments/assets/8dd4bd49-d256-4a18-8951-8257760838e3" />
+
+I then extruded the sketch to cut through the entirety of feature 2. 
+
+<img width="1917" height="976" alt="image" src="https://github.com/user-attachments/assets/9482b9ce-e9ac-4690-a51c-fe6e3d27b5dd" />
+
+#### Minimize Deflection 
+
+To minimize deflection within the overall design, I took the initiative to first create a chamfer that was asymmetrically dimensioned at 12 mm vertical and 7 mm horizontal, located right in the corner of the L between feature 1 and feature 2. I specifically chose this location due to how stress and deflection will likely concentrate at the corner due to its rigid structure. The chamfer is meant to add more material that can help resist this motion and stress.
+
+<img width="1912" height="981" alt="image" src="https://github.com/user-attachments/assets/12c962c7-f734-4cdf-9efd-a6165d8e00eb" />
+
+The second feature was an additional double fillet found on both of the edges of the previously created chamfer. This fillet was constrained to have a radius of 2 mm. The reasoning behind this design choice to prevent stress and deflection concentration is that it is generally known that sharp edges are a major cause of the buildup of these restrictions; with the added material from the chamfer and the smoother edges from the fillet, we can help prevent any major deflection/stress from building up at our weakest points.
+
+<img width="1916" height="982" alt="image" src="https://github.com/user-attachments/assets/f5770db5-6d1f-487f-899e-f912c7283330" />
+
+With the final design completed below. To note, the ring you find surrounding the bolts on feature 1 is the max diameter that the motor was dimensioned to have. I left the sketch there to signal where I could chamfer and fillet without interacting with the motor itself.
+
+<img width="1642" height="938" alt="image" src="https://github.com/user-attachments/assets/8fa66d6f-15ea-4ee8-8741-875eb72453fe" />
+
+### Drawing (2157)
 
 
 
