@@ -63,10 +63,25 @@ remind: image of governing height and cross sectional area
 
 ### Solving for Feature 2's Height 
 
-T
 #### F2 Free Body Diagram
 
+The geometry of Feature 2 is considerably more complicated than that of Feature 1, as it involves a rigid section and a free section that is allowed to bend, as presented by the graphic below. I spent roughly an hour and a half researching how the specific moment would be applied to Feature 2 based on the force P. I was not able to locate any clear source that pertained specifically to a cantilever beam being attached in such a way pertaining to a rigid body. This required me to make an assumption with the 2 key options is considering the length to calculate the moment as either the entire length of the beam or just the length of the free body. I decided to choose the length of the entire body, as the decision to pick the free length and to be wrong about it would generate a design that isn't constrained to properly meet the required deflection and stress limits. The worst case for assuming the moment for the entire length is that the design is overengineered. In a real world senario I would deliberately simulate either in real life or within a Finite Element Analysis to consider what actually happens within the design. 
 
+Remind: Image of feature 2 graphic given
+
+Now that the length for calculating moment has been established, we must analyze how we considered our length value. Although it isn't common for motor mounts to be designed this way, I chose to utilize the overall geometry for the motor to determine the total length. Taking into consideration the height of feature 1, as it would overlap within the corner section, at 14.58 mm. Then considering the Motor size at 38 mm and the Gearbox size at 36.3 mm. Combining these values together gives us a total length of roughly 89.18 mm. For the sake of simpler calculations and dimension values when modeling we round this value up to 90mm.
+
+Remind: image of feature 2 length calculation graphic
+
+With the obtained total length, we can now calculate the moment about Feature 2. The original force applied, P = 300 N, is used within our calculations, being multiplied by the length of Feature 2, which is 90 mm, and the distance at which P was initially applied, 18 mm. This produces a product of 32,400 N mm of moment being generated on feature 2.
+
+Remind: Image of FBD for feature 2 
+
+#### F2 Stress Calculations
+
+Similar to feature 1's stress calculations 
+
+REMINDER NEED TO MENTION USING SAME MATERIAL PLA FOR CONSISTENCY OF MANUFACTURE
 
 ## Decide
 
