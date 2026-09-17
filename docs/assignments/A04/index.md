@@ -168,8 +168,7 @@ With the final design completed below. To note, the ring you find surrounding th
 <img width="1642" height="938" alt="image" src="https://github.com/user-attachments/assets/8fa66d6f-15ea-4ee8-8741-875eb72453fe" />
 ### Drawing (2157)
 
-[Moter_mount_A4_drawing2.PDF](https://github.com/user-attachments/files/32320237/Moter_mount_A4_drawing2.PDF)
-
+<img width="1491" height="927" alt="Moter_mount_A4_final" src="https://github.com/user-attachments/assets/420e5078-bdb7-42bc-a31c-a720d9c4eae4" />
 
 ### Lessons Learned 
 
@@ -187,3 +186,5 @@ Link to Real Motor Mount: [https://www.omc-stepperonline.com/brushed-24v-dc-gear
 Link to CAD Pre-Scale: [Moter_mount_A4.SLDPRT](Moter_mount_A4.SLDPRT)
 
 Link to Cad Post-Scale:[Moter_mount_A4_scaled.SLDPRT](Moter_mount_A4_scaled.SLDPRT)
+
+Link for Drawing PDF: [Moter_mount_A4_drawing2.PDF](https://github.com/user-attachments/files/32320237/Moter_mount_A4_drawing2.PDF)
