@@ -168,6 +168,10 @@ With the final design completed below. To note, the ring you find surrounding th
 <img width="1642" height="938" alt="image" src="https://github.com/user-attachments/assets/8fa66d6f-15ea-4ee8-8741-875eb72453fe" />
 ### Drawing (2157)
 
+To go into a little detail about the process of creating the drawing you see below (CAD file and PDF are downloadable if the image is difficult to make out). After creating and establishing the 3 angle view with the front in the bottom left, the top above it, and the right to the right of it. As well as the isometric view in the top right I began to constrain all of the dimensions, which was relatively simple as the use of the smart dimension tool was able to assume most of what I was trying to place. The only constraint that gave me a difficult time was the chamfer due to the nature of the fillets that prevented the dimension tool from properly understanding how to constrain it. But thankfully, I utilized the sketch tool within the drawing file to align the original chamfer to input the correct dimensions.
+
+Once it was entirely dimensioned, I moved on to formatting. Starting with inputting the title "Motor Mount", my name "Ethan Minton", the date "9/16/26", the dimension units of mm, the material being PLA, the lack of tolerances, and the scale being 1:18. I then implemented the asked for center lines and hidden lines that were not originally found within the drawing. To clean it up I organized the dimension labels as best as possible to what you see now. Note: all unlabeled extrusions are considered through the entire material and lack any real dimension to constrain.
+
 <img width="1491" height="927" alt="Moter_mount_A4_final" src="https://github.com/user-attachments/assets/420e5078-bdb7-42bc-a31c-a720d9c4eae4" />
 
 ### Lessons Learned 
@@ -190,3 +194,7 @@ Link to Cad Post-Scale:[Moter_mount_A4_scaled.SLDPRT](Moter_mount_A4_scaled.SLDP
 Link for Drawing PDF: [Moter_mount_A4_drawing2.PDF](https://github.com/user-attachments/files/32320237/Moter_mount_A4_drawing2.PDF)
 
 Link for CAD drawing: [Moter_mount_A4_final.SLDDRW](Moter_mount_A4_final.SLDDRW)
+
+Link for alternate Motor 1: [https://www.omc-stepperonline.com/cn-on-sale-brushed-12v-dc-gear-motor-0-8kg-cm-138rpm-w-76-1-planetary-gearbox-cn-pa22-201213500-g76](https://www.omc-stepperonline.com/cn-on-sale-brushed-12v-dc-gear-motor-0-8kg-cm-138rpm-w-76-1-planetary-gearbox-cn-pa22-201213500-g76)
+
+Link for alternate Motor 2: [https://www.omc-stepperonline.com/brushed-12v-dc-gear-motor-0-46kg-cm-237rpm-w-19-1-planetary-gearbox-pa25-24126000-g19](https://www.omc-stepperonline.com/brushed-12v-dc-gear-motor-0-46kg-cm-237rpm-w-19-1-planetary-gearbox-pa25-24126000-g19)
