@@ -182,6 +182,6 @@ Link to MatWeb: [https://www.matweb.com/search/DataSheet.aspx?MatGUID=ab96a4c065
 
 Link to Real Motor Mount: [https://www.omc-stepperonline.com/brushed-24v-dc-gear-motor-3-6kg-cm-46rpm-w-99-5-1-planetary-gearbox-pa28-28245800-g100](https://www.omc-stepperonline.com/brushed-24v-dc-gear-motor-3-6kg-cm-46rpm-w-99-5-1-planetary-gearbox-pa28-28245800-g100)
 
-Link to CAD Pre-Scale:
+Link to CAD Pre-Scale: [Motor_mount_A4.SLDPRT](Motor_mount_A4.SLDPRT)
 
-Link to Cad Post-Scale:
+Link to Cad Post-Scale:[Motor_mount_A4_scaled.SLDPRT](Motor_mount_A4_scaled.SLDPRT)
