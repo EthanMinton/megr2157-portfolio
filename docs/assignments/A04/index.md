@@ -159,7 +159,7 @@ The second feature was an additional double fillet found on both of the edges of
 
 <img width="1916" height="982" alt="image" src="https://github.com/user-attachments/assets/f5770db5-6d1f-487f-899e-f912c7283330" />
 
-Once I had completed the model and moved on to the Chamfer and fillet, I realized that when I was initializing the model, my scale for units had not saved with mm as the basic unit, and had instead saved with cm as the basic unit. Thankfully, utilizing the Scale feature, I was able to scale down the model by 0.1 to ensure that all units were correctly processed. I plan on attaching both the normal model that contains the incorrectly scaled units and yet the same dimensions and the scaled-down model that is appropriately sized with the Scale feature.
+Once I had completed the model and moved on to the Chamfer and fillet, I realized that when I was initializing the model, my scale for units had not saved with mm as the basic unit, and had instead saved with cm as the basic unit. Thankfully, utilizing the Scale feature, I was able to scale down the model by 0.1 to ensure that all units were correctly processed. I plan on attaching both the normal model that contains the incorrectly scaled units but has the same dimensions and the scaled-down model that is appropriately sized with the Scale feature.
 
 <img width="1911" height="978" alt="image" src="https://github.com/user-attachments/assets/1e16a7bf-9eaa-48f8-b818-4b3dd6cbb461" />
 
@@ -169,5 +169,10 @@ With the final design completed below. To note, the ring you find surrounding th
 ### Drawing (2157)
 
 
+### Lessons Learned 
+
+Within this assignment, I learned the importance of keeping my work heavily organized and checking my assumptions before moving too far into the design process. One of the biggest examples of this was when I realized that my CAD model had been created using centimeters instead of millimeters. Every attempt I made to change the units from centimeters into millimeters would result in SolidWorks crashing. Even though the numerical dimensions within the model were correct, the overall scale of the part was incorrect. Thankfully, I was able to correct the issue by using the Scale feature, but this could have caused much larger problems if I had not caught it before finishing the model. It taught me that checking the units and settings before beginning a CAD model is a small step that can prevent a much larger issue later. It definitely will not happen again.
+
+I also learned that organizing my work throughout the design process makes the overall assignment much easier to complete. During previous assignments, I constantly kept having to search for documentation and scratch work that I had to clean up. But by keeping track of my assumptions, equations, calculations, sketches, and CAD dimensions as I worked, I was able to go back and use the information from earlier steps instead of having to redo work. This was especially helpful when creating the parametric model because I could directly use the dimensions that I had already calculated. Overall, staying organized and checking small details throughout the process can save a significant amount of time and prevent mistakes from carrying over into later parts of the design.
 
 https://www.matweb.com/search/DataSheet.aspx?MatGUID=ab96a4c0655c4018a8785ac4031b9278&ckck=1
