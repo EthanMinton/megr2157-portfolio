@@ -189,4 +189,4 @@ Link to Cad Post-Scale:[Moter_mount_A4_scaled.SLDPRT](Moter_mount_A4_scaled.SLDP
 
 Link for Drawing PDF: [Moter_mount_A4_drawing2.PDF](https://github.com/user-attachments/files/32320237/Moter_mount_A4_drawing2.PDF)
 
-Link for CAD drawing: 
+Link for CAD drawing: [Moter_mount_A4_final.SLDDRW](Moter_mount_A4_final.SLDDRW)
