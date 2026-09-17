@@ -175,4 +175,13 @@ Within this assignment, I learned the importance of keeping my work heavily orga
 
 I also learned that organizing my work throughout the design process makes the overall assignment much easier to complete. During previous assignments, I constantly kept having to search for documentation and scratch work that I had to clean up. But by keeping track of my assumptions, equations, calculations, sketches, and CAD dimensions as I worked, I was able to go back and use the information from earlier steps instead of having to redo work. This was especially helpful when creating the parametric model because I could directly use the dimensions that I had already calculated. Overall, staying organized and checking small details throughout the process can save a significant amount of time and prevent mistakes from carrying over into later parts of the design.
 
-https://www.matweb.com/search/DataSheet.aspx?MatGUID=ab96a4c0655c4018a8785ac4031b9278&ckck=1
+The total time spent on the project was approximately 11 hours 30 minutes. Much of it was dedicated primarily to documenting the step-by-step process.
+
+### Resources
+Link to MatWeb: [https://www.matweb.com/search/DataSheet.aspx?MatGUID=ab96a4c0655c4018a8785ac4031b9278&ckck=1](https://www.matweb.com/search/DataSheet.aspx?MatGUID=ab96a4c0655c4018a8785ac4031b9278&ckck=1)
+
+Link to Real Motor Mount: [https://www.omc-stepperonline.com/brushed-24v-dc-gear-motor-3-6kg-cm-46rpm-w-99-5-1-planetary-gearbox-pa28-28245800-g100](https://www.omc-stepperonline.com/brushed-24v-dc-gear-motor-3-6kg-cm-46rpm-w-99-5-1-planetary-gearbox-pa28-28245800-g100)
+
+Link to CAD Pre-Scale:
+
+Link to Cad Post-Scale:
