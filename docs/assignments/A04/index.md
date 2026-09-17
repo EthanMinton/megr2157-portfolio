@@ -174,9 +174,9 @@ With the final design completed below. To note, the ring you find surrounding th
 
 Within this assignment, I learned the importance of keeping my work heavily organized and checking my assumptions before moving too far into the design process. One of the biggest examples of this was when I realized that my CAD model had been created using centimeters instead of millimeters. Every attempt I made to change the units from centimeters into millimeters would result in SolidWorks crashing. Even though the numerical dimensions within the model were correct, the overall scale of the part was incorrect. Thankfully, I was able to correct the issue by using the Scale feature, but this could have caused much larger problems if I had not caught it before finishing the model. It taught me that checking the units and settings before beginning a CAD model is a small step that can prevent a much larger issue later. It definitely will not happen again.
 
-I also learned that organizing my work throughout the design process makes the overall assignment much easier to complete. During previous assignments, I constantly kept having to search for documentation and scratch work that I had to clean up. But by keeping track of my assumptions, equations, calculations, sketches, and CAD dimensions as I worked, I was able to go back and use the information from earlier steps instead of having to redo work. This was especially helpful when creating the parametric model because I could directly use the dimensions that I had already calculated. Overall, staying organized and checking small details throughout the process can save a significant amount of time and prevent mistakes from carrying over into later parts of the design.
+I also learned that organizing my work throughout the design process makes the overall assignment much easier to complete. During previous assignments, I constantly kept having to search for documentation and scratch work that I had to clean up. But by keeping track of my assumptions, equations, calculations, sketches, and CAD dimensions as I worked, I was able to go back and use the information from earlier steps instead of having to redo work. This was especially helpful when creating the parametric model because I could directly use the dimensions that I had already calculated. Overall, staying organized and checking small details throughout the process can save significant time and prevent mistakes from carrying over into later parts of the design.
 
-The total time spent on the project was approximately 11 hours 30 minutes. Much of it was dedicated primarily to documenting the step-by-step process.
+The total time spent on the project was approximately 11 hours 30 minutes. Much of it was spent documenting the step-by-step process.
 
 ### Resources
 Link to MatWeb: [[https://www.matweb.com/search/DataSheet.aspx?MatGUID=ab96a4c0655c4018a8785ac4031b9278&ckck=1](https://www.matweb.com/search/DataSheet.aspx?MatGUID=ab96a4c0655c4018a8785ac4031b9278&ckck=1)
@@ -188,3 +188,5 @@ Link to CAD Pre-Scale: [Moter_mount_A4.SLDPRT](Moter_mount_A4.SLDPRT)
 Link to Cad Post-Scale:[Moter_mount_A4_scaled.SLDPRT](Moter_mount_A4_scaled.SLDPRT)
 
 Link for Drawing PDF: [Moter_mount_A4_drawing2.PDF](https://github.com/user-attachments/files/32320237/Moter_mount_A4_drawing2.PDF)
+
+Link for CAD drawing: 
