@@ -19,12 +19,22 @@ The given dimensions below are of the rigid body that the bracket is designed to
 
 <img width="698" height="313" alt="image" src="https://github.com/user-attachments/assets/f606ab45-1ee1-4ee9-bb4d-91f40680ab70" />
 
-## Stress Analysis 
+##  Analysis 
 
-### Feature A
+To preface the analysis section I decided that it would be easiest to solve these features back-to-back, starting with Stress calculations and then moving onto stiff calculations. 
+
+### Feature A - Stress and Stiffness
+
+Some of the General Feature A assumptions include considering that no shear failure is applied. The assignment instructions describe the total force applied to the member due to the strap as 2 times the force of p, which in this case will result in a total force of 1200 lbf. Our feature will be considered as a single-surface-supported beam. We were required to make a geometric assumption based on the length of the model; the linked strap that was used within the constraints has a width of 3/4 of an inch. I decided to make our length 1 inch to compensate for any interactions from the other features and to accommodate the full 3/4 of an inch for the entire strap without having to worry about it hanging too close to the ledge. The given equations from the instructions are used below to solve for both the stress and stiffness calculations. Resulting in a Stress radius of 0.438 inches and a Stiffness radius of 0.19 inches. 
 
 
-## Objective
+### Feature B - Stress and Stiffness
+
+Some of the general Feature B assumptions include considering that no shear failure is applied. Due to the fact that our Feature A had 2p of force pulling itself downward, we must assume that the force resulting from that must also be 2p as an internal reaction, giving us the force 1200 lbf. Our feature will be considered as a beam in tension, with the 2p force being axially applied to each of these ends. The rounded end of the feature will be assumed negligible for area calculations due to the support of the rest of feature A. I understand this isn't entirely accurate with the true physics, as stress concentrations are likely to appear at this junction, but for the sake of simplicity, we are able to hand calculation I decided to make this assumption. Based on our previous calculations for Feature A, we are able to decide the base width of the model will be kept consistent with the diameter. This should give different sizes and scales based on Feature A for each calculation. Another assumption was reducing the length as much as possible to avoid any increase in our deflection; this is why I assumed a length of 1 inch. Once performing our calculations in solving for the thickness of the memeber the stress resulted in 0.151 inches and the stiffness resulted in 0.0217 inches 
+
+[Math Scratch Paper (41).pdf](https://github.com/user-attachments/files/32604529/Math.Scratch.Paper.41.pdf)
+
+### Feature C - Stress and Stiffness 
 
 
 ## Analyze
