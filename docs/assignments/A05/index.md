@@ -79,7 +79,59 @@ Below are the created multi-view sketches. To note I attempted to make these as 
 
 ### Governing Failure Mode 
 
-I want to say that for every single calculation, I found that the strength dimensions always cleared well over the stiffness dimension
+I want to say that for every single calculation, I found that the strength dimensions always cleared well over the stiffness dimension. For Feature A, the stress calculation required a radius of 0.438 inches, while the stiffness calculation only required 0.19 inches. This means that stress governed this feature by about 0.248 inches. Feature B had a similar result, with stress requiring 0.151 inches while stiffness only required 0.0217 inches, making stress the governing failure mode by about 0.129 inches. Feature C required a height of 0.498 inches from the stress calculation compared to 0.253 inches from stiffness, meaning stress governed by about 0.245 inches. Feature D was a little closer, with stress requiring 0.814 inches while stiffness required 0.382 inches, giving a difference of about 0.432 inches. Finally, Feature E had a stress requirement of 0.315 inches while stiffness only required 0.025 inches, meaning stress governed by about 0.290 inches.
 
+Overall, stress was consistently the governing failure mode for every feature, rather than stiffness. The closest comparison was Feature B, but even then the stress requirement was still significantly larger than the stiffness requirement. This showed me that for this bracket design, increasing the dimensions for strength automatically gave the bracket more than enough stiffness to meet the requirements. It also helped show that the final dimensions were not necessarily being controlled by how much the bracket would deflect, but instead by how much stress the material could withstand before reaching the required factor of safety. If I were to redesign the bracket, stiffness would therefore not be the main factor limiting the dimensions unless the loading conditions or required deflection were changed.
+
+### Error Propagation 
+
+The main error I found during my calculations was attempting to perform bending stress calculations on Feature B rather than axial stress. At first, I was treating Feature B as if the force was causing the member to bend, when the assignment actually required the member to be analyzed under axial loading. Thankfully, I caught this error before moving on to the later features after looking more closely into the assignment instructions and the way the force was being applied. Because I caught this mistake early, the incorrect bending calculation did not propagate into the downstream features or affect the final dimensions of the bracket. This was a good reminder that checking the assumptions and loading conditions before carrying a value into the next calculation is just as important as performing the math correctly.
+
+### Assumption Sensitivity 
+
+One assumption that could have a major effect on the final dimensions is the assumption that shear failure can be neglected. This is especially important in Feature E because the stiffness calculation resulted in an extremely small height of only 0.025 inches. While this value is acceptable based on the bending and stiffness equations used, a member this thin would very likely experience shear or other forms of failure in a real-world application before behaving exactly as the calculations predict. If shear could not be neglected, the height of Feature E would need to be increased beyond the calculated 0.025 inches to provide enough area to resist the shear force. This would make the final dimension larger and could potentially make shear, rather than stiffness, another governing factor in the design. This showed me that even when an equation produces a very small value that technically meets the requirements, the result still needs to be looked at from a practical engineering standpoint.
+
+Time Taken: 13 Hours 20 Minutes
+
+## 2157 Fits 
+
+
+The link was designed to connect Feature A to a 1-inch diameter shaft while carrying the same 600 lbf load. I used ASTM A36 steel with a factor of safety of 4. I assumed a width of 2 inches and a length of 3 inches, to keep it compact with enough space between the 2 holes. Since the 1-inch hole leaves the smallest cross-sectional area, it was used as the critical section for both stress and stiffness calculations.
+
+
+Using the stress equation and the smallest cross-sectional area around the 1-inch hole, the required thickness was found to be 0.066 inches. The axial deflection calculation resulted in a required thickness of 0.0124 inches. Since the stress requirement of 0.066 inches is larger than the stiffness requirement, stress governs the final thickness of the link. Therefore, the link was designed with a minimum thickness of 0.066 inches.
+
+<img width="1640" height="671" alt="IMG_0103 (1)" src="https://github.com/user-attachments/assets/4fcbc074-5210-4667-9962-a3fbfa593891" />
+
+### Feature A
+
+The hole connecting the link to Feature A was designed as a running/sliding fit. Feature A has a diameter of 0.876 inches, placing it in the 0.71–1.19 inch range in Table 8a of Machinery's Handbook. I selected the RC4 running/sliding fit, which provides the clearance needed for the link to slide relative to Feature A. The required hole and shaft dimensions were determined using the tolerances listed in Table 8a.
+
+<img width="842" height="497" alt="image" src="https://github.com/user-attachments/assets/28ef9286-6ffc-44ac-81e1-49d51e6a70bd" />
+
+For manufacturing, the hole would first be drilled undersize and then reamed to its final dimension. Table 6 shows the required tolerance grade, while Table 7 shows that reaming can produce the required tolerance. Therefore, reaming was selected as the final operation.
+
+<img width="866" height="640" alt="image" src="https://github.com/user-attachments/assets/8e1ff0c0-7f43-44f8-a3f1-d2e5d2c7e974" />
+<img width="830" height="501" alt="image" src="https://github.com/user-attachments/assets/660b8bf1-3b1e-404e-90bb-6b61eb3b8fbf" />
+
+
+Source: Machinery's Handbook, 29th ed - page 641 with Table 8a, Table 6, Table 7
+
+### 1-Inch Shaft
+
+
+The second hole was designed around the 1-inch diameter shaft and required light assembly pressure. I selected the FN1 light drive fit because it provides a small interference between the shaft and hole while still allowing the components to be assembled with light pressure. The hole and shaft dimensions were determined using the appropriate force-fit table.
+
+Put your force/shrink fit table screenshot here.
+
+Then:
+
+The hole would be drilled undersize and then reamed to its final dimension. The shaft requires a tighter tolerance, so a more precise machining operation such as cylindrical grinding would be used. Table 6 was used to determine the required tolerance grade, while Table 7 was used to select the appropriate manufacturing process.
+
+Put Table 6 and Table 7 here again if needed.
+
+Citation:
+
+Oberg et al., Machinery's Handbook, 29th ed., Table 6, ANSI Standard Tolerances; Table 7, Relation of Machining Processes to Tolerance Grades; force and shrink fit table.
 ## Communicate
 
