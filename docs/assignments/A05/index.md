@@ -30,9 +30,13 @@ Some of the General Feature A assumptions include considering that no shear fail
 
 ### Feature B - Stress and Stiffness
 
-Some of the general Feature B assumptions include considering that no shear failure is applied. Due to the fact that our Feature A had 2p of force pulling itself downward, we must assume that the force resulting from that must also be 2p as an internal reaction, giving us the force 1200 lbf. Our feature will be considered as a beam in tension, with the 2p force being axially applied to each of these ends. The rounded end of the feature will be assumed negligible for area calculations due to the support of the rest of feature A. I understand this isn't entirely accurate with the true physics, as stress concentrations are likely to appear at this junction, but for the sake of simplicity, we are able to hand calculation I decided to make this assumption. Based on our previous calculations for Feature A, we are able to decide the base width of the model will be kept consistent with the diameter. This should give different sizes and scales based on Feature A for each calculation. Another assumption was reducing the length as much as possible to avoid any increase in our deflection; this is why I assumed a length of 1 inch. Once performing our calculations in solving for the thickness of the memeber the stress resulted in 0.151 inches and the stiffness resulted in 0.0217 inches 
+<img width="1106" height="416" alt="image" src="https://github.com/user-attachments/assets/af7483fd-4690-4f8f-b249-26426d40ef03" />
 
-[Math Scratch Paper (41).pdf](https://github.com/user-attachments/files/32604529/Math.Scratch.Paper.41.pdf)
+
+Some of the general Feature B assumptions include considering that no shear failure is applied. Due to the fact that our Feature A had 2p of force pulling itself downward, we must assume that the force resulting from that must also be 2p as an internal reaction, giving us the force 1200 lbf. Our feature will be considered as a beam in tension, with the 2p force being axially applied to each of these ends. The rounded end of the feature will be assumed negligible for area calculations due to the support of the rest of feature A. I understand this isn't entirely accurate with the true physics, as stress concentrations are likely to appear at this junction, but for the sake of simplicity, we are able to hand calculation I decided to make this assumption. Based on our previous calculations for Feature A, we decided to keep the model's base width consistent with the diameter. This should give different sizes and scales for each calculation based on Feature A. Another assumption was reducing the length as much as possible to avoid any increase in our deflection; this is why I assumed a length of 1 inch. Once performing our calculations in solving for the thickness of the memeber the stress resulted in 0.151 inches and the stiffness resulted in 0.0217 inches 
+
+<img width="1102" height="721" alt="image" src="https://github.com/user-attachments/assets/4aa5eb78-8abb-49ee-be56-f7137e31fe2a" />
+
 
 ### Feature C - Stress and Stiffness 
 
