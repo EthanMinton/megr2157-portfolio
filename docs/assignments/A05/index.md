@@ -96,7 +96,7 @@ Time Taken: 13 Hours 20 Minutes
 ## 2157 Fits 
 
 
-The link was designed to connect Feature A to a 1-inch diameter shaft while carrying the same 600 lbf load. I used ASTM A36 steel with a factor of safety of 4. I assumed a width of 2 inches and a length of 3 inches, to keep it compact with enough space between the 2 holes. Since the 1-inch hole leaves the smallest cross-sectional area, it was used as the critical section for both stress and stiffness calculations.
+The link was designed to connect Feature A to a 1-inch diameter shaft while carrying the same 600 lbf load. I used ASTM A36 steel with a factor of safety of 4. I assumed a width of 2 inches and a length of 3 inches to keep it compact with enough space between the 2 holes. Since the 1-inch hole leaves the smallest cross-sectional area, it was used as the critical section for both stress and stiffness calculations.
 
 
 Using the stress equation and the smallest cross-sectional area around the 1-inch hole, the required thickness was found to be 0.066 inches. The axial deflection calculation resulted in a required thickness of 0.0124 inches. Since the stress requirement of 0.066 inches is larger than the stiffness requirement, stress governs the final thickness of the link. Therefore, the link was designed with a minimum thickness of 0.066 inches.
@@ -115,23 +115,25 @@ For manufacturing, the hole would first be drilled undersize and then reamed to 
 <img width="830" height="501" alt="image" src="https://github.com/user-attachments/assets/660b8bf1-3b1e-404e-90bb-6b61eb3b8fbf" />
 
 
-Source: Machinery's Handbook, 29th ed - page 641 with Table 8a, Table 6, Table 7
+Source: Machinery's Handbook, 32nd ed. - Table 8a (Page 654), Table 6, Table 7 (page 650)
 
 ### 1-Inch Shaft
 
 
-The second hole was designed around the 1-inch diameter shaft and required light assembly pressure. I selected the FN1 light drive fit because it provides a small interference between the shaft and hole while still allowing the components to be assembled with light pressure. The hole and shaft dimensions were determined using the appropriate force-fit table.
+Design/Selection paragraph:
 
-Put your force/shrink fit table screenshot here.
+The hole connecting the link to the 1-inch shaft was designed as a force fit because the assignment requires light assembly pressure. The FN1 fit was selected using Table 11 of Machinery’s Handbook. The 1-inch shaft falls within the 0.95–1.19 in nominal size range.
 
-Then:
+<img width="4032" height="3024" alt="IMG_5979" src="https://github.com/user-attachments/assets/81084e86-7a46-4257-a036-6e034bc67243" />
 
-The hole would be drilled undersize and then reamed to its final dimension. The shaft requires a tighter tolerance, so a more precise machining operation such as cylindrical grinding would be used. Table 6 was used to determine the required tolerance grade, while Table 7 was used to select the appropriate manufacturing process.
+For the FN1 fit, the hole has an H6 tolerance of +0.0005/−0.0000 in, while the shaft has a tolerance of +0.0012/+0.0008 in. This results in a hole size of 1.0000–1.0005 in and a shaft size of 1.0008–1.0012 in, producing an interference of 0.0003–0.0012 in.
 
-Put Table 6 and Table 7 here again if needed.
+The hole has a total tolerance of 0.0005 in, corresponding to a Grade 6 tolerance for this size range. Reaming was selected as the manufacturing process because it can achieve the required tolerance. The shaft requires a 0.0004-in tolerance, so a precision finishing process such as cylindrical grinding would be used.
 
-Citation:
+<img width="866" height="640" alt="image" src="https://github.com/user-attachments/assets/8e1ff0c0-7f43-44f8-a3f1-d2e5d2c7e974" />
+<img width="830" height="501" alt="image" src="https://github.com/user-attachments/assets/660b8bf1-3b1e-404e-90bb-6b61eb3b8fbf" />
 
-Oberg et al., Machinery's Handbook, 29th ed., Table 6, ANSI Standard Tolerances; Table 7, Relation of Machining Processes to Tolerance Grades; force and shrink fit table.
-## Communicate
+
+Source: Machinery's Handbook, 32nd ed. - Tables 6, 7 (page 650), and 11 (page 659)
+
 
