@@ -54,10 +54,35 @@ I then constrained the length using the assumed parameter for Feature C at 2.5 i
 
 <img width="1647" height="985" alt="image" src="https://github.com/user-attachments/assets/2a407bf4-96c0-4d35-ac4f-f4b2a1a6bed6" />
 
-Once the sketch was completed, I then extruded the sketch using our Primary thickness variable, which was set to 2 inches. 
+Once the sketch was completed, I extruded the sketch using our Primary thickness variable, which was set to 2 inches. 
 
 <img width="1917" height="986" alt="image" src="https://github.com/user-attachments/assets/df6fa4a0-d82c-4b44-aae9-b6ee25ea1637" />
 
+The next step was feature D: sketching 2 identical rectangles aligned to be constrained to the bottom of feature C, equalizing the horizontal lines and the vertical lines using the constraints. I was able to dimension over double the model.  Using the T-beam dimensions, I had a height of 1.5 inches using the variable; I was able to constrain both sides with the height of feature D. I then constrained both sides using the calculated length for D, which roughly values to 0.81 inches.
+
+<img width="1648" height="985" alt="image" src="https://github.com/user-attachments/assets/a01fb741-8d36-4631-b991-4952694c5a1a" />
+
+<img width="1647" height="986" alt="image" src="https://github.com/user-attachments/assets/e42cd7d1-fa01-41c1-8d29-5e3a84451473" />
+
+Similar to feature C, I then used our primary thickness value of 2 inches to extrude the feature on both sides. 
+
+<img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/fd9c1b6f-b80c-47c8-97c8-bbe32f8af6e2" />
+
+For Feature E first started by creating 2 rectangles aligned with the top of the previous feature D, using the equal constraint to set their values of their horizontal lines and vertical lines equal to each other. Constraining the height, I used our calculated height variable for E, which was roughly 0.32 inches.
+he
+<img width="1646" height="977" alt="image" src="https://github.com/user-attachments/assets/9ffb276b-3e17-478e-a87d-2896f14e2ae6" />
+
+The next constraint I chose was the length for E, this was a given value from the T-beam and its tolerances, roughly 1 inch. 
+
+<img width="1646" height="1011" alt="image" src="https://github.com/user-attachments/assets/9160c6ee-ed36-4658-ba90-ca839d8b55ea" />
+
+Once the sketch had been completed, I then extruded the sketch by the same primary thickness of 2 inches to match the rest of the primary section of the model.
+
+<img width="1917" height="1005" alt="image" src="https://github.com/user-attachments/assets/64c4f369-9991-46dd-8224-202a0f3c2a26" />
+
+Below is the final structure of the model. I want to note that the true dimensions of the tolerances were all rounded to the 2nd decimal place, this isn't entirely accurate, and the drawing below will go into more detail about which tolerances are needed for machining. 
+
+<img width="1917" height="1007" alt="image" src="https://github.com/user-attachments/assets/939345a1-ba83-4884-b924-4a4e0625ee5f" />
 
 ## Analyze
 
