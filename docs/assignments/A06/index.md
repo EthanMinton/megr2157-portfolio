@@ -136,6 +136,10 @@ circle distance
 Extrude
 <img width="1917" height="1006" alt="image" src="https://github.com/user-attachments/assets/66360c24-b1d6-4f46-bf50-f733b8cc2396" />
 
+
+Drawing
+
+The 0.88 hole from our book has tolerance of 0.4 tho + and the 1 hole has tolerance of 0.5 tho +, no negative
 ## Analyze
 
 
