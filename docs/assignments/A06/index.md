@@ -112,6 +112,7 @@ But when considering a tighter tolerance, the vast majority that get to the +-0.
 
 <img width="967" height="635" alt="image" src="https://github.com/user-attachments/assets/d6e65fd2-af37-41e9-8399-b2379e8b8b3c" />
 
+Outside of that, the biggest issue/mistake I encountered during the parametric modeling process was determining which dimensions actually needed to be controlled by parameters. Initially, I considered adding variables for nearly every dimension, but this would have added unnecessary complexity to the model. I instead focused the parameters on dimensions that were directly determined by the stress calculations, fit requirements, or other dimensions that needed to update when the model changed. For example, the height of Feature B was entered directly because it was an assumed dimension and did not affect the stress calculation. This helped keep the model parametric where it was functionally important without unnecessarily increasing the number of equations.
 
 Time Taken: 9 Hours 45 Minutes
 
@@ -157,13 +158,13 @@ The final model is seen below.
 
 <img width="1610" height="945" alt="A6_LINK" src="https://github.com/user-attachments/assets/a46120d2-530d-4c79-a041-8241c6ada6a0" />
 
+### Link Lessons Learned 
 
-The 0.88 hole from our book has tolerance of 0.4 tho + and the 1 hole has tolerance of 0.5 tho +, no negative
-## Analyze
+One lesson I learned about ensuring part-to-part compatibility through tolerancing is that it is important to pay attention to the specific type of fit required for each feature. For Feature A, the bracket requires a sliding fit, meaning the tolerance needs to allow the part to move while still maintaining a controlled fit. Feature 1 requires a press fit, which requires a different tolerance because the parts need to fit together more tightly and accurately. These different fit requirements determine the tolerances that are applied to each feature rather than simply using the same general tolerance throughout the entire drawing. Using the appropriate tolerance for each fit helps ensure that the parts will be compatible when they are manufactured and assembled. If we had just left each of the model's tolerances up to the basic table, we could very likely find fits that are not actually compatible with what was asked for, with a sliding fit in the worst case not fitting at all or a press fit being way too loose for any actual pressure.
+
+Another lesson I learned is how dimensioning and tolerancing communicate the design intent and functional requirements of a part. The level of detail in the tolerances can show which features are more important to the function of the design and require more attention, time, and money spent. For example, the sliding fit on Feature A and the press fit on Feature 1 each have their own specific tolerances because they are important to how the parts interact with one another; if we just generalized the tolerances, their behaviors are very likely to not work as intended. In comparison, to the other dimensions, they can use the general tolerance block because they are not as critical to the function of the assembly. This shows that tolerances are not only used to describe how accurately a part should be manufactured, but also communicate which dimensions are most important to the function of the overall design. It is almost like communicating a story to machinists without requiring a real explanation, sort of like environmental storytelling.
 
 
-## Decide
+## Resources
 
-
-## Communicate
 
