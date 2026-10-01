@@ -171,7 +171,7 @@ Another lesson I learned is how dimensioning and tolerancing communicate the des
 
 *Please use the drawing links below to further inspect them due to the compression; it makes it difficult to view the tolerances and other details within the table in the corner.*
 
-[A6_LINK.SLDDRW](A6_LINK.SLDDRW)
+[A6_LINK_fixed.SLDDRW](A6_LINK_fixed.SLDDRW)
 
 [A6_LINK.SLDPRT](A6_LINK.SLDPRT)
 
