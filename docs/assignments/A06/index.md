@@ -102,6 +102,40 @@ Another lesson I learned was how tolerances should be selected based on the func
 
 Time Taken: 9 Hours 45 Minutes
 
+
+## 2157 
+
+Equations 
+<img width="1212" height="231" alt="image" src="https://github.com/user-attachments/assets/bd919d6c-021d-4b6c-aa8b-880911c6443e" />
+
+Mention the rectangular flat design, easy to mass produce through pressing machine
+
+length dim
+<img width="1643" height="982" alt="image" src="https://github.com/user-attachments/assets/9deb1cee-1e91-4db7-873a-33efe2dd782c" />
+
+
+width dim 
+<img width="1642" height="987" alt="image" src="https://github.com/user-attachments/assets/e53c9cd5-e63a-4a50-976d-4b6017b7b64e" />
+
+thickness dim
+<img width="1917" height="1010" alt="image" src="https://github.com/user-attachments/assets/afb972b8-7ab9-4141-bcc7-596ea4945706" />
+
+
+dia a
+
+<img width="1917" height="1012" alt="image" src="https://github.com/user-attachments/assets/d092bf05-13cf-4b15-89ca-5f58ec11faf2" />
+
+
+dia 1
+<img width="1647" height="986" alt="image" src="https://github.com/user-attachments/assets/2c9caabb-7466-4eb0-beaf-11949ffe2164" />
+
+
+circle distance 
+<img width="1648" height="986" alt="image" src="https://github.com/user-attachments/assets/3f70234c-672b-4fe8-937a-bff3d20bdd81" />
+
+Extrude
+<img width="1917" height="1006" alt="image" src="https://github.com/user-attachments/assets/66360c24-b1d6-4f46-bf50-f733b8cc2396" />
+
 ## Analyze
 
 
