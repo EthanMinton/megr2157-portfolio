@@ -167,4 +167,17 @@ Another lesson I learned is how dimensioning and tolerancing communicate the des
 
 ## Resources
 
+[A6_LINK.SLDDRW](A6_LINK.SLDDRW)
+
+[A6_LINK.SLDPRT](A6_LINK.SLDPRT)
+
+[A6_Model.SLDDRW](A6_Model.SLDDRW)
+
+[A6_Model.SLDPRT](A6_Model.SLDPRT)
+
+Machinery's Handbook 32nd Edition - Page 619
+
+
+
+
 
