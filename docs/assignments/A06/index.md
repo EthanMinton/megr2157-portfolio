@@ -156,6 +156,8 @@ The final model is seen below.
 
 ### Link Drawing
 
+For the link drawing, I created a fully dimensioned multi-view drawing using third-angle projection and included the required tolerance block. I applied specific tolerances to the two hole features because they are the main interface points that connect the link to the bracket and other components. These features require more attention than the other dimensions because their fit directly affects how the parts assemble; I will elaborate more on these tolerances in the lessons learned. The remaining non-critical dimensions use the general tolerance block since they do not have the same functional requirements. I also included the required interface notes and tolerance callouts so that the drawing clearly communicates how the link is intended to be manufactured and assembled.
+
 <img width="1610" height="945" alt="A6_LINK" src="https://github.com/user-attachments/assets/a46120d2-530d-4c79-a041-8241c6ada6a0" />
 
 ### Link Lessons Learned 
@@ -166,6 +168,8 @@ Another lesson I learned is how dimensioning and tolerancing communicate the des
 
 
 ## Resources
+
+*Please use the drawing links below to further inspect them due to the compression; it makes it difficult to view the tolerances and other details within the table in the corner.*
 
 [A6_LINK.SLDDRW](A6_LINK.SLDDRW)
 
