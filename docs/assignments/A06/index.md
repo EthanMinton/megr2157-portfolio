@@ -84,6 +84,24 @@ Below is the final structure of the model. I want to note that the true dimensio
 
 <img width="1917" height="1007" alt="image" src="https://github.com/user-attachments/assets/939345a1-ba83-4884-b924-4a4e0625ee5f" />
 
+## Drawing 
+
+For the engineering drawing, I created a fully dimensioned multi-view drawing of the bracket using third-angle projection. The dimensions were based on the calculations and fit selections from the previous assignment. I also included the required tolerance block of X.X ± 0.02, X.XX ± 0.01, and X.XXX ± 0.005 for the general dimensions of the bracket. 
+
+For the three dimensions that interact with the rigid T-beam, I used the fit tolerances determined in the previous assignment rather than the general tolerance block. Dimension A was designed around the 0.498 inch rigid-body dimension and uses an RC7 free-running fit, giving the bracket dimension a tolerance of +0.0016/-0.0000 inches. Dimension B was based around the 0.9992 inch dimension and uses an RC3 precision running fit, giving a bracket tolerance of +0.0008/-0.0000 inches. Finally, Dimension C was based around the 1.499 inch dimension and uses an RC1 fit because accurate location and minimum play were desired, giving a bracket tolerance of +0.0004/-0.0000 inches. These dimensions were determined by the maximum possible tolerance allowed by each of their fits as described within the Machinery's handbook. I elaborated more in the previous assignment on these tolerances and the tables attributed to how these values were found.
+
+These tighter tolerances were used specifically on the mating surfaces because they control how the bracket fits onto the rigid T-beam. The remaining non-critical dimensions use the general tolerance block shown on the drawing. They are expected to not be required to be completely perfect, as they won't be interacting in the same way that the sliding fit does. The majority of the non-fit tolerances were left to be found at 2 decimal places meaning that they should be found with a tolerance value of +- 0.01 which makes sense as our model should be expected to be accurate to the calculations we had made while also considering the time and money it would take to achieve tighter tolerances for minimum benefit.
+
+## Lessons Learned 
+
+One of the main things I learned from this assignment was how to connect the calculations from the previous assignment directly to the parametric CAD model. For example, the stress equation used for Feature B was used to determine the required thickness of the member. Instead of calculating the value separately and simply typing the final dimension into CAD, I connected the dimension to the appropriate parameter/equation in the CAD model. This allowed the dimension to update when the input values were changed. If the calculated value changed, the linked dimension updated with it, while the rest of the model responded to the change through the existing parametric relationships rather than requiring the entire model to be rebuilt.
+
+Take for example. FINISH LATER
+
+Another lesson I learned was how tolerances should be selected based on the function of a dimension. For example, Dimension B is a mating surface with the rigid T-beam and uses an RC3 precision running fit, so it requires a much tighter tolerance than a non-critical dimension. In contrast, a dimension such as the overall width of the bracket does not control how the bracket fits onto the T-beam, so it can use the looser general tolerance from the drawing tolerance block. Using a tighter tolerance on a non-critical dimension would require more precise manufacturing and could increase manufacturing difficulty and cost without providing a functional benefit. This showed me that tolerances should be based on the purpose of each feature rather than applying the tightest tolerance to every dimension.
+
+Time Taken: 9 Hours 45 Minutes
+
 ## Analyze
 
 
