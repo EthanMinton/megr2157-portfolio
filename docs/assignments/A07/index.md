@@ -235,11 +235,24 @@ Calculating the percent difference between the 2 found safety factors, we get a 
 
 ##### Mass Results
 
-The reduced mass of the design was 2.06 lbs. This roughly a 1.3 lbs reduction from the previous Design, with our model now meeting stress and displacement requirements I can focus much more into the next design into reducing the overall weight.
+The reduced mass of the design was 2.06 lbs. The mesh size does not affect the estimated values for within our model.
 
 <img width="451" height="120" alt="image" src="https://github.com/user-attachments/assets/83bf6fd5-8f37-460f-9aa6-fce8251420e1" />
 
 
+##### Final Results 
+
+From our collected data from the second Design Test, we found that our changes successfully fixed the stress and deflection issues. Both the Coarse and Medium meshes showed similar results that met all requirements. However, with a factor of safety around 8.7, the design is currently stronger than it needs to be. This is where we will prioritize our design modifications for Design 3, focusing on reducing the overall weight.
+
+| Mesh Type | Coarse Mesh | Medium Mesh | Fine Mesh |
+| --- | --- | --- | --- |
+| Max Stress (psi) | 4,065 | 4,168 | NA |
+| Max Displacement (in) | 0.0001494 | 0.0001509 | NA |
+| Factor of Safety | 8.9 | 8.7 | NA |
+| Mass (lbs) | 2.06 | 2.06 | NA |
+| Element Count | 2274 | 6281 | NA |
+
+### Design #3
 
 REMIND CREATE ENTIRE VALUE TABLE
 ## Decide
