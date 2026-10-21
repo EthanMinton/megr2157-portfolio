@@ -392,7 +392,7 @@ I then set the Material to ASTM A36 steel, which is the same material type as th
 
 ### Design #1
 
-##### Mesh #1: Coarse Mesh
+#### Mesh #1: Coarse Mesh
 
 2335 elements 
 
@@ -426,4 +426,236 @@ Minimum 2.1 FOS.
 Mass is 0.09 lbs
 
 <img width="475" height="162" alt="image" src="https://github.com/user-attachments/assets/0dade6b0-bd82-40ec-b6b7-4fa1cee3e1a0" />
+
+#### Mesh #2: Medium Mesh
+
+6274 elements
+
+<img width="1917" height="981" alt="image" src="https://github.com/user-attachments/assets/1821c2cc-24fc-4291-ac31-b86030583fff" />
+
+##### Stress Result
+
+Max stress of 173700 psi
+
+<img width="1916" height="985" alt="image" src="https://github.com/user-attachments/assets/013d1b01-fffa-48a4-99a9-f6c57746dd1a" />
+
+Same place as coarse mesh
+
+<img width="1917" height="983" alt="image" src="https://github.com/user-attachments/assets/c4d10f5f-f66d-4a1d-b57c-7b39641e482b" />
+
+0.93% difference between coarse and medium
+
+<img width="362" height="87" alt="image" src="https://github.com/user-attachments/assets/a9b800b8-667e-4c4d-94f8-05a8196d834e" />
+
+##### Displacement Result 
+
+0.0008291 inch max displacement 
+
+<img width="1916" height="978" alt="image" src="https://github.com/user-attachments/assets/8103fc4d-3caf-4824-9ad1-769a2d1ef1bb" />
+
+concentration same place as coarse mesh
+<img width="1917" height="978" alt="image" src="https://github.com/user-attachments/assets/a206d825-1609-4627-a32e-2444503b2d1d" />
+
+0.06% percent difference 
+
+<img width="365" height="90" alt="image" src="https://github.com/user-attachments/assets/0690c87b-e50e-4c1b-8b18-934474f42d2b" />
+
+##### Factor of Safety Results
+
+<img width="1916" height="983" alt="image" src="https://github.com/user-attachments/assets/8cd0da3e-a2de-4caa-9871-799d833d1e28" />
+
+2.1 minimum
+
+There is 0% difference between the coarse mesh and the medium mesh
+
+##### Mass Results
+
+0.09 lbs
+
+<img width="473" height="167" alt="image" src="https://github.com/user-attachments/assets/37f7c887-c606-49b5-a471-2f3dc6da7db4" />
+
+### Design #2
+
+One the biggest failure of the design was it not meeting the factor of safety requirements of 4, as it resulted in a minimum Factor of Safety of 2.1. To combat this I decided to multiply the thickness equation by 2.5 to compensate for the safety factor and to reduce the peak stress. This will allow the model to withstand stress without failure. 
+
+<img width="1667" height="518" alt="image" src="https://github.com/user-attachments/assets/f0945714-be68-499b-98d5-a4566d08d266" />
+
+I then applied a 0.50 inch filleted edge to the 4 corners of the design to reduce meaningless mass that contributes little to strength.
+
+<img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/2645f28e-06d5-4af0-ae0c-8197c9c098e2" />
+
+#### Mesh #1: Coarse Mesh 
+
+1950 elements
+
+<img width="1916" height="980" alt="image" src="https://github.com/user-attachments/assets/5c1f63ad-dd63-449a-9066-2138779e99c3" />
+
+##### Stress Results 
+
+6918 psi max stress
+
+<img width="1916" height="977" alt="image" src="https://github.com/user-attachments/assets/6bdcef68-4d79-41a8-b9d9-a77502c82b74" />
+
+Found same area as first stress concentration on left and right side of force hole in design.
+
+<img width="1917" height="977" alt="image" src="https://github.com/user-attachments/assets/7bfb189e-223c-4b1c-917f-d84bd0b75435" />
+
+##### Deflection Results
+
+0.0003332 inches 
+
+<img width="1912" height="988" alt="image" src="https://github.com/user-attachments/assets/131ea032-f0bf-440a-a52b-d1d99e11773a" />
+
+concentration found same spot at bottom of force applied circle.
+
+<img width="1915" height="982" alt="image" src="https://github.com/user-attachments/assets/8c528647-883a-4830-9008-d717ce660dc1" />
+
+##### Factor of Safety Results 
+
+Min FOS 5.2 
+
+<img width="1915" height="986" alt="image" src="https://github.com/user-attachments/assets/1cec05b7-d450-4505-b935-084c21f34dd3" />
+
+##### Mass Results 
+
+0.21 lbs
+
+<img width="478" height="162" alt="image" src="https://github.com/user-attachments/assets/81644bc5-0be9-4fc3-96b0-8f9a888ce237" />
+
+#### Mesh #2: Medium Mesh
+6549 elements 
+
+<img width="1907" height="987" alt="image" src="https://github.com/user-attachments/assets/8cb2fb2f-f9e2-46ab-997b-c8f94e8ca0e2" />
+
+##### Stress Results
+
+6928 psi max stress
+
+<img width="1916" height="987" alt="image" src="https://github.com/user-attachments/assets/4ff69393-4b40-4928-ab66-456a942ba457" />
+
+same place 
+
+<img width="1917" height="978" alt="image" src="https://github.com/user-attachments/assets/c7de4789-caff-4446-ae6f-e91bb03bfe4d" />
+
+0.14445% percent difference 
+
+<img width="362" height="83" alt="image" src="https://github.com/user-attachments/assets/31ed8984-2cac-41e3-b039-d53d8798084b" />
+
+##### Deflection Results
+
+0.0003342 inches
+
+<img width="1917" height="981" alt="image" src="https://github.com/user-attachments/assets/3dae207f-26ad-4779-a9cc-4deadcc7e5bd" />
+
+Same place as prev deflec results
+
+<img width="1916" height="980" alt="image" src="https://github.com/user-attachments/assets/eddec99a-96b3-4861-ad80-44176fe0a69f" />
+
+0.3% percent difference
+
+<img width="360" height="87" alt="image" src="https://github.com/user-attachments/assets/80a7fd03-4bc4-4b0a-9136-0e7d6dd42224" />
+
+##### Factor of Safety Results
+
+5.2 
+
+<img width="1916" height="991" alt="image" src="https://github.com/user-attachments/assets/8973e579-fd3d-40f2-b287-3f9bc420ccc6" />
+
+0% percent difference 
+
+##### Mass Results 
+
+0.21 lbs
+
+<img width="478" height="162" alt="image" src="https://github.com/user-attachments/assets/81644bc5-0be9-4fc3-96b0-8f9a888ce237" />
+
+### Design #3
+
+In an attempt to reduce the weight of the link, I decided to reduce the multiplier from 2.5 to 2, which should reduce the total weight while ensuring that it is ablke to withstand the forces applied.
+
+<img width="1663" height="513" alt="image" src="https://github.com/user-attachments/assets/98cfecf0-82f5-4bef-b197-c2cc41d2bfc8" />
+
+#### Mesh #1: Coarse Mesh
+1679 elements
+
+<img width="1917" height="977" alt="image" src="https://github.com/user-attachments/assets/f5086d8f-5294-4822-9f84-16e7451a1678" />
+
+##### Stress Results
+
+8624 psi 
+
+<img width="1917" height="978" alt="image" src="https://github.com/user-attachments/assets/86c7714c-8275-4d69-8638-c0c947353723" />
+
+same place left and right side of force applied hole 
+
+<img width="1916" height="977" alt="image" src="https://github.com/user-attachments/assets/25c21926-af82-454a-a361-42fef3329e7f" />
+
+##### Displacement Results
+
+0.0004167 inch
+
+<img width="1916" height="976" alt="image" src="https://github.com/user-attachments/assets/a981a10c-e5bc-4809-8646-8d31deac128d" />
+
+bottom of hole force cirlce
+
+<img width="1916" height="980" alt="image" src="https://github.com/user-attachments/assets/5bb95a72-aba6-434d-887b-dc62c51daec1" />
+
+##### Factor of Safety Result
+
+4.2 minimum
+
+<img width="1916" height="982" alt="image" src="https://github.com/user-attachments/assets/9a85acc6-722d-46e0-8cba-7cef39af480a" />
+
+##### Mass Results 
+
+0.17 lbs
+
+<img width="472" height="126" alt="image" src="https://github.com/user-attachments/assets/d189efdf-5904-4b2c-ba9d-fbfd767e5626" />
+
+#### Mesh #2: Medium Mesh
+7537 elements 
+
+<img width="1910" height="988" alt="image" src="https://github.com/user-attachments/assets/b83285c1-a45a-4cf9-87e4-f5e279576e66" />
+
+##### Stress Results
+
+8667 psi
+
+<img width="1916" height="985" alt="image" src="https://github.com/user-attachments/assets/191cf349-6458-46cb-b7e9-6d121793f093" />
+
+same place 
+
+<img width="1916" height="977" alt="image" src="https://github.com/user-attachments/assets/af542b18-bfa6-46bd-962d-f21907d03808" />
+
+0.50% percent diff
+
+<img width="370" height="85" alt="image" src="https://github.com/user-attachments/assets/876a28e1-fbb9-4992-bf23-ab639d6f8b58" />
+
+##### Deflection Results
+
+0.0004175 in
+
+<img width="1916" height="983" alt="image" src="https://github.com/user-attachments/assets/026bd98f-2dc1-46da-adfd-c96f9dce7fb9" />
+
+same location 
+
+<img width="1917" height="977" alt="image" src="https://github.com/user-attachments/assets/ba5c4e78-a3c9-4197-b9f5-a6c83b602738" />
+
+0.19%
+
+<img width="372" height="85" alt="image" src="https://github.com/user-attachments/assets/3b761afc-0270-427c-8129-afe876915144" />
+
+##### Factor of Safety Results
+
+4.2 min
+
+<img width="1917" height="978" alt="image" src="https://github.com/user-attachments/assets/b072071b-7921-4038-b1af-8e91c8de3179" />
+
+0% percent difference
+
+##### Mass Results 
+
+0.17 lbs
+
+<img width="472" height="126" alt="image" src="https://github.com/user-attachments/assets/d189efdf-5904-4b2c-ba9d-fbfd767e5626" />
 
