@@ -283,18 +283,75 @@ The maximum deflection value that was calculated by the study was similar to the
 
 <img width="1917" height="980" alt="image" src="https://github.com/user-attachments/assets/d5604700-e3b7-4b30-965f-879a8b0694eb" />
 
-Its concentration was found at the center of feature A, which is similar to the previous design. This makes sense with feature B supporting it on either side it leaves the center the most unsupported and susceptible to deflection.
+Its concentration was found at the center of feature A, which is similar to the previous design. This makes sense, with feature B supporting it on either side it leaves the center the most unsupported and susceptible to deflection.
 
 <img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/5fc57726-b4b6-42e1-b656-6e2e1aecb7dd" />
 
 ##### Safety Factor Results 
 
-The minimum factor of safety calculated by the mesh was 8.8 above our given limit of 4.
+The minimum factor of safety calculated by the mesh was 8.8, above our given limit of 4.
 
 <img width="1915" height="982" alt="image" src="https://github.com/user-attachments/assets/d10dcf34-dedb-4e52-af5f-e742bc8641d2" />
 
+
 ##### Mass Results
 
+For design #3 in the coarse mesh, our design is estimated to have a weight of 1.04 lbs.
+
+<img width="471" height="168" alt="image" src="https://github.com/user-attachments/assets/d07ccc07-9303-45db-818c-c674e9e3a1f9" />
+
+
+#### Mesh #1: Medium Mesh
+
+The medium mesh for Design 3 had an element count of 5208 elements.
+
+<img width="1917" height="986" alt="image" src="https://github.com/user-attachments/assets/f6c2a38b-3a95-4fa0-b605-1011ba61f268" />
+
+
+##### Stress Results
+
+The Medium Mesh projected the Bracket to have a max stress of 4199 psi.
+
+<img width="1917" height="986" alt="image" src="https://github.com/user-attachments/assets/9a232597-16e2-42d0-ad14-313d00a2c15d" />
+
+This maximum stress is similarly located as in the previous test within the center of feature B.
+
+<img width="1917" height="983" alt="image" src="https://github.com/user-attachments/assets/6dcb4a77-689e-4299-bfc5-7cfd75330a24" />
+
+Utilizing our Percent Difference Calculator, we find that our difference was roughly 2.31%, well below the 7% threshold.
+
+<img width="342" height="85" alt="image" src="https://github.com/user-attachments/assets/14de2a37-137d-4d8d-a073-8ba1c72146df" />
+
+##### Deflection Results
+
+The maximum calculated deflection is found to be 0.0001429 inches
+
+<img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/57b5ffc6-e344-479b-a69a-42dd642bd14f" />
+
+Similar to all other deflections, post design #1: our concentration is found on Feature A.
+
+<img width="1917" height="981" alt="image" src="https://github.com/user-attachments/assets/91761713-affc-4057-8c93-b312c5bd3188" />
+
+Comparing 0.0001429 inches from this result and 0.0001422 inches from the coarse mesh, we find a 0.49% difference.
+
+<img width="347" height="80" alt="image" src="https://github.com/user-attachments/assets/bc114841-1090-4171-84e7-4862fa4eb8bb" />
+
+
+##### Factor of Safety Design 
+
+The minimum listed Factor of Safety from the Medium Mesh is 8.6.
+
+<img width="1916" height="983" alt="image" src="https://github.com/user-attachments/assets/135c444e-5127-4b95-b799-0163de0d8247" />
+
+The calculated percent difference is 2.35% between the Coarse and Medium Mesh.
+
+<img width="336" height="97" alt="image" src="https://github.com/user-attachments/assets/43291f0a-dd5b-450f-b157-8650b2e971dd" />
+
+##### Mass Results
+
+For design #3 in the Medium mesh, our design is estimated to have a weight of 1.04 lbs.
+
+<img width="471" height="168" alt="image" src="https://github.com/user-attachments/assets/d07ccc07-9303-45db-818c-c674e9e3a1f9" />
 The material
 
 <img width="472" height="167" alt="image" src="https://github.com/user-attachments/assets/c640a482-23eb-4e14-ad67-6fb0659daa69" />
