@@ -364,3 +364,66 @@ Despite attempting to reduce the overall size of the model to decrease the weigh
 | Factor of Safety | 8.8 | 8.6 | NA |
 | Mass (lbs) | 1.04 | 1.04 | NA |
 | Element Count | 2352 | 5208 | NA |
+
+
+## FEA Link
+
+The step of the assignment is to take the link we have been producing in parallel to the bracket and apply similar constraints to test the stress, Factor of safety, and deflections. 
+
+### Preprocessing 
+
+I first started by creating a Static study for our link, naming it "D2".
+
+<img width="1917" height="985" alt="image" src="https://github.com/user-attachments/assets/7cceb510-3220-41cd-82aa-3545e49bc946" />
+
+I then created a fixed Surface on the surface that connects to Feature A, the smaller-radius hole.
+
+<img width="1917" height="976" alt="image" src="https://github.com/user-attachments/assets/0e0048ba-53b3-4fbf-8d8a-bec5b6b89f99" />
+
+I then applied a 600 lbf downward force to the second hole measured at 1 inch.
+
+<img width="1916" height="981" alt="image" src="https://github.com/user-attachments/assets/bc80a07b-3ae2-4c45-9720-8b19d6550974" />
+
+I then set the Material to ASTM A36 steel, which is the same material type as the bracket.
+
+<img width="1915" height="982" alt="image" src="https://github.com/user-attachments/assets/1a0a774a-054d-4066-ab5c-83e8f7a96e36" />
+
+## FEA
+
+### Design #1
+
+##### Mesh #1: Coarse Mesh
+
+2335 elements 
+
+<img width="1917" height="978" alt="image" src="https://github.com/user-attachments/assets/2043d278-1e11-42b2-8d8b-60aedb4404f6" />
+
+##### Stress Results
+
+172100 psi max stress below the yield stress
+
+<img width="1912" height="985" alt="image" src="https://github.com/user-attachments/assets/b9be5a6e-4efa-4efa-b7c2-76fa951c999a" />
+
+Concetration is found at the left and right edges of of the force applied circle.
+<img width="1916" height="980" alt="image" src="https://github.com/user-attachments/assets/d7276679-58b5-4050-9d1d-c21c2965a004" />
+
+##### Deflection Results
+
+0.0008286 inch max deflection below 0.005 inches
+
+<img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/b219e06c-93f4-434e-bf2e-d20f6d58abb4" />
+
+Concentration at the bottom of the force applied circle.
+
+##### Factor of Safety Results
+
+Minimum 2.1 FOS.
+
+<img width="1917" height="978" alt="image" src="https://github.com/user-attachments/assets/a5c59fca-81c4-49ff-a326-af20872c9034" />
+
+##### Mass Results
+
+Mass is 0.09 lbs
+
+<img width="475" height="162" alt="image" src="https://github.com/user-attachments/assets/0dade6b0-bd82-40ec-b6b7-4fa1cee3e1a0" />
+
