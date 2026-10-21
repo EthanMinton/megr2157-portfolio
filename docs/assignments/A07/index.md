@@ -352,6 +352,15 @@ The calculated percent difference is 2.35% between the Coarse and Medium Mesh.
 For design #3 in the Medium mesh, our design is estimated to have a weight of 1.04 lbs.
 
 <img width="471" height="168" alt="image" src="https://github.com/user-attachments/assets/d07ccc07-9303-45db-818c-c674e9e3a1f9" />
-The material
 
-<img width="472" height="167" alt="image" src="https://github.com/user-attachments/assets/c640a482-23eb-4e14-ad67-6fb0659daa69" />
+##### Finalize Results 
+
+Despite attempting to reduce the overall size of the model to decrease the weight, it seemed to have very little impact on our stress and displacement values. Even observing the walls of the brackets, they still were colored a deep blue. I remember specifically when attempting the calculation for the Features in A5's assignment, the thicknesses I initially calculated using a different formula were incredibly thin to the point where they were minute fractions of an inch. If I were to attempt a 4th design, I would reduce the wall thickness even further to test the limit of the walls.
+
+| Mesh Type | Coarse Mesh | Medium Mesh | Fine Mesh |
+| --- | --- | --- | --- |
+| Max Stress (psi) | 4,103 | 4,199 | NA |
+| Max Displacement (in) | 0.0001422 | 0.0001429 | NA |
+| Factor of Safety | 8.8 | 8.6 | NA |
+| Mass (lbs) | 1.04 | 1.04 | NA |
+| Element Count | 2352 | 5208 | NA |
