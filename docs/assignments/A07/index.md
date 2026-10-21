@@ -144,7 +144,7 @@ I then added a 0.20-inch fillet to the corners where Feature B meets the bottom 
 
 <img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/1f976c42-2eff-4927-87ef-d67d5b0ea26d" />
 
-In an attempt to reduce the weight, I also divided all of my parametric equations used to calculate the different dimensions by a factor of 2. I did this to reduce the overall weight of the design, as I had observed that in the FEA, the areas of the Features C, D, and E all have very few issues or concentrations. If this is an overcorrection or even a under correction these values will be independently altered.
+In an attempt to reduce the weight, I also divided all of my parametric equations used to calculate the different dimensions by a factor of 2. I did this to reduce the overall weight of the design, as I had observed that in the FEA, the areas of the Features C, D, and E all have very few issues or concentrations. If this is an overcorrection or even an undercorrection these values will be independently altered.
 
 <img width="1902" height="431" alt="image" src="https://github.com/user-attachments/assets/b5972e07-ad60-40fc-b5de-2d03296ad36c" />
 
@@ -254,9 +254,15 @@ From our collected data from the second Design Test, we found that our changes s
 
 ### Design #3
 
-REMIND CREATE ENTIRE VALUE TABLE
-## Decide
+For design #3, my main priority was to reduce the overall weight of the design while also ensuring that our max stress calculations do not exceed our previously established limits. In order to do this, I went back to the parametric equations and changed the division by a factor of 2 on the "HEIGHT_C" and "LENGTH_D" to a factor of 5. This greatly reduced the size of the non-affecting sides of the bracket. 
 
+<img width="1778" height="330" alt="image" src="https://github.com/user-attachments/assets/c7b4d65d-6309-4511-b98a-8d65701da0d2" />
 
-## Communicate
+If I were given the chance to have more time and ability to redesign the bracket, I would attempt to thin the walls even more while simultaneously cutting out full parts, such as an "X" design, to maintain structural stability while also reducing weight even further. My goal with design #3 was to attempt to get down to roughly only a pound of material being used while maintaining its stability. I would have gone for even more extremes if it was not for fear that it would cause the failure of the design.
+
+#### Mesh #1: Coarse Mesh
+need to say number of elements REMIND REMIND
+
+##### Stress Concentration
+<img width="1916" height="980" alt="image" src="https://github.com/user-attachments/assets/01a87b80-07e9-4595-83d8-b89cd5af60b4" />
 
