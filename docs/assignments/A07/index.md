@@ -258,11 +258,43 @@ For design #3, my main priority was to reduce the overall weight of the design w
 
 <img width="1778" height="330" alt="image" src="https://github.com/user-attachments/assets/c7b4d65d-6309-4511-b98a-8d65701da0d2" />
 
-If I were given the chance to have more time and ability to redesign the bracket, I would attempt to thin the walls even more while simultaneously cutting out full parts, such as an "X" design, to maintain structural stability while also reducing weight even further. My goal with design #3 was to attempt to get down to roughly only a pound of material being used while maintaining its stability. I would have gone for even more extremes if it was not for fear that it would cause the failure of the design.
+If I were given the chance to have more time and ability to redesign the bracket, I would attempt to thin the walls even more while simultaneously cutting out full parts, such as an "X" design, to maintain structural stability while also reducing weight even further. My goal with design #3 was to get down to roughly a pound of material while maintaining stability. I would have gone even more extreme if I hadn't feared it would cause the design to fail.
 
 #### Mesh #1: Coarse Mesh
-need to say number of elements REMIND REMIND
 
-##### Stress Concentration
+The first mesh I created here was a coarser mesh with an element count of 2352.
+
+<img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/f8c6feea-1a4f-4e97-a6e0-d1589e28a0a9" />
+
+##### Stress Results
+
+The maximum stress value that was calculated by the study was similar to the previous design, at around 4,103 psi. 
+
 <img width="1916" height="980" alt="image" src="https://github.com/user-attachments/assets/01a87b80-07e9-4595-83d8-b89cd5af60b4" />
 
+Its concentration was found at a very similar position in the center of Feature B. This is expected with the previous changes made in design 2 to compensate for the concentrations at the corner; the stress has shifted.
+
+<img width="1916" height="985" alt="image" src="https://github.com/user-attachments/assets/e4622b43-9ad8-41bf-aa54-4f63f5866b95" />
+
+
+##### Deflection Results
+
+The maximum deflection value that was calculated by the study was similar to the previous design at 0.0001422 inches.
+
+<img width="1917" height="980" alt="image" src="https://github.com/user-attachments/assets/d5604700-e3b7-4b30-965f-879a8b0694eb" />
+
+Its concentration was found at the center of feature A, which is similar to the previous design. This makes sense with feature B supporting it on either side it leaves the center the most unsupported and susceptible to deflection.
+
+<img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/5fc57726-b4b6-42e1-b656-6e2e1aecb7dd" />
+
+##### Safety Factor Results 
+
+The minimum factor of safety calculated by the mesh was 8.8 above our given limit of 4.
+
+<img width="1915" height="982" alt="image" src="https://github.com/user-attachments/assets/d10dcf34-dedb-4e52-af5f-e742bc8641d2" />
+
+##### Mass Results
+
+The material
+
+<img width="472" height="167" alt="image" src="https://github.com/user-attachments/assets/c640a482-23eb-4e14-ad67-6fb0659daa69" />
