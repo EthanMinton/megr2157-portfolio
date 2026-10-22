@@ -735,3 +735,13 @@ Overall, seeing where the stress plots stayed deep blue showed me exactly where 
 Once the assignment was completed, I spent roughly 12 hours on everything, mostly on organizing and expressing all results, explanations, and documentation. The FEA was simple to carry out, with all of the data being easy to access and understand. I'd say the biggest mistake I made was the technique I utilized in order to copy and explain the data down in the documentation was pretty inefficient until the near end where I was able to accelerate my process.
 
 ### CAD Files
+
+[A6_Model](A6_Model)
+
+[A6_Model_D2](A6_Model_D2)
+
+[A6_Model_D3](A6_Model_D3)
+
+[A6_LINK_D2](A6_LINK_D2)
+
+[A6_LINK_D3](A6_LINK_D3)
