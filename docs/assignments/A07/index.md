@@ -705,21 +705,21 @@ By reducing the thickness multiplier to 2.0, Design 3 hit our target Factor of S
 
 | Metric | Design #1 (Converged) | Design #2 (Converged) | Design #3 (Converged) | Limit / Goal |
 | :--- | :--- | :--- | :--- | :--- |
-| **Max Stress & Location** | 86,050 psi (Neck / Top-Feature B Connection) | 4,168 psi (Center of Feature B Body) | 4,199 psi (Center of Feature B Body) | $\le 9,064.85 \text{ psi}$ |
-| **Max Deflection & Location** | 0.03809 in (Tip of Feature A Cylinder) | 0.0001509 in (Center Span of Feature A Bridge) | 0.0001429 in (Center Span of Feature A Bridge) | $\le 0.005 \text{ in}$ |
+| **Max Stress & Location** | 86,050 psi (Neck / Top-Feature B Connection) | 4,168 psi (Center of Feature B Body) | 4,199 psi (Center of Feature B Body) | 9,064.85 psi |
+| **Max Deflection & Location** | 0.03809 in (Tip of Feature A Cylinder) | 0.0001509 in (Center Span of Feature A Bridge) | 0.0001429 in (Center Span of Feature A Bridge) | 0.005  |
 | **Mass** | 3.39 lbs | 2.06 lbs | 1.04 lbs | Minimize |
-| **Safety Factor** | 0.42 | 8.7 | 8.6 | $\ge 4.0$ |
-| **Number of Elements** | 7,364 | 6,281 | 5,208 | Convergence $< 7\%$ |
+| **Safety Factor** | 0.42 | 8.7 | 8.6 | 4.0 |
+| **Number of Elements** | 7,364 | 6,281 | 5,208 | Convergence 7% |
 
 ### Link Summary (2157)
 
 | Metric | Design #1 (Converged) | Design #2 (Converged) | Design #3 (Converged) | Limit / Goal |
 | :--- | :--- | :--- | :--- | :--- |
-| **Max Stress & Location** | 17,370 psi ( Left/Right Sides of Loaded Hole Interior Edges) | 6,928 psi (Left/Right Sides of Loaded Hole Interior Edges) | 8,665 psi (Left/Right Sides of Loaded Hole Interior Edges) | $\le 9,064.85 \text{ psi}$ |
-| **Max Deflection & Location** | 0.0008291 in (Bottom Rim of Loaded Hole) | 0.0003342 in (Bottom Rim of Loaded Hole) | 0.0004175 in (Bottom Rim of Loaded Hole) | $\le 0.005 \text{ in}$ |
+| **Max Stress & Location** | 17,370 psi ( Left/Right Sides of Loaded Hole Interior Edges) | 6,928 psi (Left/Right Sides of Loaded Hole Interior Edges) | 8,665 psi (Left/Right Sides of Loaded Hole Interior Edges) | 9,064.85 psi |
+| **Max Deflection & Location** | 0.0008291 in (Bottom Rim of Loaded Hole) | 0.0003342 in (Bottom Rim of Loaded Hole) | 0.0004175 in (Bottom Rim of Loaded Hole) | 0.005 in |
 | **Mass** | 0.09 lbs | 0.21 lbs | 0.17 lbs | Minimize |
-| **Safety Factor** | 2.1 | 5.2 | 4.2 | $\ge 4.0$ |
-| **Number of Elements** | 6,274 | 6,549 | 7,537 | Convergence $< 7\%$ |
+| **Safety Factor** | 2.1 | 5.2 | 4.2 | 4.0 |
+| **Number of Elements** | 6,274 | 6,549 | 7,537 | Convergence 7%|
 
 ### Lessons
 
