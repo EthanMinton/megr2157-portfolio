@@ -736,14 +736,14 @@ Once the assignment was completed, I spent roughly 12 hours on everything, mostl
 
 ### CAD Files
 
-[A6_Model](A6_Model)
+[A6_Model.SLDPRT](A6_Model.SLDPRT)
 
-[A6_Model_D2](A6_Model_D2)
+[A6_Model_D2.SLDPRT](A6_Model_D2.SLDPRT)
 
-[A6_Model_D3](A6_Model_D3)
+[A6_Model_D3.SLDPRT](A6_Model_D3.SLDPRT)
 
-[A6_LINK](A6_LINK)
+[A6_LINK.SLDPRT](A6_LINK.SLDPRT)
 
-[A6_LINK_D2](A6_LINK_D2)
+[A6_LINK_D2.SLDPRT](A6_LINK_D2.SLDPRT)
 
-[A6_LINK_D3](A6_LINK_D3)
+[A6_LINK_D3.SLDPRT](A6_LINK_D3.SLDPRT)
