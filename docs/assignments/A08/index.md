@@ -51,6 +51,12 @@ The 11,000 psi compressive yield strength came from page 2 of the NBM Metals SAE
 
 <img width="1077" height="193" alt="image" src="https://github.com/user-attachments/assets/97d62180-f53a-4b0c-8085-e0ec07a15e66" />
 
+### Sketch of Gearbox Housing 
+
+This sketch shows how the main and secondary housing halves fit together at their mounting flanges. I included four aligned screw holes, one at each corner, to secure the halves while allowing the gearbox to be disassembled. Removing the screws allows the halves to separate, providing access to the gears, shafts, and bearings. The shafts extend through opposite sides of the housing to provide the input and output connections.
+
+<img width="820" height="753" alt="Math Scratch Paper (32)" src="https://github.com/user-attachments/assets/b6985ac1-c9a1-471e-b42b-cd85d504c5f7" />
+
 ## Design CAD Model
 ### Input Shaft Model
 
@@ -165,6 +171,9 @@ I created the secondary housing using the same wall thickness, extrusions, mount
 
 ### Assembly 
 
+To assemble the gearbox as the assembly shows, the bronze bearings are first seated in their corresponding housing holes. The gears are press-fitted onto their shafts, and the shafts are inserted through the bearings. The housing halves are then brought together, aligning the mounting holes while positioning the gears at the calculated 0.6875-inch center distance. Screws and matching nuts secure the joining flanges and allow the housing to be opened again. In SolidWorks, the gears are locked rotationally to their shafts, while the shafts remain free to rotate inside the bearings. A gear mate controls their relative rotation using the 18:48 tooth ratio. Removing the fasteners allows the housing halves to separate so the internal components can be accessed.
+
+
 <img width="1617" height="961" alt="image" src="https://github.com/user-attachments/assets/43d087ca-36b7-428d-ad1c-ef71ae7753e6" />
 
 <img width="1616" height="958" alt="image" src="https://github.com/user-attachments/assets/38e4f8f7-4d8d-4d6c-ba3a-2a67c16315fb" />
@@ -178,3 +187,19 @@ Another difficulty was SolidWorks crashing and causing me to lose progress. Havi
 One part I thought was really cool was being able to download the gear and bearing models directly from McMaster-Carr. This saved modeling time and allowed me to design around the dimensions of actual purchased components. I will use this resource in future projects when working with standard parts. Overall, this assignment helped me connect hand calculations, parametric modeling, and moving assemblies while showing how a small change in one part can affect the fit of the entire gearbox.
 
 The project took roughly 14 hours to complete, with most of the time being dedicated to all of the CAD requirements ask of me.
+
+## Resources 
+
+PLEASE NOTE: You must download all of the files below in order to properly access the assembly.
+
+[Input Gear — 7880K19](https://www.mcmaster.com/7880K19/)
+
+[Output Gear — 7880K24](https://www.mcmaster.com/7880K24/)
+
+[Input Bearing — 6391K111](https://www.mcmaster.com/6391K111/)
+
+[Output Bearing — 6391K131](https://www.mcmaster.com/6391K131/)
+
+[Binding-Head Screw — 91793A077](https://www.mcmaster.com/91793A077/)
+
+[SAE 841 Bronze Strength Data Sheet](https://www.avivametals.com/assets/files/nbm-sae841.pdf)
