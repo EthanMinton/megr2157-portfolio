@@ -147,11 +147,34 @@ I added 0.050-inch fillets to the selected housing edges to round the sharp corn
 
 <img width="1616" height="957" alt="image" src="https://github.com/user-attachments/assets/e4502a3c-bc43-4bed-80ee-9732e1f59e9b" />
 
-## Analyze
+#### 2157 Main Gearbox Housing 
+
+<img width="1117" height="723" alt="image" src="https://github.com/user-attachments/assets/8413c9d7-5a44-456e-b952-7003bd39f860" />
 
 
-## Decide
+### Secondary Gearbox Housing
 
+I created the secondary housing using the same wall thickness, extrusions, mounting flange, screw holes, and fillets as the main housing. The main difference was the bearing-hole sketch, which I resized for the smaller input bearing and constrained to align with the input shaft in the assembly. I also added the pitch-diameter equation to calculate the required 0.6875-inch spacing between the shaft centers.
 
-## Communicate
+<img width="1248" height="516" alt="image" src="https://github.com/user-attachments/assets/f5af9df4-f750-4486-b413-b02926600fa5" />
 
+<img width="1621" height="960" alt="image" src="https://github.com/user-attachments/assets/12e7ddf0-cb46-4ce1-817e-4c1a4ecbb28e" />
+
+#### 2157 Secondary Gearbox Housing
+<img width="1118" height="721" alt="image" src="https://github.com/user-attachments/assets/816ea2c8-545d-45dc-81e0-7563506bb920" />
+
+### Assembly 
+
+<img width="1617" height="961" alt="image" src="https://github.com/user-attachments/assets/43d087ca-36b7-428d-ad1c-ef71ae7753e6" />
+
+<img width="1616" height="958" alt="image" src="https://github.com/user-attachments/assets/38e4f8f7-4d8d-4d6c-ba3a-2a67c16315fb" />
+
+## Lessons Learned 
+
+The most difficult part of this assignment was getting the gears and shafts to rotate properly in the assembly. I was mostly used to static mating, where the goal was to fully constrain the parts so they could not move. This assignment required me to think about which movements needed to remain available. At first, some parts would not rotate, while others moved out of position. Working through these issues helped me understand how concentric mates, axial positioning, and locking rotation affect the assembly. I also learned that the gear mate controls the rotation ratio, while the other mates establish the position and alignment of the gears.
+
+Another difficulty was SolidWorks crashing and causing me to lose progress. Having to repeat work was frustrating and added time to the project, but it reinforced the importance of saving frequently, especially before making larger changes to the assembly.
+
+One part I thought was really cool was being able to download the gear and bearing models directly from McMaster-Carr. This saved modeling time and allowed me to design around the dimensions of actual purchased components. I will use this resource in future projects when working with standard parts. Overall, this assignment helped me connect hand calculations, parametric modeling, and moving assemblies while showing how a small change in one part can affect the fit of the entire gearbox.
+
+The project took roughly 14 hours to complete, with most of the time being dedicated to all of the CAD requirements ask of me.
