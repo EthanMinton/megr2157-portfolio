@@ -190,7 +190,7 @@ The project took roughly 14 hours to complete, with most of the time being dedic
 
 ## Resources 
 
-PLEASE NOTE: You must download all of the files below in order to properly access the assembly.
+PLEASE NOTE: You must download all of the files below in order to access the assembly properly. (I understand it is a lot... I have a slight theory as to why my SolidWorks was struggling)
 
 [Input Gear — 7880K19](https://www.mcmaster.com/7880K19/)
 
@@ -203,3 +203,23 @@ PLEASE NOTE: You must download all of the files below in order to properly acces
 [Binding-Head Screw — 91793A077](https://www.mcmaster.com/91793A077/)
 
 [SAE 841 Bronze Strength Data Sheet](https://www.avivametals.com/assets/files/nbm-sae841.pdf)
+
+[Input Bearing Drawing](6391K111_gear.SLDDRW)
+
+[Output Bearing Drawing](6391K131_gear.SLDDRW)
+
+[Input Shaft Drawing](IN_Gear_shaft.SLDDRW)
+
+[Input Shaft Model](IN_Gear_shaft.SLDPRT)
+
+[Output Shaft Drawing](OUT_Gear_shaft.SLDDRW)
+
+[Output Shaft Model](OUT_gear_shaft.SLDPRT)
+
+[Main Housing Model](gear_Main.SLDPRT)
+
+[Secondary Housing Model](gear_secondary.SLDPRT)
+
+[Main Housing Drawing](Main_housing.SLDDRW)
+
+[Secondary Housing Drawing](secondary_housing.SLDDRW)
