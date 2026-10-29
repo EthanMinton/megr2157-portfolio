@@ -2,6 +2,9 @@
 
 ## Objective
 
+The objective of this assignment was to design a gearbox with a 24:9 gear ratio that delivers an output torque of 1.25 in-lbf at 1100 rpm. I analyzed the shaft stresses and bearing loads to determine whether the selected dimensions and bearing material were suitable. Using these results, I modeled the shafts and two-piece housing in SolidWorks and assembled them with the selected gears and bearings.
+
+## Design Calculations
 ### Gear Ratio Calculations
 
 Before moving into the shaft and bearing calculations, I first needed to determine the input speed, input torque, and power being transmitted through the gearbox. The assignment gives us a gear ratio of 24:9, an output speed of 1100 rpm, and an output torque of 1.25 in-lbf. Following the assignment’s assumption that the gear train is ideal, we can consider the input and output power equal, with no power lost through the gears. Using the gear ratio, I found that the input speed is 2933.33 rpm and the input torque is 0.46875 in-lbf. The transmitted power was then calculated as approximately 0.02182 hp. These results show that the smaller input gear rotates faster with less torque, while the larger output gear rotates slower with more torque. These values were then used in the remaining shaft and bearing calculations.
@@ -44,6 +47,7 @@ I then compared this result with the selected stock bearing dimensions. Using no
 
 <img width="1685" height="722" alt="image" src="https://github.com/user-attachments/assets/33b34946-48bd-448c-935b-2524818b88a2" />
 
+## Design CAD Model
 ## Analyze
 
 
