@@ -47,6 +47,10 @@ I then compared this result with the selected stock bearing dimensions. Using no
 
 <img width="1685" height="722" alt="image" src="https://github.com/user-attachments/assets/33b34946-48bd-448c-935b-2524818b88a2" />
 
+The 11,000 psi compressive yield strength came from page 2 of the NBM Metals SAE 841 sintered bronze material sheet, available through Aviva Metals. I used this as a representative material strength for our simplified bearing-wall calculation. With an assumed safety factor of 2, the allowable compressive stress was 5500 psi.
+
+<img width="1077" height="193" alt="image" src="https://github.com/user-attachments/assets/97d62180-f53a-4b0c-8085-e0ec07a15e66" />
+
 ## Design CAD Model
 ### Input Shaft Model
 
@@ -97,6 +101,22 @@ I downloaded the CAD model for the McMaster-Carr 6391K111 bronze sleeve bearing 
 
 <img width="1176" height="760" alt="image" src="https://github.com/user-attachments/assets/975ff3b8-ab2a-491a-802e-22a8594cc403" />
 
+### Main Gearbox Housing
+
+<img width="1246" height="521" alt="image" src="https://github.com/user-attachments/assets/dfa5ecfb-6a16-4880-925f-b17c0090c9c2" />
+
+<img width="1621" height="957" alt="image" src="https://github.com/user-attachments/assets/6919ade3-5942-4e47-aa3c-256efbdabd1d" />
+
+<img width="1616" height="960" alt="image" src="https://github.com/user-attachments/assets/d7010146-e5e6-41bb-a224-dd9becae05ee" />
+<img width="1617" height="953" alt="image" src="https://github.com/user-attachments/assets/735e4dfb-d675-43a6-8a75-799eb01d20cd" />
+<img width="1611" height="956" alt="image" src="https://github.com/user-attachments/assets/45109b4f-6717-4ac1-b138-2b00bbf9d864" />
+
+<img width="1617" height="956" alt="image" src="https://github.com/user-attachments/assets/d905400a-0219-4a8d-be51-dfffe50d1e09" />
+<img width="1616" height="958" alt="image" src="https://github.com/user-attachments/assets/c5256325-9c37-49f0-86ea-b9cbf0dcdb07" />
+<img width="1615" height="962" alt="image" src="https://github.com/user-attachments/assets/737698db-1b21-45a9-b462-0d32807c3bba" />
+<img width="1627" height="955" alt="image" src="https://github.com/user-attachments/assets/180064f4-b119-4ead-bbc1-fdf4997c7b5b" />
+<img width="1622" height="937" alt="image" src="https://github.com/user-attachments/assets/72684510-9e99-4109-8894-cd0c141cdec5" />
+<img width="1616" height="957" alt="image" src="https://github.com/user-attachments/assets/e4502a3c-bc43-4bed-80ee-9732e1f59e9b" />
 
 ## Analyze
 
