@@ -223,3 +223,5 @@ PLEASE NOTE: You must download all of the files below in order to access the ass
 [Main Housing Drawing](Main_housing.SLDDRW)
 
 [Secondary Housing Drawing](secondary_housing.SLDDRW)
+
+[Gearbox Assembly](Gear_assem.SLDASM)
