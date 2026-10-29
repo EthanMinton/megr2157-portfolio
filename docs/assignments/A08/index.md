@@ -103,19 +103,48 @@ I downloaded the CAD model for the McMaster-Carr 6391K111 bronze sleeve bearing 
 
 ### Main Gearbox Housing
 
+I created global variables to control the housing wall thickness, gear dimensions, clearance, and bearing-hole sizes.
+
 <img width="1246" height="521" alt="image" src="https://github.com/user-attachments/assets/dfa5ecfb-6a16-4880-925f-b17c0090c9c2" />
+
+I sketched the rectangular housing walls and linked their 0.250-inch thickness to “THICKNESS_WALL.”
 
 <img width="1621" height="957" alt="image" src="https://github.com/user-attachments/assets/6919ade3-5942-4e47-aa3c-256efbdabd1d" />
 
+I extruded the wall profile using “MAX_GEAR_HEIGHT” to control the housing depth.
+
 <img width="1616" height="960" alt="image" src="https://github.com/user-attachments/assets/d7010146-e5e6-41bb-a224-dd9becae05ee" />
+
+I sketched a rectangle matching the outside edges of the housing to create the closing wall.
+
 <img width="1617" height="953" alt="image" src="https://github.com/user-attachments/assets/735e4dfb-d675-43a6-8a75-799eb01d20cd" />
+
+I extruded this rectangle using “THICKNESS_WALL” to give it a thickness of 0.250 inches.
+
 <img width="1611" height="956" alt="image" src="https://github.com/user-attachments/assets/45109b4f-6717-4ac1-b138-2b00bbf9d864" />
 
+I sketched the output bearing hole and positioned its center 0.80 inches from the upper edge.
+
 <img width="1617" height="956" alt="image" src="https://github.com/user-attachments/assets/d905400a-0219-4a8d-be51-dfffe50d1e09" />
+
+I used a Through All cut to create the opening for the output bearing.
+
 <img width="1616" height="958" alt="image" src="https://github.com/user-attachments/assets/c5256325-9c37-49f0-86ea-b9cbf0dcdb07" />
+
+I sketched an outer mounting flange and linked its width to “THICKNESS_WALL.”
+
 <img width="1615" height="962" alt="image" src="https://github.com/user-attachments/assets/737698db-1b21-45a9-b462-0d32807c3bba" />
+
+I extruded the flange using “THICKNESS_WALL” divided by two, giving it a thickness of 0.125 inches.
+
 <img width="1627" height="955" alt="image" src="https://github.com/user-attachments/assets/180064f4-b119-4ead-bbc1-fdf4997c7b5b" />
+
+I used Hole Wizard to add four mounting holes sized for #2 binding-head screws.
+
 <img width="1622" height="937" alt="image" src="https://github.com/user-attachments/assets/72684510-9e99-4109-8894-cd0c141cdec5" />
+
+I added 0.050-inch fillets to the selected housing edges to round the sharp corners.
+
 <img width="1616" height="957" alt="image" src="https://github.com/user-attachments/assets/e4502a3c-bc43-4bed-80ee-9732e1f59e9b" />
 
 ## Analyze
