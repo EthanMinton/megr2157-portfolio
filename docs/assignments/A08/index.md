@@ -48,6 +48,56 @@ I then compared this result with the selected stock bearing dimensions. Using no
 <img width="1685" height="722" alt="image" src="https://github.com/user-attachments/assets/33b34946-48bd-448c-935b-2524818b88a2" />
 
 ## Design CAD Model
+### Input Shaft Model
+
+I created the global variables “INNER_DIA” = 0.125 inches and “INNER_LENGTH” = 1 inch to control the input shaft dimensions.
+
+<img width="1250" height="518" alt="image" src="https://github.com/user-attachments/assets/f92ffbb5-e34f-48e1-83f4-dcb86542799e" />
+
+I sketched a circle centered at the origin and linked its diameter to “INNER_DIA,” fully defining the sketch.
+
+<img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/768f3638-7881-4b4a-b967-2c326db53f71" />
+I used extrusion and linked the extrusion depth to “INNER_LENGTH” to create the shaft.
+
+<img width="1616" height="960" alt="image" src="https://github.com/user-attachments/assets/81024b4d-e6d4-458a-9a8d-f30201cd9a7d" />
+
+#### 2157 Input Shaft Drawing
+<img width="962" height="620" alt="image" src="https://github.com/user-attachments/assets/75d7eb8f-f158-45ed-9860-b8688697f61a" />
+
+### Output Shaft Model 
+
+I created the global variables “OUT_SHAFT_DIA” = 0.250 inches and “SHAFT_LENGTH” = 1 inch to control the output shaft dimensions.
+
+<img width="1243" height="517" alt="image" src="https://github.com/user-attachments/assets/35dc0d7a-b573-4d39-a67d-018ee18cc653" />
+
+I sketched a circle and linked its diameter to “OUT_SHAFT_DIA.”
+<img width="1620" height="956" alt="image" src="https://github.com/user-attachments/assets/9c6f65aa-58fa-407a-a80c-f1bfc7e32720" />
+
+I then used the Boss Extrude and linked its depth to “SHAFT_LENGTH” to complete the output shaft.
+
+<img width="1616" height="957" alt="image" src="https://github.com/user-attachments/assets/7be59a8a-7025-4e15-99d7-eac7c31c4d49" />
+
+#### 2157 Output Shaft Drawing
+
+<img width="998" height="630" alt="image" src="https://github.com/user-attachments/assets/6d110e83-c275-436e-af95-48128f888a9c" />
+
+### Bronze Sleeve Bearing 6391K131
+
+I downloaded the CAD model for the McMaster-Carr 6391K131 bronze sleeve bearing to support the 0.250-inch output shaft. Its 0.250-inch length matches our calculations, and the drawing’s outside and inside diameters give a wall thickness of (0.376 − 0.251)/2 = 0.0625 inches. This exceeds our calculated minimum of 0.000967 inches under the simplified compression model. Our output bearing pressure of 42.57 psi, velocity of 71.99 ft/min, and PV of 3064.61 psi-ft/min also fall below the porous-bronze limits from the slides.
+
+#### 2157 Bronze Sleeve Bearing 6391K131
+
+<img width="1173" height="760" alt="image" src="https://github.com/user-attachments/assets/aff520df-47b4-455f-ba07-f1f018a4a7bb" />
+
+### Bronze Sleeve Bearing 6391K111
+
+I downloaded the CAD model for the McMaster-Carr 6391K111 bronze sleeve bearing to support the 0.125-inch input shaft. Its 0.250-inch length matches our calculations, and its nominal wall thickness of 0.0625 inches exceeds our calculated minimum of 0.000967 inches under the simplified compression model. Our input bearing pressure of 85.134 psi, velocity of 95.99 ft/min, and PV of 8172.30 psi-ft/min also fall below the porous-bronze limits from the slides.
+
+#### 2157 Bronze Sleeve Bearing 6391K111
+
+<img width="1176" height="760" alt="image" src="https://github.com/user-attachments/assets/975ff3b8-ab2a-491a-802e-22a8594cc403" />
+
+
 ## Analyze
 
 
