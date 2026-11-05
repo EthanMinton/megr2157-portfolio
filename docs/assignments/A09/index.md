@@ -74,6 +74,8 @@ One thing I learned was why the belt forces get subtracted for the shaft calcula
 
 I also learned to separate the minimum size I calculated from the size I actually selected. My minimum belt diameter was 0.2788 in, but the belt I selected was 5/16 in. Using that larger diameter changed the installed outer circumference from 20.301 in to 20.407 in. Next time, I would update the belt length as soon as I choose a catalog size so the calculations and part selection match.
 
+<img width="1448" height="702" alt="IMG_0146" src="https://github.com/user-attachments/assets/6a95195d-4ce5-4f1b-a9f6-6464b8e773ab" />
+
 When I selected the journal bearing material, I learned that pressure alone was only one part of the check. The bearing also had to handle the shaft surface speed and the combined pressure and velocity, or PV. Several materials met the requirements, but I chose porous bronze because it had room across all three limits if the load or speed changed.
 
 The assignment took me about 7 hours from start to finish. I spent 5 hours working through the calculations and 2 hours documenting the design in my portfolio.
