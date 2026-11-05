@@ -7,7 +7,7 @@ The objective of this assignment is to design a belt and pulley system that tran
 
 ## Belt Design
 
-I selected 6061-T6 aluminum for both 3-inch pulleys. I chose aluminum because it keeps the pulleys light and is easy to machine. The groove would be sized for the 5/16-inch round belt, and the center bore would be sized to fit the 0.20-inch steel shaft.
+I selected 6061-T6 aluminum for both 3-inch pulleys. I chose aluminum because it keeps the pulleys light and is easy to machine.
 
 ### Belt Calculations
 I started with two 3-inch pulleys spaced 5 inches apart and an initial belt tension of 5 lbf. Since the pulleys are the same diameter, the belt wraps halfway around each pulley. I assumed a coefficient of friction of 1.0 and used the belt friction equation at the point where the belt would start to slip. This gave me 9.586 lbf on the tight side and 0.414 lbf on the loose side.
@@ -38,7 +38,7 @@ I used the difference between the tight-side and loose-side belt forces to find 
 
 ## Journal Bearing Design 
 ### Journal Bearing Calculations
-I added the tight-side and loose-side belt forces to find the 10-lbf radial load on each shaft. I assumed the pulley was centered between two bearings, so each bearing carried 5 lbf. I used a 0.20-inch nominal bore to match the shaft and chose a 1-inch bearing length.
+I added the tight-side and loose-side belt forces to find the 10 lbf radial load on each shaft. I assumed the pulley was centered between two bearings, so each bearing carried 5 lbf. I used a 0.20-inch nominal bore to match the shaft and chose a 1-inch bearing length.
 
 I divided the load on one bearing by its projected area to get a pressure of 25 psi. At 1500 rpm, the shaft surface speed was 78.54 ft/min. Multiplying pressure by surface speed gave a PV of 1,963.5 psi·ft/min.
 
@@ -58,7 +58,7 @@ I selected porous bronze because all three calculated values were below the limi
 
 I made a rough sketch of the support frame to show how the two pulleys and their bearings would be arranged. I chose an 8.5 × 3.5 in mounting plate that would attach to the ceiling, as shown by the red dashed lines. The supports hang down from the plate. In the front view, the support is 6.5 in wide and 2.5 in tall, with the pulley shaft centers 5 in apart and 2 in below the underside of the mounting plate. The solid red outline shows the path of the belt around both pulleys.
 
-In the side view, the pulley sits between two bearing housings. I used 1 in of length for each bearing seat and placed the bearing centers 2 in apart along the shaft. This leaves a 1 in gap for the pulley. The sketch uses a 0.50 in seat diameter based on the assumed outside diameter of the bearing. I used the sketch to lay out the main dimensions and check how the parts would fit together.
+In the side view, the pulley sits between two bearing housings. I used 1 in of length for each bearing seat and placed the bearing centers 2 in apart along the shaft. This leaves a 1 in gap for the pulley. The sketch uses a 0.50 in. seat diameter based on the assumed outside diameter of the bearing. I used the sketch to lay out the main dimensions and check how the parts would fit together.
 
 <img width="1528" height="970" alt="94891" src="https://github.com/user-attachments/assets/bd2bda4a-c15c-4026-885e-fc29a7abff52" />
 
@@ -66,7 +66,7 @@ I selected 6061-T6 aluminum for the support frame, the same material I used for 
 
 <img width="1441" height="961" alt="image" src="https://github.com/user-attachments/assets/23fce4a0-f3ea-4a60-912e-70590ca54541" />
 
-If I had been given enough time, I would have almost definitely modeled the structure in SolidWorks and performed an FEA on the model to check the strength the frame could hold with much more precise dimensions. But due to limited time, I felt that choosing Aluminum as our material would well exceed any possible situation that could be enacted on these pulleys. 
+If I had been given enough time, I would have almost definitely modeled the structure in SolidWorks and performed an FEA on the model to check the strength the frame could hold with much more precise dimensions. But due to limited time, I felt that choosing Aluminum as our material would well exceed any possible situation that could be encountered on these pulleys. 
 
 ## Lessons Learned 
 
@@ -80,3 +80,10 @@ When I selected the journal bearing material, I learned that pressure alone was 
 
 The assignment took me about 7 hours from start to finish. I spent 5 hours working through the calculations and 2 hours documenting the design in my portfolio.
 
+## Resources 
+
+[McMaster-Carr – 5/16-inch Polyurethane Round Belt (9462T58)](https://www.mcmaster.com/9462T58/)
+
+[MatWeb – AISI 1060 Steel Material Properties](https://www.matweb.com/search/DataSheet.aspx?MatGUID=5fb9954cde754e709944d64233e50d3b&ckck=1)
+
+[LEADRP – Metal Strength Chart](https://leadrp.net/blog/metal-strength-chart-a-basic-guide-to-metal-strength-you-must-know/)
