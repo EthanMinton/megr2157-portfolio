@@ -4,7 +4,10 @@
 
 The objective of this assignment is to design a belt and pulley system that transfers power between two parallel shafts.
 
+
 ## Belt Design
+
+I selected 6061-T6 aluminum for both 3-inch pulleys. I chose aluminum because it keeps the pulleys light and is easy to machine. The groove would be sized for the 5/16-inch round belt, and the center bore would be sized to fit the 0.20-inch steel shaft.
 
 ### Belt Calculations
 I started with two 3-inch pulleys spaced 5 inches apart and an initial belt tension of 5 lbf. Since the pulleys are the same diameter, the belt wraps halfway around each pulley. I assumed a coefficient of friction of 1.0 and used the belt friction equation at the point where the belt would start to slip. This gave me 9.586 lbf on the tight side and 0.414 lbf on the loose side.
@@ -59,6 +62,12 @@ In the side view, the pulley sits between two bearing housings. I used 1 in of l
 
 <img width="1528" height="970" alt="94891" src="https://github.com/user-attachments/assets/bd2bda4a-c15c-4026-885e-fc29a7abff52" />
 
+I selected 6061-T6 aluminum for the support frame, the same material I used for both pulleys. The strength-versus-density chart shows that aluminum alloys have higher strength than many common plastics and a lower density than steel. I chose aluminum because it gives me a good balance of strength and weight, which helps keep the ceiling-mounted assembly light. It can also be machined to make the bearing seats and mounting holes shown in the sketch.
+
+<img width="1441" height="961" alt="image" src="https://github.com/user-attachments/assets/23fce4a0-f3ea-4a60-912e-70590ca54541" />
+
+If I had been given enough time, I would have almost definitely modeled the structure in SolidWorks and performed an FEA on the model to check the strength the frame could hold with much more precise dimensions. But due to limited time, I felt that choosing Aluminum as our material would well exceed any possible situation that could be enacted on these pulleys. 
+
 ## Lessons Learned 
 
 One thing I learned was why the belt forces get subtracted for the shaft calculation but added for the bearing calculation. The tight side and loose side turn the pulley in opposite directions, so the difference between the forces determines the torque. Both sides pull the shaft toward the other pulley, so their forces add to give a 10-lbf radial load. With the pulley centered between two bearings, each bearing carries 5 lbf.
@@ -66,4 +75,6 @@ One thing I learned was why the belt forces get subtracted for the shaft calcula
 I also learned to separate the minimum size I calculated from the size I actually selected. My minimum belt diameter was 0.2788 in, but the belt I selected was 5/16 in. Using that larger diameter changed the installed outer circumference from 20.301 in to 20.407 in. Next time, I would update the belt length as soon as I choose a catalog size so the calculations and part selection match.
 
 When I selected the journal bearing material, I learned that pressure alone was only one part of the check. The bearing also had to handle the shaft surface speed and the combined pressure and velocity, or PV. Several materials met the requirements, but I chose porous bronze because it had room across all three limits if the load or speed changed.
+
+The assignment took me about 7 hours from start to finish. I spent 5 hours working through the calculations and 2 hours documenting the design in my portfolio.
 
