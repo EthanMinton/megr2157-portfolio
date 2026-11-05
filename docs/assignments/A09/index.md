@@ -51,6 +51,14 @@ I selected porous bronze because all three calculated values were below the limi
 | Surface speed | 78.54 ft/min | 1,500 ft/min |
 | PV | 1,963.5 psi·ft/min | 50,000 psi·ft/min |
 
+## Frame Design 
+
+I made a rough sketch of the support frame to show how the two pulleys and their bearings would be arranged. I chose an 8.5 × 3.5 in mounting plate that would attach to the ceiling, as shown by the red dashed lines. The supports hang down from the plate. In the front view, the support is 6.5 in wide and 2.5 in tall, with the pulley shaft centers 5 in apart and 2 in below the underside of the mounting plate. The solid red outline shows the path of the belt around both pulleys.
+
+In the side view, the pulley sits between two bearing housings. I used 1 in of length for each bearing seat and placed the bearing centers 2 in apart along the shaft. This leaves a 1 in gap for the pulley. The sketch uses a 0.50 in seat diameter based on the assumed outside diameter of the bearing. I used the sketch to lay out the main dimensions and check how the parts would fit together.
+
+<img width="1528" height="970" alt="94891" src="https://github.com/user-attachments/assets/bd2bda4a-c15c-4026-885e-fc29a7abff52" />
+
 ## Lessons Learned 
 
 One thing I learned was why the belt forces get subtracted for the shaft calculation but added for the bearing calculation. The tight side and loose side turn the pulley in opposite directions, so the difference between the forces determines the torque. Both sides pull the shaft toward the other pulley, so their forces add to give a 10-lbf radial load. With the pulley centered between two bearings, each bearing carries 5 lbf.
