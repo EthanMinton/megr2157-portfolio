@@ -94,6 +94,50 @@ The finished crosshead has two main openings and eight tapped mounting holes. Th
 
 <img width="838" height="583" alt="12_Finished_Part" src="https://github.com/user-attachments/assets/9e5b0795-7872-488c-9e10-64e99c66f49f" />
 
+### Flange Nut Assembly
+
+I started by importing the flange nut CAD model into the assembly. This gave me the nut geometry and threads without having to model them separately.
+
+<img width="371" height="239" alt="1_Imported_Nut" src="https://github.com/user-attachments/assets/54be6891-fd21-4f12-b492-8950da94a42d" />
+
+I used a circular sketch pattern to create four equally spaced bolt locations around the flange. These locations matched the mounting pattern on the crosshead.
+
+<img width="440" height="486" alt="2_Hole_Sketch" src="https://github.com/user-attachments/assets/a2d905b1-f95f-4873-aed7-e21d5e981f37" />
+
+I used Hole Wizard to create four #24 drilled holes through the flange. These holes allow the mounting screws to pass through and thread into the crosshead.
+
+<img width="595" height="476" alt="3_HoleWizard" src="https://github.com/user-attachments/assets/fefab1e4-cd9e-4715-bfeb-c9a022a0ba58" />
+
+I mated the nut to the crosshead with the center openings lined up. The flange sat against the bottom face of the crosshead.
+
+<img width="228" height="286" alt="4_Mated_w_Crosshead" src="https://github.com/user-attachments/assets/a031dda2-7d50-4894-83bf-bedce36a3425" />
+
+I assigned Commercial Bronze, UNS C22000, from the SolidWorks material library to the nut.
+
+<img width="614" height="482" alt="5_Assigned_Matl" src="https://github.com/user-attachments/assets/59e7fd3e-f3d9-4fc5-a193-d734dd541f74" />
+
+I added a second flange nut and mated it to the opening at the other end of the crosshead. Both nuts were now positioned for the lead screws.
+
+<img width="397" height="209" alt="6_Added_2nd_Nut" src="https://github.com/user-attachments/assets/1175218b-9447-451f-909e-fcc1644b2266" />
+
+### Mounting Bolt and Leadscrew Assembly 
+
+I imported the socket head screws and mated them into the mounting holes. I added four screws to each flange to secure both nuts to the crosshead.
+
+<img width="803" height="586" alt="Imported Mated_bolts" src="https://github.com/user-attachments/assets/b395b4b3-f1c2-4659-a0ca-e5b40939753b" />
+
+I imported the lead screw model and created a reference plane 18 inches from the end. This gave me a location to shorten the screw to the selected length.
+
+<img width="614" height="514" alt="1_Imported_LS" src="https://github.com/user-attachments/assets/d7b9420c-54f8-4710-8086-04391bcf8b4f" />
+
+I sketched on the reference plane and used a through-all extruded cut to remove the extra length. This shortened the lead screw model from 36 inches to 18 inches.
+
+<img width="881" height="572" alt="2_Cutting_LS" src="https://github.com/user-attachments/assets/bdbafef0-2863-469e-9184-cb4ab6996111" />
+
+I added the second lead screw and mated both screws to the flange nuts. This positioned the screws parallel to each other and completed this portion of the assembly.
+
+<img width="400" height="422" alt="3_Mated_LS+Final assembly" src="https://github.com/user-attachments/assets/5bba3e83-5ce1-4ff6-8ca4-862240d48aab" />
+
 ## Lessons Learned
 
 ### Ethan — Lead Screw Calculations
