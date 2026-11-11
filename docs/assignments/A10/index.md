@@ -140,6 +140,7 @@ I added the second lead screw and mated both screws to the flange nuts. This pos
 
 ## Finite Element Analysis 
 
+### FEA Setup 
 I added a hole in the middle of the crosshead to represent the specimen attachment location. This gave me a surface to apply the load for the simulation.
 
 <img width="689" height="347" alt="1_Added_Hole_CH" src="https://github.com/user-attachments/assets/63ab500e-9224-44ba-8818-023885bd028c" />
@@ -151,6 +152,8 @@ I created a static study named “Initial_Static” in SolidWorks Simulation. Th
 I applied a 2,000 N downward force to the inside surface of the center hole. This represented the specimen load acting at the middle of the crosshead.
 
 <img width="587" height="505" alt="3_Loading" src="https://github.com/user-attachments/assets/2a5a19df-5465-4fd4-9dcc-43300f5d4f7f" />
+
+## Design 1
 
 ## Lessons Learned
 
