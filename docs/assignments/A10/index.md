@@ -138,6 +138,20 @@ I added the second lead screw and mated both screws to the flange nuts. This pos
 
 <img width="400" height="422" alt="3_Mated_LS+Final assembly" src="https://github.com/user-attachments/assets/5bba3e83-5ce1-4ff6-8ca4-862240d48aab" />
 
+## Finite Element Analysis 
+
+I added a hole in the middle of the crosshead to represent the specimen attachment location. This gave me a surface to apply the load for the simulation.
+
+<img width="689" height="347" alt="1_Added_Hole_CH" src="https://github.com/user-attachments/assets/63ab500e-9224-44ba-8818-023885bd028c" />
+
+I created a static study named “Initial_Static” in SolidWorks Simulation. This allowed me to check the stress, displacement, and factor of safety under the applied load.
+
+<img width="200" height="527" alt="2_Created_Study" src="https://github.com/user-attachments/assets/5d91a088-b814-4f10-a59e-6d05b0d9644c" />
+
+I applied a 2,000 N downward force to the inside surface of the center hole. This represented the specimen load acting at the middle of the crosshead.
+
+<img width="587" height="505" alt="3_Loading" src="https://github.com/user-attachments/assets/2a5a19df-5465-4fd4-9dcc-43300f5d4f7f" />
+
 ## Lessons Learned
 
 ### Ethan — Lead Screw Calculations
