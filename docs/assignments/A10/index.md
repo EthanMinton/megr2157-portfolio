@@ -38,7 +38,7 @@ https://www.roton.com/products/acme-lead-screws-nuts/engineering-data/
 |---|---|---|---|---|---|
 | 1 | 2 | Acme Lead Screw, 5/8"-8, 36" Long | $102.38 | $204.76 | [97014A320](https://www.mcmaster.com/97014A320/) |
 | 2 | 2 | Bronze Acme Flange Nut, 5/8"-8 | $138.20 | $276.40 | [95120A119](https://www.mcmaster.com/95120A119/) |
-| 3 | TBD packs | Socket Head Screw, 6-32, 3/4" Long | $4.41 per pack of 10 | TBD | [92200A151](https://www.mcmaster.com/92200A151/) |
+| 3 |  | Socket Head Screw, 6-32, 3/4" Long | $4.41 per pack of 10 | TBD | [92200A151](https://www.mcmaster.com/92200A151/) |
 | | | | **Total Cost** | **TBD** | |
 
 
