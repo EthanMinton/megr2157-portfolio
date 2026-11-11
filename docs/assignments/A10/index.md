@@ -3,7 +3,7 @@
 ## Objective
 
 
-## Leadscrew Selection 
+## Leadscrew Selection - E
 
 ### Minimum Diameter
 
@@ -41,6 +41,58 @@ https://www.roton.com/products/acme-lead-screws-nuts/engineering-data/
 | 3 | TBD packs | Socket Head Screw, 6-32, 3/4" Long | $4.41 per pack of 10 | TBD | [92200A151](https://www.mcmaster.com/92200A151/) |
 | | | | **Total Cost** | **TBD** | |
 
+
+## Parametric Modeling and Assembly - B
+
+### Crosshead Design
+
+I started by creating the tensile tester assembly and adding a new crosshead part.
+
+<img width="185" height="209" alt="1_Assembly Part_Creation" src="https://github.com/user-attachments/assets/d9fa2edb-13d2-4a60-9969-a089aed68789" />
+
+I added global variables for the crosshead dimensions, hole diameter, and hole spacing. This allowed me to control the dimensions and make changes in one place.
+
+<img width="523" height="104" alt="2_Global_vars" src="https://github.com/user-attachments/assets/38dc6d83-4a85-4477-9dba-56a216ca54c9" />
+
+I sketched a rectangle and linked the dimensions to the global variables. The crosshead was set to 10 inches long and 2 inches wide.
+
+<img width="353" height="233" alt="3_CH_Sketch" src="https://github.com/user-attachments/assets/bacab578-8b61-46fe-bac4-47485c269d4c" />
+
+I extruded the rectangle to a thickness of 1 inch using the height variable.
+
+<img width="830" height="362" alt="4_CH_Extrusion" src="https://github.com/user-attachments/assets/957c513a-173c-4391-b43e-c0913a14dbc0" />
+
+I sketched two holes along the centerline and set their centers 8 inches apart. Both hole diameters were linked to the 0.875-inch global variable.
+
+<img width="617" height="227" alt="5_Hole_Sketch" src="https://github.com/user-attachments/assets/f2dde11a-36fe-4e6f-9ba7-9488cc146ba8" />
+
+I cut both holes through the crosshead to create the openings for the lead screw nuts.
+
+<img width="659" height="462" alt="6_Hole_Cut" src="https://github.com/user-attachments/assets/f7661d44-3362-4987-b23b-322f9221830e" />
+
+I used a circular sketch pattern to create four equally spaced bolt locations around the first opening.
+
+<img width="461" height="534" alt="7_Bolthole_sketch" src="https://github.com/user-attachments/assets/f2e590bb-2f9e-4df8-89b3-7af12040adf5" />
+
+I mirrored the bolt locations across the middle of the crosshead. This gave both ends the same mounting pattern.
+
+<img width="691" height="273" alt="8_Bolthole_mirrored" src="https://github.com/user-attachments/assets/450326f0-9964-4c09-88f8-e0810037568c" />
+
+I used Hole Wizard to select #6-32 tapped holes. I set the holes and threads to go through the crosshead.
+
+<img width="184" height="624" alt="9_Holewizard_Details" src="https://github.com/user-attachments/assets/eade1ef6-af2c-450c-8dc7-1b33806b224a" />
+
+I placed the tapped holes at the sketch points around both openings. This created four mounting holes for each nut flange.
+
+<img width="740" height="283" alt="10_bolthole_feature" src="https://github.com/user-attachments/assets/57d6a305-f397-4756-8201-c3c0ddf960a3" />
+
+I assigned 6061-T6 aluminum from the SolidWorks material library to the crosshead.
+
+<img width="614" height="486" alt="11_Material_Assigned" src="https://github.com/user-attachments/assets/4d115857-3c0e-4226-b87a-8e94caf92fbc" />
+
+The finished crosshead has two main openings and eight tapped mounting holes. The part was ready to be used in the tensile tester assembly.
+
+<img width="838" height="583" alt="12_Finished_Part" src="https://github.com/user-attachments/assets/9e5b0795-7872-488c-9e10-64e99c66f49f" />
 
 ## Lessons Learned
 
