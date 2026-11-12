@@ -449,21 +449,21 @@ The project took approximately 30 dedicated hours to complete.
 
 ## Resources
 
-[Tensile Tester Assembly](Tensile_Tester_Asm.SLDASM)
+[Tensile Tester Assembly - DOWNLOAD ALL FILES BELOW FOR THIS TO FUNCTION](Tensile_Tester_Asm.SLDASM)
 
-[Lead Screw](./Lead_Screw.SLDPRT)
+[Lead Screw CAD](./Lead_Screw.SLDPRT)
 
-[Flange Nut](./Flange_Nut.SLDPRT)
+[Flange Nut CAD](./Flange_Nut.SLDPRT)
 
-[Crosshead](./Crosshead.SLDPRT)
+[Crosshead CAD](./Crosshead.SLDPRT)
 
-[Crosshead Drawing](./Crosshead.SLDDRW)
+[Crosshead Drawing CAD](./Crosshead.SLDDRW)
 
-[2 ft Rail](./2ft_Rail.SLDPRT)
+[2 ft Rail CAD](./2ft_Rail.SLDPRT)
 
-[1 ft Rail](./1ft_Rail.SLDPRT)
+[1 ft Rail CAD](./1ft_Rail.SLDPRT)
 
-[6-32 Mounting Screw](./%236_32_Screw.SLDPRT)
+[6-32 Mounting Screw CAD](./%236_32_Screw.SLDPRT)
 
 [ATI — 316 Stainless Steel Properties](https://www.atimaterials.com/Products/Pages/ati-316.aspx)
 
