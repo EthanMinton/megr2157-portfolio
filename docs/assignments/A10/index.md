@@ -32,56 +32,79 @@ For part 3, I used the inclined plane method from class to calculate the torque 
 
 https://www.roton.com/products/acme-lead-screws-nuts/engineering-data/
 
-## Crosshead Calculations
+## Nut and Flange Design — Grant
 
-### Nut and Flange Design
+I selected the [McMaster 95120A119 flange nut](https://www.mcmaster.com/95120A119/), made from 932 bearing bronze with 5/8–8 right-hand Acme threads. The nut has a listed height of 1.25 inches, a body diameter of 0.875 inches, and a flange diameter of 1.50 inches. These dimensions were used to plan the mounting features on the crosshead.
 
-I selected a 932 bearing bronze flange nut with 5/8–8 Acme threads to match the selected lead screw. I assumed the centered 2,000 N load was shared equally between the two screws, giving 1,000 N per nut. The FBD shows the load transferred between the nut threads and the crosshead.
+### Knowns and Unknowns
 
-<img width="461" height="350" alt="image" src="https://github.com/user-attachments/assets/3396a6a6-e738-4068-9653-57dc6e0ed011" />
+| Known | Value |
+|---|---|
+| Total specimen load | 2,000 N |
+| Load per nut, assuming equal sharing | 1,000 N = 224.81 lbf |
+| Assumed effective engagement length, L_e | 1.25 in |
+| Thread pitch, p | 0.125 in |
+| Internal thread root diameter, d_r | 0.645 in |
+| Assumed nut yield strength, S_y | 14,000 psi |
+| Required safety factor | 4 |
 
+The unknowns were the number of engaged threads, thread bending stress, allowable stress, and calculated safety factor.
 
+I assumed the centered load was shared equally between the two nuts. The FBD represents the force transferred between the screw threads and the crosshead through one nut.
 
-I assumed the full 1.25-inch nut length provided thread engagement. Dividing this length by the 0.125-inch thread pitch gave an estimated 10 engaged threads. I then used the thread bending equation to estimate the stress under the load.
+<img width="461" height="350" alt="Nut free-body diagram" src="https://github.com/user-attachments/assets/3396a6a6-e738-4068-9653-57dc6e0ed011" />
 
-Since the McMaster product information did not list yield strength, I assumed 14,000 psi for this preliminary calculation. Dividing this value by the required safety factor of 4 gave an allowable stress of 3,500 psi.
+I assumed the full 1.25-inch nut height provided effective thread engagement and that the engaged threads shared the load equally. This simplified the initial thread calculation. Dividing the engagement length by the pitch gave 10 engaged threads.
 
-<img width="750" height="377" alt="image" src="https://github.com/user-attachments/assets/08cc9528-a58e-495a-906a-ce6b0ee97578" />
+The 0.645-inch value came from the minimum internal major diameter in Dependable Acme’s 5/8–8 Class 2G thread table. For the nut, this is the diameter at the internal thread roots.
 
-<img width="1087" height="329" alt="image" src="https://github.com/user-attachments/assets/9f554917-796c-4bf9-8a64-9293001e0339" />
+Since the McMaster listing did not provide yield strength, I used 14,000 psi as a preliminary material estimate. St. Paul Foundry lists this minimum value for as-cast C93200 bronze. Applying it to the purchased nut remains an assumption because its exact material condition was not confirmed.
 
+<img width="750" height="377" alt="Thread engagement and thread bending calculations" src="https://github.com/user-attachments/assets/08cc9528-a58e-495a-906a-ce6b0ee97578" />
 
-### Crosshead Design
+The estimated bending stress was 533 psi. Dividing the assumed yield strength by the required safety factor gave an allowable stress of 3,500 psi. The calculated safety factor was approximately 26.3, so the nut passed this preliminary thread-bending check under the stated assumptions.
 
-I modeled the crosshead as a simply supported beam with the 2,000 N load acting at the center. I used an 8-inch span based on the distance between the lead screws. With this centered loading, each support carried 1,000 N, or approximately 224.81 lbf.
+## Crosshead Design — Grant
 
-<img width="743" height="253" alt="image" src="https://github.com/user-attachments/assets/821e25fd-067b-48cd-886d-afcc90f1f6c3" />
+### Dimension Selection
 
+I used the selected nut’s 1.50-inch flange diameter to help determine the crosshead dimensions. I selected a width of 2 inches, leaving 0.25 inches between each centered flange and the side edges. With an 8-inch spacing between the screws and a 10-inch overall length, each screw center was 1 inch from the nearest end. This also left 0.25 inches between the flange and the end of the crosshead. These dimensions were design choices based on the researched hardware dimensions.
 
+I modeled the crosshead as a simply supported beam with the 2,000 N specimen load acting at the center. The support span was 8 inches, giving equal support reactions of 1,000 N, or 224.81 lbf. I used an initial rectangular cross section of 2 inches wide by 1 inch thick.
 
-I started with a cross section of 2 inches wide by 1 inch thick. I calculated the maximum bending moment and area moment of inertia, then used the bending stress equation to determine the stress in the crosshead. The calculated stress was approximately 2,698 psi. Applying the safety factor of 4 gave a minimum required yield strength of 10,791 psi.
+<img width="743" height="253" alt="Crosshead free-body diagram" src="https://github.com/user-attachments/assets/821e25fd-067b-48cd-886d-afcc90f1f6c3" />
 
-<img width="323" height="335" alt="image" src="https://github.com/user-attachments/assets/ddf1148f-ead4-48d4-b19b-e38467390bcf" />
+### Strength Analysis
 
-<img width="278" height="337" alt="image" src="https://github.com/user-attachments/assets/0fbc593c-b251-45f2-806a-b86c15c69ed7" />
+<img width="323" height="335" alt="Strength analysis knowns" src="https://github.com/user-attachments/assets/ddf1148f-ead4-48d4-b19b-e38467390bcf" />
 
-<img width="934" height="922" alt="image" src="https://github.com/user-attachments/assets/ff84e66b-6c34-4854-832b-28d2a79972ec" />
+<img width="278" height="337" alt="Strength analysis unknowns" src="https://github.com/user-attachments/assets/0fbc593c-b251-45f2-806a-b86c15c69ed7" />
 
-I selected 6061-T6 aluminum because its listed yield strength of 35,000 psi exceeded the calculated requirement. Using this yield strength gave a safety factor of approximately 13.0, which exceeded the required value of 4.
+I calculated the maximum bending moment and area moment of inertia, then substituted these into the bending stress equation. This gave a maximum bending stress of approximately 2,698 psi. Applying the required safety factor of 4 gave a minimum required yield strength of 10,791 psi.
 
-I used the same dimensions and loading to check deflection. I first solved for the minimum elastic modulus needed to stay below the 0.10 mm deflection limit. I then used an elastic modulus of 10 million psi for 6061-T6 aluminum to calculate the expected deflection.
+I selected 6061-T6 aluminum and used a reference yield strength of 40,000 psi. Kaiser Aluminum lists this typical yield strength and an elastic modulus of 10 million psi for T6/T651 material. Using these reference properties gave a preliminary safety factor of approximately 14.83.
 
-<img width="465" height="342" alt="image" src="https://github.com/user-attachments/assets/5cacd7b4-f086-4fa1-8ca7-0b0f79f2a73b" />
+<img width="934" height="922" alt="Crosshead strength calculations" src="https://github.com/user-attachments/assets/ff84e66b-6c34-4854-832b-28d2a79972ec" />
 
-<img width="297" height="332" alt="image" src="https://github.com/user-attachments/assets/84258154-f4cf-471e-bd1b-71eb3938ae00" />
+### Deflection Analysis
 
-<img width="881" height="699" alt="image" src="https://github.com/user-attachments/assets/65860c67-d6ba-4686-bd3c-10600402158b" />
+<img width="465" height="342" alt="Deflection analysis knowns" src="https://github.com/user-attachments/assets/5cacd7b4-f086-4fa1-8ca7-0b0f79f2a73b" />
 
-The calculated deflection was 0.0731 mm, which was below the 0.10 mm limit. These initial calculations treated the crosshead as a solid rectangular beam. The holes and mounting details would be evaluated further in the FEA.
+<img width="297" height="332" alt="Deflection analysis unknowns" src="https://github.com/user-attachments/assets/84258154-f4cf-471e-bd1b-71eb3938ae00" />
 
-I included a multi-view sketch showing the crosshead dimensions, mounting features, and selected material. This connects the dimensions used in the calculations to the part modeled in SolidWorks.
+I used the same dimensions and loading to check the 0.10 mm deflection requirement. Rearranging the beam deflection equation gave a minimum required elastic modulus of approximately 7.3 × 10⁶ psi. The selected reference modulus of 10 × 10⁶ psi exceeded this requirement.
 
-<img width="1190" height="916" alt="image" src="https://github.com/user-attachments/assets/42fc37bb-33da-4859-a434-ecd4525cbfe0" />
+Using this modulus gave a calculated deflection of 0.002878 inches, or 0.0731 mm. This was approximately 73.1% of the allowable deflection, so the initial dimensions passed the deflection check.
+
+<img width="881" height="699" alt="Crosshead deflection calculations" src="https://github.com/user-attachments/assets/65860c67-d6ba-4686-bd3c-10600402158b" />
+
+These hand calculations treated the crosshead as a solid rectangular beam with ideal supports. The center hole, mounting holes, and attachment details would be evaluated further in the FEA.
+
+### Crosshead Sketch
+
+I included front, top, and side views showing the overall dimensions and mounting arrangement. The sketch connects the dimensions used in the calculations to the SolidWorks model.
+
+<img width="1190" height="916" alt="Crosshead multiview sketch" src="https://github.com/user-attachments/assets/42fc37bb-33da-4859-a434-ecd4525cbfe0" />
 
 ## Bill of Materials
 
