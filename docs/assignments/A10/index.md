@@ -3,7 +3,7 @@
 ## Objective
 
 
-## Leadscrew Selection - E
+## Leadscrew Selection - Ethan Minton
 
 ### Minimum Diameter
 
@@ -32,7 +32,7 @@ For part 3, I used the inclined plane method from class to calculate the torque 
 
 https://www.roton.com/products/acme-lead-screws-nuts/engineering-data/
 
-## Nut and Flange Design — Grant
+## Nut and Flange Design — Grant Parker
 
 I selected the [McMaster 95120A119 flange nut](https://www.mcmaster.com/95120A119/), made from 932 bearing bronze with 5/8–8 right-hand Acme threads. The nut has a listed height of 1.25 inches, a body diameter of 0.875 inches, and a flange diameter of 1.50 inches. These dimensions were used to plan the mounting features on the crosshead.
 
@@ -64,7 +64,7 @@ Since the McMaster listing did not provide yield strength, I used 14,000 psi as 
 
 The estimated bending stress was 533 psi. Dividing the assumed yield strength by the required safety factor gave an allowable stress of 3,500 psi. The calculated safety factor was approximately 26.3, so the nut passed this preliminary thread-bending check under the stated assumptions.
 
-## Crosshead Design — Grant
+## Crosshead Design — Grant Parker
 
 ### Dimension Selection
 
@@ -106,17 +106,20 @@ I included front, top, and side views showing the overall dimensions and mountin
 
 <img width="1190" height="916" alt="Crosshead multiview sketch" src="https://github.com/user-attachments/assets/42fc37bb-33da-4859-a434-ecd4525cbfe0" />
 
-## Bill of Materials
+## Bill of Materials - Ethan Minton
 
 | Item Number | Quantity | Name | Cost/Item | Cost | Purchase Link |
 |---|---|---|---|---|---|
-| 1 | 2 | Acme Lead Screw, 5/8"-8, 36" Long | $102.38 | $204.76 | [97014A320](https://www.mcmaster.com/97014A320/) |
-| 2 | 2 | Bronze Acme Flange Nut, 5/8"-8 | $138.20 | $276.40 | [95120A119](https://www.mcmaster.com/95120A119/) |
-| 3 |  | Socket Head Screw, 6-32, 3/4" Long | $4.41 per pack of 10 | TBD | [92200A151](https://www.mcmaster.com/92200A151/) |
-| | | | **Total Cost** | **TBD** | |
+| 1 | 2 | 316 Stainless Steel Acme Lead Screw, 5/8"-8, 36" Long; Cut to 18" | $102.38 | $204.76 | [97014A320](https://www.mcmaster.com/97014A320/) |
+| 2 | 2 | 932 Bronze Acme Flange Nut, 5/8"-8 Right-Hand Thread | $138.20 | $276.40 | [95120A119](https://www.mcmaster.com/95120A119/) |
+| 3 | 1 pack of 10; 8 used | 18-8 Stainless Steel Socket Head Screw, 6-32 × 3/4" | $4.41 per pack | $4.41 | [92200A151](https://www.mcmaster.com/92200A151/) |
+| 4 | 1 stock length | 80 × 40 mm, 40-Series Double T-Slot Aluminum Profile, 10 ft; Assignment Reference Price | $262.23 | $262.23 | [Assignment Frame Profile Resource](https://www.grainger.com/category/material-handling/structural-framing-systems/t-slot-framing-systems/profiles-for-t-slot-framing/metric-profiles-for-t-slot-framing?attrs=Relative+Profile+Weight%7CHeavy~~Series%7C40+Series&filters=attrs) |
+| 5 | 12 | 40-Series Two-Hole Gusseted Inside Corner Bracket | $7.73 | $92.76 | [80/20 40-4332](https://8020.net/40-4332.html) |
+| 6 | 24 | M8 × 16 mm Button Head Screw and Compatible Slide-In T-Nut Assembly | $1.14 | $27.36 | [80/20 75-3422](https://8020.net/75-3422.html) |
+| | | | **Total Estimated Cost of Listed Components** | **$867.92** | |
 
 
-## Parametric Modeling and Assembly - B
+## Parametric Modeling and Assembly - Bryan Mccanch
 
 ### Crosshead Design
 
@@ -212,22 +215,226 @@ I added the second lead screw and mated both screws to the flange nuts. This pos
 
 <img width="400" height="422" alt="3_Mated_LS+Final assembly" src="https://github.com/user-attachments/assets/5bba3e83-5ce1-4ff6-8ca4-862240d48aab" />
 
-## Finite Element Analysis 
+## Finite Element Analysis — Bryan Mccanch
 
-### FEA Setup 
-I added a hole in the middle of the crosshead to represent the specimen attachment location. This gave me a surface to apply the load for the simulation.
+### FEA Setup
 
-<img width="689" height="347" alt="1_Added_Hole_CH" src="https://github.com/user-attachments/assets/63ab500e-9224-44ba-8818-023885bd028c" />
+I added a hole at the center of the crosshead to represent the specimen attachment location. This provided a surface for applying the specimen load.
 
-I created a static study named “Initial_Static” in SolidWorks Simulation. This allowed me to check the stress, displacement, and factor of safety under the applied load.
+<img width="689" height="347" alt="Center specimen attachment hole" src="https://github.com/user-attachments/assets/63ab500e-9224-44ba-8818-023885bd028c" />
 
-<img width="200" height="527" alt="2_Created_Study" src="https://github.com/user-attachments/assets/5d91a088-b814-4f10-a59e-6d05b0d9644c" />
+I created a static study named “Initial_Static” in SolidWorks Simulation. This allowed me to evaluate the stresses and displacement under the applied load.
 
-I applied a 2,000 N downward force to the inside surface of the center hole. This represented the specimen load acting at the middle of the crosshead.
+<img width="200" height="527" alt="Creating the static study" src="https://github.com/user-attachments/assets/5d91a088-b814-4f10-a59e-6d05b0d9644c" />
 
-<img width="587" height="505" alt="3_Loading" src="https://github.com/user-attachments/assets/2a5a19df-5465-4fd4-9dcc-43300f5d4f7f" />
+I applied a 2,000 N downward force to the inside surface of the center hole. This represented the load transferred from the specimen into the crosshead.
+
+<img width="587" height="505" alt="Applying the 2000 N specimen load" src="https://github.com/user-attachments/assets/2a5a19df-5465-4fd4-9dcc-43300f5d4f7f" />
 
 ## Design 1
+
+### Mesh 1
+
+#### Stress
+
+I ran the initial study using a reported mesh count of 236,650 cells. The maximum von Mises stress was approximately 12,160 psi, with the peak reported at the flange nut threads.
+
+<img width="545" height="548" alt="Mesh1_Stress" src="https://github.com/user-attachments/assets/7eeba02d-2324-4e0e-bebf-6d113fb60188" />
+
+#### Maximum Stress Location
+
+I viewed the underside of the crosshead to locate the stress concentration. The highest stress was concentrated near the nut and lead screw interface, so this area needed closer attention during mesh refinement.
+
+<img width="431" height="376" alt="Mesh1_Max_Stress" src="https://github.com/user-attachments/assets/e4b527cf-56d2-43aa-8831-082be0591384" />
+
+
+#### Displacement
+
+The maximum resultant displacement was 0.09711 mm near the middle of the crosshead. This was below 0.10 mm and followed the expected pattern of the center moving farther than the supported ends.
+
+<img width="506" height="567" alt="Mesh1_Delf" src="https://github.com/user-attachments/assets/dc30d0f3-e72a-42b6-b1bc-92e5097f76f4" />
+
+
+### Mesh 2
+
+#### Stress
+
+I refined the mesh, increasing the reported count to 275,946 cells. The maximum stress increased to 21,800 psi and remained at the flange nut threads. This was a 79.28% increase from Mesh 1.
+
+<img width="573" height="576" alt="Mesh2_Stress" src="https://github.com/user-attachments/assets/5b8bc805-9a6b-421d-b28d-8b39f245d768" />
+
+#### Displacement
+
+The maximum resultant displacement was 0.09689 mm near the middle of the crosshead. This changed by approximately 0.23% from Mesh 1, showing that the displacement was much less sensitive to this refinement than the peak stress.
+
+<img width="592" height="565" alt="Mesh2_Defl" src="https://github.com/user-attachments/assets/1d026cd4-6040-4b94-9e59-9c8de690cada" />
+
+### Mesh 3
+
+#### Stress
+
+I refined the mesh again, increasing the reported count to 293,619 cells. The maximum stress increased to 24,140 psi at the same reported location. The increase from Mesh 2 was approximately 10.73%.
+
+<img width="604" height="525" alt="Mesh3_Stress" src="https://github.com/user-attachments/assets/86b5b8da-a125-4a59-9b20-316545b4bc39" />
+
+#### Displacement
+
+The maximum resultant displacement was 0.09711 mm near the middle of the crosshead. This changed by approximately 0.23% from Mesh 2 and remained below 0.10 mm.
+
+<img width="577" height="580" alt="Mesh3_Defl" src="https://github.com/user-attachments/assets/f9d3eaeb-4a1c-4cc9-a0cb-b65ad6969635" />
+
+### Mesh Comparison
+
+| Result | Mesh 1 | Mesh 2 | Mesh 3 |
+|---|---|---|---|
+| Reported mesh cells | 236,650 | 275,946 | 293,619 |
+| Maximum von Mises stress | 12,160 psi | 21,800 psi | 24,140 psi |
+| Reported maximum stress location | Flange nut threads | Flange nut threads | Flange nut threads |
+| Maximum resultant displacement, URES | 0.09711 mm | 0.09689 mm | 0.09711 mm |
+| Maximum displacement location | Middle of crosshead | Middle of crosshead | Middle of crosshead |
+| Stress change from previous mesh | — | 79.28% | 10.73% |
+| Displacement change from previous mesh | — | 0.23% | 0.23% |
+| Estimated nut safety factor using 14,000 psi yield | 1.15 | 0.64 | 0.58 |
+
+### Convergence Discussion
+
+I noticed unusual behavior in the maximum stress near the flange nut threads. The peak was concentrated in a very small area and increased as the mesh was refined, while the maximum displacement stayed nearly constant. Between Mesh 2 and Mesh 3, the stress increased by 10.73%, while the displacement changed by approximately 0.23%.
+
+This localized peak appeared questionable and may be a mesh or contact artifact associated with the modeled thread geometry. A sharp thread root or contact edge could produce a numerical stress singularity. However, the screenshots alone do not confirm this, so the peak should be investigated rather than automatically treated as a realistic stress or ignored.
+
+### Safety Factor
+
+Using the assumed bronze yield strength of 14,000 psi and the Mesh 3 peak stress gave an estimated safety factor of 0.58. This value was controlled by the highly localized stress at the flange nut threads.
+
+Because that peak may be affected by the mesh and contact definitions, I treated this safety factor as preliminary. Further checks of the thread geometry, material assignments, contacts, and local mesh are needed before drawing a final strength conclusion. These results do not yet verify the required safety factor of 4.
+
+### Load Path and Deformation
+
+The specimen load enters through the center hole and bends the crosshead between the two nut connections. The load then transfers through the flange nuts into the lead screws and their supports.
+
+The displayed deformation also shows sideways bending of the lead screws. This needs further review of the support and contact definitions. Crosshead twisting cannot be determined from these views alone; displacement across both sides of the crosshead should be compared.
+
+## Design 2
+
+### Revised Crosshead Geometry
+
+I added two pockets to the crosshead to remove material and reduce mass. I kept solid material around the center attachment hole and the flange nut mounting areas. The pockets also included rounded corners to avoid sharp internal corners.
+
+<img width="384" height="584" alt="Optimized_design" src="https://github.com/user-attachments/assets/3fa6a230-fb2b-4d4d-b59f-1bda5faba0c4" />
+
+### Mesh 1
+
+#### Stress
+
+I ran the revised design using a reported mesh count of 110,830 cells. The maximum von Mises stress was approximately 18,360 psi, with the peak again reported at the flange nut threads.
+
+<img width="477" height="473" alt="Mesh1_Stress (1)" src="https://github.com/user-attachments/assets/d04850a3-8999-4a96-9a89-e51cb3fe2811" />
+
+#### Displacement
+
+The maximum resultant displacement was 0.1444 mm near the middle of the crosshead. This was higher than the 0.09711 mm reported for Design 1, showing a stiffness penalty in the revised model.
+
+<img width="526" height="476" alt="Mesh1_Defl" src="https://github.com/user-attachments/assets/0a50178e-ba86-4889-9bbc-d2b020a61bc9" />
+
+### Mesh 2
+
+#### Stress
+
+I refined the mesh, increasing the reported count to 133,727 cells. The maximum stress increased to 21,560 psi at the flange nut threads. This was a 17.43% increase from Mesh 1.
+
+<img width="493" height="438" alt="Mesh2_Stress (1)" src="https://github.com/user-attachments/assets/d080bcda-4945-4d09-bdcd-fb2893ea841f" />
+
+#### Displacement
+
+The maximum resultant displacement remained approximately 0.1444 mm near the middle of the crosshead. The displayed result changed very little even though the peak stress increased.
+
+<img width="467" height="440" alt="Mesh2_Defl (1)" src="https://github.com/user-attachments/assets/05e9d8d0-7635-4f39-af3c-d05e03808fa2" />
+
+### Mesh 3
+
+#### Stress
+
+I refined the mesh again, increasing the reported count to 142,338 cells. The maximum stress decreased to 15,110 psi, which was approximately 29.92% lower than Mesh 2. The reported maximum remained at the flange nut threads.
+
+<img width="515" height="470" alt="Mesh3_Stress (1)" src="https://github.com/user-attachments/assets/43ab4d8d-38d2-4f9d-93ab-3aa26a313b5a" />
+
+#### Displacement
+
+The maximum resultant displacement remained approximately 0.1444 mm near the middle of the crosshead. The displacement was stable to the precision shown across all three meshes.
+
+<img width="467" height="465" alt="Mesh3_Defl (1)" src="https://github.com/user-attachments/assets/9ae4a40f-9fb3-4902-aaba-fa52bdebecce" />
+
+### Mesh Comparison
+
+| Result | Mesh 1 | Mesh 2 | Mesh 3 |
+|---|---|---|---|
+| Reported mesh cells | 110,830 | 133,727 | 142,338 |
+| Maximum von Mises stress | 18,360 psi | 21,560 psi | 15,110 psi |
+| Reported maximum stress location | Flange nut threads | Flange nut threads | Flange nut threads |
+| Maximum resultant displacement, URES | 0.1444 mm | 0.1444 mm | 0.1444 mm |
+| Maximum displacement location | Middle of crosshead | Middle of crosshead | Middle of crosshead |
+| Stress change from previous mesh | — | 17.43% increase | 29.92% decrease |
+| Displacement change at displayed precision | — | Approximately 0.00% | Approximately 0.00% |
+| Estimated nut safety factor using 14,000 psi yield | 0.76 | 0.65 | 0.93 |
+
+### Flange Nut Stress Concentration and Convergence
+
+I noticed the same unusual stress concentration at the flange nut that appeared in Design 1. The maximum stress was concentrated in a very small region near the threads, while most of the surrounding assembly showed much lower stress.
+
+The isolated peak seemed unrealistic as a measure of the overall crosshead strength. It may be affected by the mesh, thread geometry, or contact definitions. The stress increased between Mesh 1 and Mesh 2, then decreased between Mesh 2 and Mesh 3, while the displacement stayed nearly constant. This showed that the reported peak stress was still sensitive to the mesh.
+
+These results suggest a possible mesh or contact artifact, but they do not prove that the concentration is artificial. Further checks are needed before dismissing the peak or using it as a final strength result.
+
+### Safety Factor
+
+Using the previously assumed bronze yield strength of 14,000 psi gave estimated nut safety factors of 0.76, 0.65, and 0.93. These values were controlled by the localized peak reported at the flange nut threads.
+
+Because the peak stress had not converged and may be affected by the modeled thread contact, I treated these safety factors as preliminary. The results did not verify the required safety factor of 4. The crosshead’s own stress and safety factor also need to be evaluated separately from the nut.
+
+### Comparison with Design 1
+
+| Result Using Mesh 3 | Design 1 | Design 2 |
+|---|---|---|
+| Maximum reported von Mises stress | 24,140 psi | 15,110 psi |
+| Reported maximum stress location | Flange nut threads | Flange nut threads |
+| Maximum resultant displacement | 0.09711 mm | 0.1444 mm |
+| Estimated nut safety factor using 14,000 psi yield | 0.58 | 0.93 |
+| Reported mass | 5.25 lb | 4.32 lb |
+| Reported volume | 52.57 in³ | 44.49 in³ |
+
+The revised design reduced the reported mass by 0.93 lb, or approximately 17.7%. The reported volume decreased by 8.08 in³, or approximately 15.4%. This showed that the pockets removed material from the crosshead.
+
+The maximum resultant displacement increased by approximately 48.7%, showing a stiffness penalty in the revised model. Although Design 2 had a lower reported peak stress on Mesh 3, neither design established a converged peak stress. The localized concentration at the flange nut remained questionable and may be affected by the mesh or contact definitions.
+
+
+### Deflection Requirement
+
+The reported resultant displacement of 0.1444 mm was above the numerical limit of 0.10 mm. However, these plots show URES rather than the vertical displacement component requested in the assignment.
+
+A vertical displacement plot at the grip line is needed before making a final comparison with that requirement. Based on the available results, I could not report Design 2 as meeting all constraints.
+
+### Load Path and Deformation
+
+The load enters through the center attachment hole and travels through the remaining crosshead material to the flange nut connections. It then transfers into the lead screws and their supports.
+
+The displayed deformation shows bending near the middle of the crosshead and sideways bending of the lead screws. The support and contact definitions need further review, and displacement across both sides of the crosshead should be compared to evaluate twisting.
+
+### Final Verification 
+
+The revised FEA predicted a maximum resultant displacement of approximately 0.1444 mm, compared with the required vertical deflection limit of 0.10 mm. I suspected that the simulation setup and thread-contact behavior may have affected the results. 
+
+The low estimated safety factor was controlled primarily by the highly concentrated stress at the flange nut threads. This peak changed considerably with mesh refinement, suggesting that the thread geometry and contact definitions may not accurately represent the actual load sharing. I therefore treated the reported safety factor as preliminary.
+
+In all honesty, the limits seem to be disrupted by the FEA itself, and not how, in actuality, the Lead Screw would perform. This is likely due to how the assembly was exactly set up; with our knowledge being limited to how it should be set up, these issues can slip through the cracks and seemingly would require an entire overhaul of the design. If I were given the opportunity again, I would definitely attempt to reconstruct the assembly in an attempt to avoid this issue of outlier concentration entirely. Unfortunately, these analysis can be extremely finicky which can otherwise turn a extremely support and well build model to have a completely gross outlier concentrations.
+
+
+
+Convert to PDF
+
+### Crosshead Drawing 
+
+<img width="1147" height="892" alt="image" src="https://github.com/user-attachments/assets/7973a283-0d1e-4f38-b049-5f27b04e6da8" />
+
 
 ## Lessons Learned
 
@@ -243,5 +450,5 @@ I completed the second math section and learned how to connect the free-body dia
 
 I completed the CAD modeling and assembly and learned how to create a screw mate in SolidWorks. Setting the travel per revolution connected the rotation of the lead screw to the linear movement of the nut and crosshead. I also learned how to combine mates that kept the components aligned while allowing the intended movement. The screw mate required checking the direction of travel and the amount of movement produced by each revolution. Working with downloaded components also taught me to check the thread size, thread direction, and number of thread starts when selecting compatible parts.
 
-The project took approximately 20 combined hours to complete.
+The project took approximately 24 dedicated hours to complete.
 
