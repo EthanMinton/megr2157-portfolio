@@ -428,9 +428,6 @@ The low estimated safety factor was controlled primarily by the highly concentra
 In all honesty, the limits seem to be disrupted by the FEA itself, and not how, in actuality, the Lead Screw would perform. This is likely due to how the assembly was exactly set up; with our knowledge being limited to how it should be set up, these issues can slip through the cracks and seemingly would require an entire overhaul of the design. If I were given the opportunity again, I would definitely attempt to reconstruct the assembly in an attempt to avoid this issue of outlier concentration entirely. Unfortunately, these analysis can be extremely finicky which can otherwise turn a extremely support and well build model to have a completely gross outlier concentrations.
 
 
-
-Convert to PDF
-
 ### Crosshead Drawing 
 
 <img width="1147" height="892" alt="image" src="https://github.com/user-attachments/assets/7973a283-0d1e-4f38-b049-5f27b04e6da8" />
@@ -451,4 +448,27 @@ I completed the second math section and learned how to connect the free-body dia
 I completed the CAD modeling and assembly and learned how to create a screw mate in SolidWorks. Setting the travel per revolution connected the rotation of the lead screw to the linear movement of the nut and crosshead. I also learned how to combine mates that kept the components aligned while allowing the intended movement. The screw mate required checking the direction of travel and the amount of movement produced by each revolution. Working with downloaded components also taught me to check the thread size, thread direction, and number of thread starts when selecting compatible parts.
 
 The project took approximately 24 dedicated hours to complete.
+
+## Resources
+
+[Lead Screw](./Lead_Screw.SLDPRT)
+[Flange Nut](./Flange_Nut.SLDPRT)
+[Crosshead](./Crosshead.SLDPRT)
+[Crosshead Drawing](./Crosshead.SLDDRW)
+[2 ft Rail](./2ft_Rail.SLDPRT)
+[1 ft Rail](./1ft_Rail.SLDPRT)
+[6-32 Mounting Screw](./%236_32_Screw.SLDPRT)
+[McMaster — Lead Screw](https://www.mcmaster.com/97014A320/)
+[McMaster — Bronze Flange Nut](https://www.mcmaster.com/95120A119/)
+[McMaster — Mounting Screw](https://www.mcmaster.com/92200A151/)
+[ATI — 316 Stainless Steel Properties](https://www.atimaterials.com/Products/Pages/ati-316.aspx)
+[Roton — Acme Screw Engineering Data](https://www.roton.com/products/acme-lead-screws-nuts/engineering-data/)
+[Dependable Acme — Thread Dimensions](https://www.dependableacme.com/internal-and-external-thread-dimensions/)
+[St. Paul Foundry — C93200 Bronze Properties](https://www.stpaulfoundry.com/AlloySpecs/alloy_specifications_data_page.aspx?id=C93200)
+[Kaiser Aluminum — 6061 Material Properties](https://online.kaiseraluminum.com/depot/PublicProductInformation/Document/1015/Kaiser_Aluminum_6061_Sheet_Coil_and_Plate.pdf)
+[Grainger — Frame Profiles](https://www.grainger.com/category/material-handling/structural-framing-systems/t-slot-framing-systems/profiles-for-t-slot-framing/metric-profiles-for-t-slot-framing?attrs=Relative+Profile+Weight%7CHeavy~~Series%7C40+Series&filters=attrs)
+[80/20 — Frame Corner Bracket](https://8020.net/40-4332.html)
+[80/20 — Frame Bolt and T-Nut Assembly](https://8020.net/75-3422.html)
+
+
 
