@@ -1,7 +1,5 @@
 # A10 – Lead Screw Translating System
 
-## Objective
-
 
 ## Leadscrew Selection - Ethan Minton
 
