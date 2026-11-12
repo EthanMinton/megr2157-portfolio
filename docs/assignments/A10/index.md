@@ -452,22 +452,39 @@ The project took approximately 24 dedicated hours to complete.
 ## Resources
 
 [Lead Screw](./Lead_Screw.SLDPRT)
+
 [Flange Nut](./Flange_Nut.SLDPRT)
+
 [Crosshead](./Crosshead.SLDPRT)
+
 [Crosshead Drawing](./Crosshead.SLDDRW)
+
 [2 ft Rail](./2ft_Rail.SLDPRT)
+
 [1 ft Rail](./1ft_Rail.SLDPRT)
+
 [6-32 Mounting Screw](./%236_32_Screw.SLDPRT)
+
 [McMaster — Lead Screw](https://www.mcmaster.com/97014A320/)
+
 [McMaster — Bronze Flange Nut](https://www.mcmaster.com/95120A119/)
+
 [McMaster — Mounting Screw](https://www.mcmaster.com/92200A151/)
+
 [ATI — 316 Stainless Steel Properties](https://www.atimaterials.com/Products/Pages/ati-316.aspx)
+
 [Roton — Acme Screw Engineering Data](https://www.roton.com/products/acme-lead-screws-nuts/engineering-data/)
+
 [Dependable Acme — Thread Dimensions](https://www.dependableacme.com/internal-and-external-thread-dimensions/)
+
 [St. Paul Foundry — C93200 Bronze Properties](https://www.stpaulfoundry.com/AlloySpecs/alloy_specifications_data_page.aspx?id=C93200)
+
 [Kaiser Aluminum — 6061 Material Properties](https://online.kaiseraluminum.com/depot/PublicProductInformation/Document/1015/Kaiser_Aluminum_6061_Sheet_Coil_and_Plate.pdf)
+
 [Grainger — Frame Profiles](https://www.grainger.com/category/material-handling/structural-framing-systems/t-slot-framing-systems/profiles-for-t-slot-framing/metric-profiles-for-t-slot-framing?attrs=Relative+Profile+Weight%7CHeavy~~Series%7C40+Series&filters=attrs)
+
 [80/20 — Frame Corner Bracket](https://8020.net/40-4332.html)
+
 [80/20 — Frame Bolt and T-Nut Assembly](https://8020.net/75-3422.html)
 
 
