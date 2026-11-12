@@ -449,6 +449,8 @@ The project took approximately 30 dedicated hours to complete.
 
 ## Resources
 
+[Tensile Tester Assembly](Tensile_Tester_Asm.SLDASM)
+
 [Lead Screw](./Lead_Screw.SLDPRT)
 
 [Flange Nut](./Flange_Nut.SLDPRT)
