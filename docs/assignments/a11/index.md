@@ -97,6 +97,32 @@ We selected the 23HS30-2904S-MG10 as the motor candidate for each lead screw bas
 
 The remaining verification items are the curve's supply voltage and current conditions, performance down to 0.315 output RPM, and confirmation of the applicable gearbox torque rating. The supplied graph does not extend to the lowest required output speed.
 
+
+| **Parameter** | **Value** |
+| :--- | :--- |
+| Selected Motor | 23HS30-2904S-MG10 |
+| Motor Type | NEMA 23 Bipolar Geared Stepper |
+| Quantity | 2 — one per lead screw |
+| Gear Ratio | 10:1 |
+| Gearbox Efficiency | 90% |
+| Rated Current | 2.9 A/phase |
+| Driver Supply Voltage | To be confirmed from torque-curve test conditions |
+| Required Design Output Torque | 6.52 N·m per assembly |
+| Required Motor Rotor Torque | Approximately 0.725 N·m |
+| Required Gearbox Output Speed | 0.315–15.75 RPM |
+| Required Motor Rotor Speed | 3.15–157.5 RPM |
+| Required Crosshead Speed | 1–50 mm/min |
+| Required Design Mechanical Output Power | 10.75 W per assembly at maximum speed |
+| Pull-Out Torque at 15.7 Output RPM | 13.28 N·m |
+| Motor Frame Size | 57 × 57 mm |
+| Front Mounting Holes | 4 × Ø5.2 mm |
+| Mounting Hole Pattern | 47.14 × 47.14 mm square |
+| Locating Boss Diameter | 40 mm |
+| Output Shaft Type | Keyed |
+| Output Shaft Diameter | 14 mm |
+| Output Shaft Length | 34 mm |
+
+
 ### Resources
 
 - [Selected Motor — STEPPERONLINE](https://www.omc-stepperonline.com/nema-23-stepper-motor-l-76mm-gear-ratio-10-1-mg-series-planetary-gearbox-23hs30-2904s-mg10)
