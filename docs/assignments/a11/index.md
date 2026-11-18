@@ -165,7 +165,7 @@ We modeled the motor torque as being resisted equally by the four mounting bolts
 
 The diagram above shows how the torque is distributed across the bolt pattern. This analysis assumes the four bolts share the torque equally and resist it through bearing contact at the holes.
 
-### Bearing Stress and Thickness Model
+### Bearing Stress and Thickness Calculations
 
 We used the force at each bolt to calculate bearing stress in the aluminum plate. The bearing area depends on the plate thickness and bolt diameter. Increasing the thickness increases this area and reduces the bearing stress.
 
