@@ -307,6 +307,74 @@ The completed view shows the coupler extending from the motor assembly, with the
 
 The selected 30 mm outer diameter exceeds the calculated minimum diameter of approximately 17.15 mm. The nominal torsional shear stress is also below the shear yield strength used in the analysis. This supports the coupler body dimensions for the applied design torque.
 
+## Frame Connector Analysis - Bryan
+
+### Knowns and Unknowns
+
+The goal of this section was to check the brackets connecting the top frame member to the vertical supports. These connections must transfer the tensile load into the uprights and resist the twisting caused by the motors.
+
+We used two 1,000 N screw loads and a torque of 13.28 N·m per motor from the selected torque–speed curve. The bracket calculations use a thickness of 6 mm and an effective section width of 39 mm.
+
+| **Known Parameter** | **Value** |
+| :--- | :--- |
+| Total Axial Load | 2,000 N |
+| Number of Motors | 2 |
+| Torque Used per Motor | 13.28 N·m |
+| Moment Arm Used in Calculation | 107 mm |
+| Bracket Thickness | 6 mm |
+| Effective Bracket Width | 39 mm |
+| Assumed Tensile Yield Strength | 276 MPa |
+| Assumed Shear Strength | 207 MPa |
+| Required Safety Factor | 4 |
+
+| **Unknown Parameter** | **Symbol** |
+| :--- | :--- |
+| Vertical Reaction at Each End | Pv |
+| Transverse Reaction from Motor Torque | Pt |
+| Nominal Normal Stress | σ |
+| Nominal Shear Stress | τ |
+
+### Frame and Bracket Arrangement
+
+We used L-shaped connector plates to connect the horizontal frame members to the vertical supports. Each plate spans the corner so that its fasteners connect both frame members.
+
+<img width="446" height="557" alt="1_Frame_Idea_to_verify" src="https://github.com/user-attachments/assets/b6dd3eee-3ba1-47cd-840f-02a6da58a667" />
+
+The CAD view above shows the proposed bracket arrangement at the top and bottom of the frame. This analysis focuses on the upper connections, where the lead screw loads and motor reaction torques enter the frame.
+
+### Free-Body Diagrams and Calculations
+
+We began by drawing the two 1,000 N screw loads on the top frame member. With symmetric loading and support locations, each end carries a vertical reaction of 1,000 N.
+
+The normal-stress calculation assumes that two bracket plates share each end reaction equally, giving a vertical load of 500 N per plate.
+
+We also represented the two motor torques as a combined moment resisted by opposing transverse reactions at the frame connections. Using the 107 mm moment arm shown in the calculations gives a transverse reaction of approximately 248.22 N.
+
+The simplified diagrams separate the vertical loading from the motor-induced twisting. This allowed us to determine the reaction forces used in the bracket stress calculations.
+
+We calculated the nominal stresses using the bracket's 6 mm thickness and 39 mm effective width. The transverse reaction was used for the shear-stress check, while the 500 N vertical load per plate was used for the normal-stress check.
+
+The material strengths were divided by the required safety factor of 4 to establish the allowable stresses.
+
+<img width="438" height="341" alt="2_Bracket_Hand_Calcs" src="https://github.com/user-attachments/assets/365a15af-a841-49ed-bc29-0f923b65a782" />
+
+
+The calculated shear stress is approximately **1.06 MPa**, below the assumed allowable shear stress of **51.75 MPa**. The calculated normal stress is approximately **2.14 MPa**, below the allowable normal stress of **69 MPa**.
+
+| **Result** | **Value** |
+| :--- | :--- |
+| Vertical Reaction per Frame End | 1,000 N |
+| Vertical Load per Plate, Assuming Equal Sharing | 500 N |
+| Transverse Reaction Used in Shear Check | 248.22 N |
+| Calculated Nominal Shear Stress | 1.06 MPa |
+| Allowable Shear Stress | 51.75 MPa |
+| Calculated Nominal Normal Stress | 2.14 MPa |
+| Allowable Normal Stress | 69 MPa |
+
+### Frame Connector Conclusion
+
+The proposed 6 mm thick brackets satisfy the nominal normal- and shear-stress checks under the loading assumptions used. These results support the proposed bracket section for transferring the calculated reactions between the top member and vertical supports. The fasteners and T-slot connections still need to be checked separately.
+
 ### Resources
 
 - [Selected Motor — STEPPERONLINE](https://www.omc-stepperonline.com/nema-23-stepper-motor-l-76mm-gear-ratio-10-1-mg-series-planetary-gearbox-23hs30-2904s-mg10)
