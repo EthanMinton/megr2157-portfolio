@@ -226,7 +226,7 @@ We then assembled the plate to the motor in CAD, aligning the center features wi
 
 The assembly view shows how the plate fits against the selected motor and leaves the output shaft exposed for the coupler connection. This establishes the motor-side mounting arrangement before integrating the mount with the tester frame.
 
-## 3. Coupler Design
+## Coupler Design - Grant
 
 ### Knowns and Unknowns
 
