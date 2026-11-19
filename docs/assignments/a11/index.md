@@ -601,49 +601,50 @@ Two motors and two mounts are included because each lead screw has its own motor
 
 ### Materials and Components
 
-| Item Number | Quantity Required | Name | Unit or Pack Cost | Total Cost | Purchase Link |
-| :---: | :---: | :--- | ---: | ---: | :--- |
-| 1 | 4 | 80 × 40 mm T-Slot Aluminum Extrusion, 2 ft | $51.82 each | $207.28 | [McMaster 5537T112](https://www.mcmaster.com/5537T112/) |
-| 2 | 8 | 40-Series Flush 90° Corner Plates | $20.18 each | $161.44 | [McMaster 3136N924](https://www.mcmaster.com/3136N924/) |
-| 3 | 8 | M5 × 65 mm Socket Head Screws — purchase one 25-pack | $4.10/pack | $4.10 | [McMaster 91290A270](https://www.mcmaster.com/91290A270/) |
-| 4 | 8 | M5 Flange Locknuts — purchase one 100-pack | $3.52/pack | $3.52 | [McMaster 94920A120](https://www.mcmaster.com/94920A120/) |
-| 5 | 8 | M5 T-Slot Nut and Screw Combinations — purchase two 4-packs | $25.10/pack | $50.20 | [McMaster 5021N15](https://www.mcmaster.com/5021N15/) |
-| 6 | 1 stock piece | 932 Bearing Bronze Stock for Floating Bearing Mounts | $187.45 | $187.45 | [McMaster 8234K22](https://www.mcmaster.com/8234K22/) |
-| 7 | 2 | Purchased NEMA 23 Motor Mounting Brackets | $5.75 each | $11.50 | [RobotShop Motor Bracket](https://www.robotshop.com/products/stepper-motor-mounting-bracket-nema-23) |
-| 8 | 2 | NEMA 23 Geared Stepper Motor, 10:1 — 23HS30-2904S-MG10 | $40.05 each | $80.10 | [STEPPERONLINE Motor](https://www.omc-stepperonline.com/nema-23-stepper-motor-l-76mm-gear-ratio-10-1-mg-series-planetary-gearbox-23hs30-2904s-mg10) |
-| | | **Current Priced Materials and Components** | | **$705.59** | |
+We combined the purchased components from A10 and A11 into one BOM. Hardware costs include the complete packs required for purchase.
 
-The screw and locknut costs include one complete pack each, even though only eight pieces are currently listed. The eight T-slot nut-and-screw combinations require two packs of four. The bronze entry represents purchased stock rather than one finished bearing mount.
+| **Item Number** | **Quantity** | **Name** | **Cost/Item** | **Cost** | **Purchase Link** |
+| :---: | :--- | :--- | ---: | ---: | :--- |
+| 1 | 4 | 80 × 40 mm T-Slot Aluminum Extrusion, 2 ft | $51.82 | $207.28 | [5537T112](https://www.mcmaster.com/5537T112/) |
+| 2 | 8 | 40-Series Flush 90° Corner Plates | $20.18 | $161.44 | [3136N924](https://www.mcmaster.com/3136N924/) |
+| 3 | 8 | M5 × 65 mm Socket Head Screws — one 25-pack | $4.10/pack | $4.10 | [91290A270](https://www.mcmaster.com/91290A270/) |
+| 4 | 8 | M5 Flange Locknuts — one 100-pack | $3.52/pack | $3.52 | [94920A120](https://www.mcmaster.com/94920A120/) |
+| 5 | 8 | T-Slot Nut and Screw Combinations — two 4-packs | $25.10/pack | $50.20 | [5021N15](https://www.mcmaster.com/5021N15/) |
+| 6 | 1 stock piece | 932 Bearing Bronze Stock for Floating Bearing Mounts | $187.45 | $187.45 | [8234K22](https://www.mcmaster.com/8234K22/) |
+| 7 | 1 | Custom Motor Coupler — Fabricated | TBD | TBD | — |
+| 8 | 1 | NEMA 23 Motor Mounting Bracket | $5.75 | $5.75 | [RobotShop](https://www.robotshop.com/products/stepper-motor-mounting-bracket-nema-23) |
+| 9 | 1 | NEMA 23 Geared Stepper Motor, 10:1 | $40.05 | $40.05 | [STEPPERONLINE](https://www.omc-stepperonline.com/nema-23-stepper-motor-l-76mm-gear-ratio-10-1-mg-series-planetary-gearbox-23hs30-2904s-mg10) |
+| 10 | 2 | ACME Lead Screw, 5/8"-8, 36 in Long | $102.38 | $204.76 | [97014A320](https://www.mcmaster.com/97014A320/) |
+| 11 | 2 | Bronze ACME Flange Nut, 5/8"-8 | $138.20 | $276.40 | [95120A119](https://www.mcmaster.com/95120A119/) |
+| 12 | 1 pack of 10 | Socket Head Screws, #6-32 × 3/4 in | $4.41/pack | $4.41 | [92200A151](https://www.mcmaster.com/92200A151/) |
+| | | **Priced Materials and Components** | | **$1,145.36** | |
 
-### Design Labor
+The material subtotal includes the listed purchased components and stock. The fabricated coupler remains unpriced and is excluded from this subtotal.
 
-We divided the **43 combined team hours** equally, giving each team member **14 hours and 20 minutes** at the required rate of **$35/hour**.
+### Design Cost
 
-| **Person** | **Hours Worked** | **Cost per Hour** | **Labor Cost** |
-| :--- | :--- | ---: | ---: |
-| Grant | 14 hours, 20 minutes | $35.00 | $501.67 |
-| Ethan | 14 hours, 20 minutes | $35.00 | $501.67 |
-| Bryan | 14 hours, 20 minutes | $35.00 | $501.66 |
-| **Total** | **43 hours** | | **$1,505.00** |
+The design labor estimate uses 12 hours per team member at $30 per hour. This gives 36 combined hours and a total design cost of $1,080.00.
 
-A one-cent rounding adjustment keeps the total consistent with 43 hours at $35/hour.
+| **Person** | **Hours Worked** | **Cost/Hour** | **Cost** |
+| :---: | :---: | ---: | ---: |
+| Grant | 12 | $30.00 | $360.00 |
+| Ethan | 12 | $30.00 | $360.00 |
+| Bryan | 12 | $30.00 | $360.00 |
+| **Total** | **36** | | **$1,080.00** |
 
-### Current Cost Summary
+### Total Project Cost
 
 | **Category** | **Cost** |
 | :--- | ---: |
-| Priced Materials and Components | $705.59 |
-| Design Labor | $1,505.00 |
-| **Current Priced Project Subtotal** | **$2,210.59** |
+| Materials and Components | $1,145.36 |
+| Design Labor | $1,080.00 |
+| **Total Priced Project Cost** | **$2,225.36** |
 
-
-The current priced subtotal is **$2,210.59**, including the listed materials, components, and design labor. Additional required items must be included before reporting the final cost for both assignment parts.
+The current priced project cost is **$2,225.36**, including the listed materials, components, and design labor. The coupler cost will be added once determined.
 
 ## Lessons Learned
 
-Throughout this assignment, we learned how to organize our work around each other's schedules and the amount of work each person could take on. We divided tasks based on our strengths in calculations, CAD, simulation, and documentation. This helped us make progress while balancing our other responsibilities. We also learned that dividing the work requires communication because each section depends on decisions made in the others. Teamwork was important to connecting our individual contributions into one design.
-
-We learned how to use the lead screw requirements from A10 to select a motor and verify its torque and speed through a gearbox. Keeping the motor rotor values separate from the gearbox output values helped us compare our calculations with the torque–speed curve. We also learned to track where the safety factor had already been applied so it was not counted twice.
+Throughout this assignment, we learned how to organize our work around each other's schedules and the amount of work each person could take on. We divided tasks based on our strengths in calculations, CAD, simulation, and documentation. This helped us make progress while balancing our other responsibilities. We also learned that dividing the work requires communication because each section depends on decisions made in the others. Teamwork was important in connecting our individual contributions into one design.
 
 The mount and coupler calculations helped us connect material strength to component dimensions. We then used CAD to show how those parts fit together. This reinforced that a component needs more than sufficient strength; its holes, shaft connections, and mounting surfaces also need to align with the surrounding assembly.
 
@@ -653,5 +654,26 @@ The assignment required approximately **23 combined team hours**, including calc
 
 ### Resources
 
-- [Selected Motor — STEPPERONLINE](https://www.omc-stepperonline.com/nema-23-stepper-motor-l-76mm-gear-ratio-10-1-mg-series-planetary-gearbox-23hs30-2904s-mg10)
-- [Manufacturer Specifications and Dimension Drawing](https://files.omc-stepperonline.com/23HS30-2904S-MG10.pdf)
+[CAD FILES](https://drive.google.com/drive/folders/1u-TWogEifa_BrdLtgf8Pgp2fLFRhht96)
+
+[Machinery’s Handbook](https://www.tfgusa.com/wp-content/uploads/2023/11/Machinerys-Handbook.pdf)
+
+[STEPPERONLINE — Selected Motor](https://www.omc-stepperonline.com/nema-23-stepper-motor-l-76mm-gear-ratio-10-1-mg-series-planetary-gearbox-23hs30-2904s-mg10)
+
+[Motor Specifications and Drawing](https://files.omc-stepperonline.com/23HS30-2904S-MG10.pdf)
+
+[McMaster 5537T112 — Frame Extrusion](https://www.mcmaster.com/5537T112/)
+
+[McMaster 3136N924 — Corner Plates](https://www.mcmaster.com/3136N924/)
+
+[McMaster 91290A270 — M5 Screws](https://www.mcmaster.com/91290A270/)
+
+[McMaster 94920A120 — M5 Locknuts](https://www.mcmaster.com/94920A120/)
+
+[McMaster 5021N15 — T-Slot Hardware](https://www.mcmaster.com/5021N15/)
+
+[McMaster 8234K22 — Bronze Stock](https://www.mcmaster.com/8234K22/)
+
+[RobotShop — Motor Bracket](https://www.robotshop.com/products/stepper-motor-mounting-bracket-nema-23)
+
+[National Bronze — Bearing Design Guide](https://www.nationalbronze.com/catalog.pdf)
