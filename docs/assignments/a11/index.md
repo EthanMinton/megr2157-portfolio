@@ -544,6 +544,95 @@ The proposed change has not been analyzed in the supplied results, so any reduct
 
 The refined model gives a minimum factor of safety of **33.67** against yielding under the modeled loads and support conditions. The maximum resultant displacement is **0.1398 mm**, so stiffness remains an important consideration even though the calculated stress is low. Transverse bracing is the proposed improvement for reducing this movement.
 
+## Floating Bearing Mount
+
+We designed the mount as a square bronze plate with a centered bearing bore and four mounting holes. The centered bore locates the screw, while the corner holes provide attachment points to the bottom frame.
+
+| **Feature** | **Proposed Dimension** |
+| :--- | :--- |
+| Mount Length and Width | 1.575 × 1.575 in |
+| Mount Thickness | 5/16 in |
+| Bearing Bore Limits | Ø0.6256–0.6263 in |
+| Bearing Bore Depth | 0.19 in |
+| Mounting Fasteners | 4 × M5 |
+| Counterbore Diameter Shown in Sketch | 0.300 in — verify against selected screw head |
+
+The approximately 40 mm square plate provides space around the center bore for the mounting holes. The selected thickness accommodates the bearing pocket and recessed fastener heads. The final drawing must also define the bolt-center spacing and edge distances so the mount matches its frame attachment.
+
+<img width="1189" height="969" alt="image" src="https://github.com/user-attachments/assets/ab93dedb-92a6-4a3f-b215-7d151db79b1e" />
+
+### RC3 Fit and Alignment
+
+We selected an RC3 precision running fit to provide clearance for rotation while limiting sideways movement of the screw end. The proposed bore limits are **0.6256–0.6263 in**.
+
+For a shaft-basis RC3 fit at this nominal size, the corresponding smooth shaft limits are **0.6246–0.6250 in**. Together, these limits provide **0.0006–0.0017 in of diametral clearance**.
+
+The bearing bore must align with the screw axis established by the upper support. The lower support must also allow axial movement so the screw does not become trapped between two axially fixed supports.
+
+### Surface Speed and Material Check
+
+We used the maximum screw speed to determine the sliding speed at the bearing surface. The calculated surface speed is approximately **2.58 ft/min**, below the **1,500 ft/min limit recorded in the notes**.
+
+The pressure and PV calculations still need to be revised before confirming the bronze selection. The handwritten pressure calculation uses the circular shaft-end area. A radial journal-bearing check requires the radial bearing load and the projected contact area based on shaft diameter and engagement length.
+
+The 1,000 N specimen load per screw must therefore be distinguished from the radial load actually carried by this floating support.
+
+### CAD Model
+
+We modeled the bronze plate with a central bearing pocket and four counterbored mounting holes.
+
+<img width="1044" height="928" alt="image" src="https://github.com/user-attachments/assets/2bab82c9-5c73-44d8-af3d-6da8f8a0d2ba" />
+
+
+The counterbores recess the fastener heads, while the central pocket supports the screw end. The assembly must leave clearance beneath the shaft end so the blind pocket does not unintentionally carry axial thrust.
+
+### Floating Bearing Mount Conclusion
+
+The proposed mount establishes the bearing location, RC3 bore limits, and four-hole attachment arrangement. Final verification requires the mating shaft dimensions, corrected bearing-pressure check, and completed fastener and hole-location dimensions.
+
+## Bill of Materials and Labor Cost
+
+We organized the purchased components, material stock, and design labor to estimate the project cost. Packaged hardware is priced by the number of complete packs required, while the quantity column identifies how many individual fasteners are needed.
+
+Two motors and two mounts are included because each lead screw has its own motor assembly. The table below retains our recorded prices.
+
+### Materials and Components
+
+| Item Number | Quantity Required | Name | Unit or Pack Cost | Total Cost | Purchase Link |
+| :---: | :---: | :--- | ---: | ---: | :--- |
+| 1 | 4 | 80 × 40 mm T-Slot Aluminum Extrusion, 2 ft | $51.82 each | $207.28 | [McMaster 5537T112](https://www.mcmaster.com/5537T112/) |
+| 2 | 8 | 40-Series Flush 90° Corner Plates | $20.18 each | $161.44 | [McMaster 3136N924](https://www.mcmaster.com/3136N924/) |
+| 3 | 8 | M5 × 65 mm Socket Head Screws — purchase one 25-pack | $4.10/pack | $4.10 | [McMaster 91290A270](https://www.mcmaster.com/91290A270/) |
+| 4 | 8 | M5 Flange Locknuts — purchase one 100-pack | $3.52/pack | $3.52 | [McMaster 94920A120](https://www.mcmaster.com/94920A120/) |
+| 5 | 8 | M5 T-Slot Nut and Screw Combinations — purchase two 4-packs | $25.10/pack | $50.20 | [McMaster 5021N15](https://www.mcmaster.com/5021N15/) |
+| 6 | 1 stock piece | 932 Bearing Bronze Stock for Floating Bearing Mounts | $187.45 | $187.45 | [McMaster 8234K22](https://www.mcmaster.com/8234K22/) |
+| 7 | 2 | Purchased NEMA 23 Motor Mounting Brackets | $5.75 each | $11.50 | [RobotShop Motor Bracket](https://www.robotshop.com/products/stepper-motor-mounting-bracket-nema-23) |
+| 8 | 2 | NEMA 23 Geared Stepper Motor, 10:1 — 23HS30-2904S-MG10 | $40.05 each | $80.10 | [STEPPERONLINE Motor](https://www.omc-stepperonline.com/nema-23-stepper-motor-l-76mm-gear-ratio-10-1-mg-series-planetary-gearbox-23hs30-2904s-mg10) |
+| | | **Current Priced Materials and Components** | | **$705.59** | |
+
+The screw and locknut costs include one complete pack each, even though only eight pieces are currently listed. The eight T-slot nut-and-screw combinations require two packs of four. The bronze entry represents purchased stock rather than one finished bearing mount.
+
+### Design Labor
+
+We used the assignment's specified design labor rate of **$35 per hour**. Each team member recorded 12 hours, giving a combined design time of 36 hours.
+
+| **Person** | **Hours Worked** | **Cost per Hour** | **Labor Cost** |
+| :--- | ---: | ---: | ---: |
+| Grant | 12 | $35.00 | $420.00 |
+| Ethan | 12 | $35.00 | $420.00 |
+| Bryan | 12 | $35.00 | $420.00 |
+| **Total** | **36** | | **$1,260.00** |
+
+### Current Cost Summary
+
+| **Category** | **Cost** |
+| :--- | ---: |
+| Priced Materials and Components | $705.59 |
+| Design Labor | $1,260.00 |
+| **Current Priced Project Subtotal** | **$1,965.59** |
+
+The current priced subtotal is **$1,965.59**, including the listed materials, components, and design labor. Additional required items must be included before reporting the final cost for both assignment parts.
+
 
 ### Resources
 
