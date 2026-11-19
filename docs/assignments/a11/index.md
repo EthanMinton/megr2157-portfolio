@@ -2,6 +2,9 @@
 
 ## Objective
 
+The objective of this assignment is to continue the tensile tester design from A10 by selecting motors and designing the mounts, couplers, frame connections, and floating bearing mounts. We will use engineering calculations and FEA to check whether the design can support the 2,000 N load with a safety factor of 4 while providing a crosshead speed of 1–50 mm/min. We will also create the CAD assembly and drawings, document our design decisions, and estimate the material and labor costs.
+
+Ethan completed the documentation, organizing the calculations, CAD screenshots, FEA results, and explanations into the portfolio. Grant completed the engineering calculations, including the motor torque and power requirements, motor mount thickness, coupler torsional stress, and frame bracket stress checks. Bryan created the CAD models and assemblies, including the motor mounting plate, coupler, floating bearing mount, and frame arrangement.
 
 ## Motor Selection — Grant
 
@@ -631,8 +634,20 @@ We used the assignment's specified design labor rate of **$35 per hour**. Each t
 | Design Labor | $1,260.00 |
 | **Current Priced Project Subtotal** | **$1,965.59** |
 
+
 The current priced subtotal is **$1,965.59**, including the listed materials, components, and design labor. Additional required items must be included before reporting the final cost for both assignment parts.
 
+## Lessons Learned
+
+Throughout this assignment, we learned how to organize our work around each other's schedules and the amount of work each person could take on. We divided tasks based on our strengths in calculations, CAD, simulation, and documentation. This helped us make progress while balancing our other responsibilities. We also learned that dividing the work requires communication because each section depends on decisions made in the others. Teamwork was important to connecting our individual contributions into one design.
+
+We learned how to use the lead screw requirements from A10 to select a motor and verify its torque and speed through a gearbox. Keeping the motor rotor values separate from the gearbox output values helped us compare our calculations with the torque–speed curve. We also learned to track where the safety factor had already been applied so it was not counted twice.
+
+The mount and coupler calculations helped us connect material strength to component dimensions. We then used CAD to show how those parts fit together. This reinforced that a component needs more than sufficient strength; its holes, shaft connections, and mounting surfaces also need to align with the surrounding assembly.
+
+Through FEA, we learned how fixtures, load locations, and mesh refinement affect the results. Comparing mesh runs helped us judge whether the reported stresses and displacements were stable. The vertical frame results also showed that a high factor of safety does not necessarily mean a part is stiff enough, which led us to consider additional transverse bracing.
+
+The assignment required approximately **23 combined team hours**, including calculations, CAD modeling, FEA, coordination, and documentation.
 
 ### Resources
 
