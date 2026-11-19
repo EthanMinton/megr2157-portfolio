@@ -617,25 +617,27 @@ The screw and locknut costs include one complete pack each, even though only eig
 
 ### Design Labor
 
-We used the assignment's specified design labor rate of **$35 per hour**. Each team member recorded 12 hours, giving a combined design time of 36 hours.
+We divided the **43 combined team hours** equally, giving each team member **14 hours and 20 minutes** at the required rate of **$35/hour**.
 
 | **Person** | **Hours Worked** | **Cost per Hour** | **Labor Cost** |
-| :--- | ---: | ---: | ---: |
-| Grant | 12 | $35.00 | $420.00 |
-| Ethan | 12 | $35.00 | $420.00 |
-| Bryan | 12 | $35.00 | $420.00 |
-| **Total** | **36** | | **$1,260.00** |
+| :--- | :--- | ---: | ---: |
+| Grant | 14 hours, 20 minutes | $35.00 | $501.67 |
+| Ethan | 14 hours, 20 minutes | $35.00 | $501.67 |
+| Bryan | 14 hours, 20 minutes | $35.00 | $501.66 |
+| **Total** | **43 hours** | | **$1,505.00** |
+
+A one-cent rounding adjustment keeps the total consistent with 43 hours at $35/hour.
 
 ### Current Cost Summary
 
 | **Category** | **Cost** |
 | :--- | ---: |
 | Priced Materials and Components | $705.59 |
-| Design Labor | $1,260.00 |
-| **Current Priced Project Subtotal** | **$1,965.59** |
+| Design Labor | $1,505.00 |
+| **Current Priced Project Subtotal** | **$2,210.59** |
 
 
-The current priced subtotal is **$1,965.59**, including the listed materials, components, and design labor. Additional required items must be included before reporting the final cost for both assignment parts.
+The current priced subtotal is **$2,210.59**, including the listed materials, components, and design labor. Additional required items must be included before reporting the final cost for both assignment parts.
 
 ## Lessons Learned
 
