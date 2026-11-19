@@ -455,6 +455,96 @@ A proposed improvement is to use larger load-spreading plates around the mountin
 ### Top Frame Conclusion
 
 Under the modeled loading and support conditions, the refined maximum stress gives a factor of safety of **6.29**, exceeding the required value of **4**. The maximum resultant displacement is **0.02857 mm**. These results support the strength of the modeled top member, with the remaining verification focused on the load settings, mesh details, and vertical displacement at the grip line.
+
+## Vertical Frame FEA 
+
+### Fixtures and Loading
+
+We fixed the bottom face of the vertical member to represent its connection to the base. This idealizes the base connection as rigid and prevents movement at the selected face.
+
+<img width="380" height="281" alt="11_Side_Bar_Fixture" src="https://github.com/user-attachments/assets/d97fbfd2-b625-4821-ad38-9bbc4c0e4ec5" />
+
+The intended axial compression is 1,000 N per upright, based on the symmetric load distribution from the frame calculations.
+
+**[INSERT SCREENSHOT HERE: The axial compression load settings showing its magnitude and direction. This screenshot was not included in the ZIP.]**
+
+We also applied a transverse force at the top of the member to represent the lateral reaction transferred through the upper frame connection.
+
+<img width="594" height="597" alt="13_Side_Bar_Transverse_Force" src="https://github.com/user-attachments/assets/61ca56e5-8dc9-4f19-9cb3-c833f988adce" />
+
+The compression load acts along the upright, while the transverse force causes bending. Applying both loads allows the study to examine their combined effect.
+
+### Initial Stress Result
+
+We first reviewed the coarse-mesh stress result to identify the most heavily loaded region.
+
+<img width="440" height="417" alt="14_Side_Bar_Stress1" src="https://github.com/user-attachments/assets/d175039a-5aa3-4f9c-b722-d50757baa8db" />
+
+The initial maximum von Mises stress was **8.365 MPa**. Stress increased toward the bottom of the member, where the fixed support resists the bending caused by the transverse load.
+
+<img width="440" height="417" alt="14_Side_Bar_Stress1" src="https://github.com/user-attachments/assets/c646fafd-73bc-4778-a447-5401b7a95455" />
+
+The close-up above shows the peak stress near the fixed bottom edge. This location is influenced by both the applied loading and the rigid support assumption.
+
+### Initial Displacement Result
+
+<img width="558" height="521" alt="16_Side_bar_Defl1" src="https://github.com/user-attachments/assets/0019b7a5-d652-4c31-96d7-c258685e2198" />
+
+The maximum resultant displacement was **0.1398 mm**, occurring near the top of the member. Displacement increased with distance from the fixed base, showing the bending response to the transverse load.
+
+This plot reports total displacement, which includes movement in all directions. It does not separately report vertical displacement at the grip line.
+
+### Mesh Refinement and Comparison
+
+We compared the coarse-mesh results with a medium-mesh run to examine how the results changed after refinement.
+
+<img width="631" height="494" alt="16_Side_Bar_Stress2" src="https://github.com/user-attachments/assets/3281fe89-1c8b-4828-8488-6ae7e974df04" />
+
+The refined maximum von Mises stress was **8.167 MPa**, with the critical region remaining near the fixed base.
+
+<img width="539" height="462" alt="17_Side_Bar_Defl2" src="https://github.com/user-attachments/assets/f93d98a3-fae0-465d-9a6d-8ae866241900" />
+
+The maximum resultant displacement remained **0.1398 mm** at the displayed precision.
+
+| **Result** | **Coarse Mesh** | **Medium Mesh** |
+| :--- | :--- | :--- |
+| Maximum von Mises Stress | 8.365 MPa | 8.167 MPa |
+| Maximum Resultant Displacement | 0.1398 mm | 0.1398 mm |
+| Stress Change | — | 2.37% |
+| Displacement Change | — | No change at displayed precision |
+
+<img width="350" height="143" alt="18_Side_bar_Converges" src="https://github.com/user-attachments/assets/4d749039-09ed-4a2e-9269-75cf30c6edf6" />
+
+The small change in stress and consistent displacement show that the results are relatively stable between these two meshes. An additional refinement is needed to complete the assignment's requirement for at least two mesh refinements.
+
+### Factor of Safety
+
+Using the displayed yield strength of **275 MPa** and refined maximum stress of **8.167 MPa** gives a minimum factor of safety of approximately **33.67**. This exceeds the required value of **4** for the yielding check.
+
+| **Final Result** | **Value** |
+| :--- | :--- |
+| Maximum von Mises Stress | 8.167 MPa |
+| Critical Stress Region | Near the fixed base |
+| Maximum Resultant Displacement | 0.1398 mm |
+| Maximum Displacement Region | Near the top |
+| Calculated Minimum Factor of Safety | 33.67 |
+| Required Factor of Safety | 4 |
+
+### Load Path and Proposed Improvement
+
+The axial load passes down the upright toward the base. The transverse load bends the member, creating the highest bending demand near the fixed support. The plots primarily show bending; twisting was not separately measured.
+
+We proposed adding transverse bracing to reduce lateral movement and improve frame stiffness. A lighter section could then be considered, but its displacement and strength would need to be checked again.
+
+<img width="797" height="65" alt="19_FoS_and_Optimization" src="https://github.com/user-attachments/assets/6d5c9300-ed8e-490f-b00a-f3d73af1d121" />
+
+The proposed change has not been analyzed in the supplied results, so any reduction in displacement or shift in the critical stress location remains to be verified.
+
+### Vertical Frame Conclusion
+
+The refined model gives a minimum factor of safety of **33.67** against yielding under the modeled loads and support conditions. The maximum resultant displacement is **0.1398 mm**, so stiffness remains an important consideration even though the calculated stress is low. Transverse bracing is the proposed improvement for reducing this movement.
+
+
 ### Resources
 
 - [Selected Motor — STEPPERONLINE](https://www.omc-stepperonline.com/nema-23-stepper-motor-l-76mm-gear-ratio-10-1-mg-series-planetary-gearbox-23hs30-2904s-mg10)
