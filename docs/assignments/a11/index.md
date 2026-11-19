@@ -373,8 +373,88 @@ The calculated shear stress is approximately **1.06 MPa**, below the assumed all
 
 ### Frame Connector Conclusion
 
-The proposed 6 mm thick brackets satisfy the nominal normal- and shear-stress checks under the loading assumptions used. These results support the proposed bracket section for transferring the calculated reactions between the top member and vertical supports. The fasteners and T-slot connections still need to be checked separately.
+The proposed 6 mm-thick brackets satisfy the nominal normal- and shear-stress checks under the loading assumptions used. These results support the proposed bracket section for transferring the calculated reactions between the top member and vertical supports. The fasteners and T-slot connections still need to be checked separately.
 
+## Top Frame FEA - Bryan
+
+### Fixtures and Axial Loading
+
+We constrained both ends of the top member to represent its connections to the vertical frame supports. These fixtures idealize the connections as rigid and do not include movement within the brackets or fasteners.
+
+The intended axial loading is 1,000 N at each lead screw location, giving a total load of 2,000 N. The loads enter the extrusion through the mounting regions around the shaft openings.
+
+<img width="499" height="386" alt="3_Top_Bar_Fixture Force" src="https://github.com/user-attachments/assets/2eb52255-94c5-4462-b614-4915252760e3" />
+
+The screenshot above shows the supported ends and the selected loading faces. This setup represents the load passing from the two screw locations through the top member and into the vertical supports.
+
+### Motor Torque Loading
+
+We also included motor reaction torque at the mounting locations. We used 13.28 N·m from the selected torque–speed curve to examine the frame under the motor's displayed output torque.
+
+<img width="379" height="393" alt="4_Top_Bar_Torque" src="https://github.com/user-attachments/assets/d1ec49d1-7b42-458a-8567-75567e9ad90a" />
+
+Including torque allows the study to account for twisting as well as bending from the axial loads. The torque must be applied at both motor locations to represent the complete loading condition.
+
+### Initial Stress and Displacement Results
+
+We first reviewed the coarse-mesh results to identify the stress distribution and overall deformation.
+
+<img width="755" height="451" alt="5_Top_Bar_Stress1" src="https://github.com/user-attachments/assets/2b5d9eb8-b18f-4554-97c9-f236967ec64d" />
+
+The initial maximum von Mises stress was **41.54 MPa**. The higher stresses were concentrated near the shaft openings and mounting regions, where the loads enter the extrusion.
+
+<img width="701" height="445" alt="6_Top_Bar_Defl1" src="https://github.com/user-attachments/assets/7345c21a-6dac-41ba-8697-330bec0b2d0a" />
+
+The initial maximum resultant displacement was **0.02844 mm**. Movement was greater between the supported ends, while displacement at the fixtures remained constrained.
+
+### Mesh Refinement and Comparison
+
+We compared the coarse-mesh results with a medium-mesh run to examine how sensitive the results were to mesh refinement.
+
+<img width="527" height="377" alt="8_Top_Bar_Stress2" src="https://github.com/user-attachments/assets/31e05165-a88b-463e-82eb-d5f8dbb04490" />
+
+
+<img width="683" height="384" alt="9_Top_Bar_Defl2" src="https://github.com/user-attachments/assets/bc358897-2d57-44f2-87bb-02f046accc01" />
+
+
+| **Result** | **Coarse Mesh** | **Medium Mesh** |
+| :--- | :--- | :--- |
+| Maximum von Mises Stress | 41.54 MPa | 43.70 MPa |
+| Maximum Resultant Displacement | 0.02844 mm | 0.02857 mm |
+| Stress Change | — | Approximately 5% |
+| Displacement Change | — | Approximately 0.46% |
+
+<img width="351" height="138" alt="10_Top_Bar_Convergence" src="https://github.com/user-attachments/assets/8eb70c47-30bc-40cf-970d-8a8390fc85e7" />
+
+The displacement changed very little between the two runs, while the maximum stress increased by approximately 5%. This shows that displacement is less sensitive to the mesh than the local peak stress. Another refinement near the critical opening would provide stronger evidence that the peak stress has stabilized.
+
+### Critical Stress Location and Safety Factor
+
+We reviewed a close-up of the refined result to identify the maximum-stress location.
+
+<img width="595" height="539" alt="7_Max_Stress_Location" src="https://github.com/user-attachments/assets/b20ed6a6-649e-4978-8b7f-8ab1c7a42b51" />
+
+The maximum stress occurs at the edge of a shaft opening near the loaded mounting region. The opening interrupts the extrusion wall and concentrates stress as the load passes into the surrounding material.
+
+Using the study's displayed yield strength of **275 MPa** and refined maximum stress of **43.70 MPa** gives a minimum factor of safety of approximately **6.29**. This exceeds the required safety factor of **4**.
+
+| **Final Result** | **Value** |
+| :--- | :--- |
+| Maximum von Mises Stress | 43.70 MPa |
+| Critical Location | Edge of a shaft opening near the mounting region |
+| Maximum Resultant Displacement | 0.02857 mm |
+| Calculated Minimum Factor of Safety | 6.29 |
+| Required Factor of Safety | 4 |
+
+### Load Path and Proposed Improvement
+
+The axial loads pass through the mounting regions into the extrusion walls and internal ribs, then toward the supported ends. The motor torques add twisting to this load path. The displacement plots show the combined deformation, although angular twist was not separately measured.
+
+A proposed improvement is to use larger load-spreading plates around the mounting openings. These could distribute the loads over more of the extrusion and reduce local deformation. A revised study would be needed to determine whether this reduces the peak stress or moves the critical location.
+
+### Top Frame Conclusion
+
+Under the modeled loading and support conditions, the refined maximum stress gives a factor of safety of **6.29**, exceeding the required value of **4**. The maximum resultant displacement is **0.02857 mm**. These results support the strength of the modeled top member, with the remaining verification focused on the load settings, mesh details, and vertical displacement at the grip line.
 ### Resources
 
 - [Selected Motor — STEPPERONLINE](https://www.omc-stepperonline.com/nema-23-stepper-motor-l-76mm-gear-ratio-10-1-mg-series-planetary-gearbox-23hs30-2904s-mg10)
