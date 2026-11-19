@@ -1,8 +1,11 @@
 # A11 – Motor Selection
 
 Group Members:
+
 Grant Parker 
+
 Ethan Minton
+
 Bryan Mccanch
 
 
