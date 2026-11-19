@@ -115,7 +115,7 @@ The remaining verification items are the curve's supply voltage and current cond
 | Gear Ratio | 10:1 |
 | Gearbox Efficiency | 90% |
 | Rated Current | 2.9 A/phase |
-| Driver Supply Voltage | To be confirmed from torque-curve test conditions |
+| Driver Supply Voltage | 36 V DC |
 | Required Design Output Torque | 6.52 N·m per assembly |
 | Required Motor Rotor Torque | Approximately 0.725 N·m |
 | Required Gearbox Output Speed | 0.315–15.75 RPM |
@@ -601,52 +601,99 @@ The proposed mount establishes the bearing location, RC3 bore limits, and four-h
 
 ## Bill of Materials and Labor Cost - Grant 
 
-We organized the purchased components, material stock, and design labor to estimate the project cost. Packaged hardware is priced by the number of complete packs required, while the quantity column identifies how many individual fasteners are needed.
+We combined the components from A10 and A11 into one BOM. The updated quantities include two motors, two motor mounts, and two fabricated couplers. We also included the aluminum stock for the crosshead.
 
-Two motors and two mounts are included because each lead screw has its own motor assembly. The table below retains our recorded prices.
+| **Quantity** | **Name** | **Cost/Item** | **Cost** | **Purchase Link** |
+| :--- | :--- | ---: | ---: | :--- |
+| 4 | 80 × 40 mm T-Slot Aluminum Extrusion, 2 ft | $51.82 | $207.28 | [5537T112](https://www.mcmaster.com/5537T112/) |
+| 8 | 40-Series Flush 90° Corner Plates | $20.18 | $161.44 | [3136N924](https://www.mcmaster.com/3136N924/) |
+| 8 | M5 × 65 mm Socket Head Screws — purchase one 25-pack | $4.10/pack | $4.10 | [91290A270](https://www.mcmaster.com/91290A270/) |
+| 8 | M5 Flange Locknuts — purchase one 100-pack | $3.52/pack | $3.52 | [94920A120](https://www.mcmaster.com/94920A120/) |
+| 8 | T-Slot Nut and Screw Combinations — purchase two 4-packs | $25.10/pack | $50.20 | [5021N15](https://www.mcmaster.com/5021N15/) |
+| 1 stock piece | 932 Bearing Bronze Stock for Floating Bearing Mounts | $187.45 | $187.45 | [8234K22](https://www.mcmaster.com/8234K22/) |
+| 2 | Custom Motor Couplers — Fabricated | TBD | TBD | — |
+| 2 | NEMA 23 Motor Mounting Brackets | $5.75 | $11.50 | [RobotShop](https://www.robotshop.com/products/stepper-motor-mounting-bracket-nema-23) |
+| 2 | NEMA 23 Geared Stepper Motors, 10:1 | $40.05 | $80.10 | [STEPPERONLINE](https://www.omc-stepperonline.com/nema-23-stepper-motor-l-76mm-gear-ratio-10-1-mg-series-planetary-gearbox-23hs30-2904s-mg10) |
+| 2 | ACME Lead Screws, 5/8"-8, 36 in Long | $102.38 | $204.76 | [97014A320](https://www.mcmaster.com/97014A320/) |
+| 2 | Bronze ACME Flange Nuts, 5/8"-8 | $138.20 | $276.40 | [95120A119](https://www.mcmaster.com/95120A119/) |
+| 1 pack of 10 | Socket Head Screws, #6-32 × 3/4 in | $4.41/pack | $4.41 | [92200A151](https://www.mcmaster.com/92200A151/) |
+| 1 | 6061 Aluminum Crosshead Stock, 1.5 × 2 × 12 in | $32.25 | $32.25 | [Grainger 2EZZ5](https://www.grainger.com/product/Aluminum-Flat-Bar-Stock-6061-2EZZ5) |
+| | **Priced Materials and Components Subtotal** | | **$1,223.41** | |
 
-### Materials and Components
-
-We combined the purchased components from A10 and A11 into one BOM. Hardware costs include the complete packs required for purchase.
-
-| **Item Number** | **Quantity** | **Name** | **Cost/Item** | **Cost** | **Purchase Link** |
-| :---: | :--- | :--- | ---: | ---: | :--- |
-| 1 | 4 | 80 × 40 mm T-Slot Aluminum Extrusion, 2 ft | $51.82 | $207.28 | [5537T112](https://www.mcmaster.com/5537T112/) |
-| 2 | 8 | 40-Series Flush 90° Corner Plates | $20.18 | $161.44 | [3136N924](https://www.mcmaster.com/3136N924/) |
-| 3 | 8 | M5 × 65 mm Socket Head Screws — one 25-pack | $4.10/pack | $4.10 | [91290A270](https://www.mcmaster.com/91290A270/) |
-| 4 | 8 | M5 Flange Locknuts — one 100-pack | $3.52/pack | $3.52 | [94920A120](https://www.mcmaster.com/94920A120/) |
-| 5 | 8 | T-Slot Nut and Screw Combinations — two 4-packs | $25.10/pack | $50.20 | [5021N15](https://www.mcmaster.com/5021N15/) |
-| 6 | 1 stock piece | 932 Bearing Bronze Stock for Floating Bearing Mounts | $187.45 | $187.45 | [8234K22](https://www.mcmaster.com/8234K22/) |
-| 7 | 1 | Custom Motor Coupler — Fabricated | TBD | TBD | — |
-| 8 | 1 | NEMA 23 Motor Mounting Bracket | $5.75 | $5.75 | [RobotShop](https://www.robotshop.com/products/stepper-motor-mounting-bracket-nema-23) |
-| 9 | 1 | NEMA 23 Geared Stepper Motor, 10:1 | $40.05 | $40.05 | [STEPPERONLINE](https://www.omc-stepperonline.com/nema-23-stepper-motor-l-76mm-gear-ratio-10-1-mg-series-planetary-gearbox-23hs30-2904s-mg10) |
-| 10 | 2 | ACME Lead Screw, 5/8"-8, 36 in Long | $102.38 | $204.76 | [97014A320](https://www.mcmaster.com/97014A320/) |
-| 11 | 2 | Bronze ACME Flange Nut, 5/8"-8 | $138.20 | $276.40 | [95120A119](https://www.mcmaster.com/95120A119/) |
-| 12 | 1 pack of 10 | Socket Head Screws, #6-32 × 3/4 in | $4.41/pack | $4.41 | [92200A151](https://www.mcmaster.com/92200A151/) |
-| | | **Priced Materials and Components** | | **$1,145.36** | |
-
-The material subtotal includes the listed purchased components and stock. The fabricated coupler remains unpriced and is excluded from this subtotal.
+The hardware costs include complete packs purchased. The bronze stock will be used to machine the floating bearing mounts, while the aluminum stock will be used for the crosshead. The two fabricated couplers remain unpriced and are excluded from the subtotal.
 
 ### Design Cost
 
-The design labor estimate uses 12 hours per team member at $30 per hour. This gives 36 combined hours and a total design cost of $1,080.00.
+We estimated **36 combined team hours**, split evenly among the three group members. Using the assignment’s required rate of **$35 per hour**, each member contributes **$420.00** in design labor. This gives a total design cost of **$1,260.00**.
 
-| **Person** | **Hours Worked** | **Cost/Hour** | **Cost** |
-| :---: | :---: | ---: | ---: |
-| Grant | 12 | $30.00 | $360.00 |
-| Ethan | 12 | $30.00 | $360.00 |
-| Bryan | 12 | $30.00 | $360.00 |
-| **Total** | **36** | | **$1,080.00** |
+| Person | Hours Worked | Cost/Hour | Labor Cost |
+| :--- | ---: | ---: | ---: |
+| Grant | 12 | $35.00 | $420.00 |
+| Ethan | 12 | $35.00 | $420.00 |
+| Bryan | 12 | $35.00 | $420.00 |
+| **Total** | **36** | | **$1,260.00** |
 
 ### Total Project Cost
 
-| **Category** | **Cost** |
+| Category | Cost |
 | :--- | ---: |
-| Materials and Components | $1,145.36 |
-| Design Labor | $1,080.00 |
-| **Total Priced Project Cost** | **$2,225.36** |
+| Priced Materials and Components | $1,223.41 |
+| Design Labor | $1,260.00 |
+| **Total Priced Project Cost** | **$2,483.41** |
 
-The current priced project cost is **$2,225.36**, including the listed materials, components, and design labor. The coupler cost will be added once determined.
+The current priced project cost is **$2,483.41**, including the listed materials, components, and design labor. This remains a subtotal because it does not yet include the cost of manufacturing the two custom couplers.
+
+## Engineering Drawings — Bryan
+
+We created a drawing package to communicate the component geometry and assembly arrangement. The drawings include dimensions, material callouts, section and detail views, and title blocks identifying each part. The general tolerance blocks show the required tolerances for dimensions unless a separate tolerance is specified.
+
+### Crosshead Drawing
+
+<img width="1001" height="772" alt="Screenshot 2026-11-18 233838" src="https://github.com/user-attachments/assets/6da2bc11-7cdb-469f-af71-0e556f65beb7" />
+
+We included the crosshead drawing from A10 to show how it connects to the lead screw nuts. The drawing shows the 10 in overall length, 2 in width, and 8 in spacing between the screw locations. The section view shows the internal pocket geometry, while Detail A identifies the nut opening and threaded mounting holes. The nut-opening tolerance controls how the flange nut fits into the crosshead.
+
+### Floating Bearing Mount Drawing
+
+<img width="1000" height="772" alt="Screenshot 2026-11-18 233855" src="https://github.com/user-attachments/assets/6723053b-f3c0-4f3d-9b78-0cbced74c30a" />
+
+The floating bearing drawing shows the center bearing pocket, four mounting holes, and counterbores. The mounting holes are located on a 1.57 × 1.57 in pattern. The center bore has a separate tolerance for the intended RC3 fit, while the side view shows the plate thickness and pocket depths. These dimensions communicate how the bronze mount supports the screw end and attaches to the bottom frame.
+
+### Motor Mount Drawing
+
+<img width="997" height="772" alt="Screenshot 2026-11-18 233912" src="https://github.com/user-attachments/assets/9a49c633-3a31-48c6-89a7-92ea199f1e39" />
+
+We created the motor mount drawing to show the four mounting holes, center shaft opening, and recess for the gearbox locating boss. The side view identifies the selected 0.25 in plate thickness and recess depth. These features position the plate against the gearbox while leaving the output shaft accessible for the coupler.
+
+### Top Frame Member Drawing
+
+<img width="1002" height="775" alt="Screenshot 2026-11-18 233930" src="https://github.com/user-attachments/assets/210e7f20-0b79-4a62-ac1b-1dd662c23da8" />
+
+The top bar drawing shows the 13.6 in member length, two shaft openings, and eight motor mounting holes. The end view shows the extrusion profile, while the isometric view shows how the openings are positioned along the member. This drawing communicates the machining required to prepare the purchased extrusion for the motor assemblies.
+
+### BOM Drawing
+
+<img width="1742" height="808" alt="image" src="https://github.com/user-attachments/assets/cfd967f5-eeaf-4170-8b7d-3f60d4699df6" />
+
+We combined the materials and components from A10 and A11 into one BOM to estimate the cost of the complete assembly. The quantities include two motors, two motor mounts, two couplers, and the lead screws and nuts required to move the crosshead. Hardware costs account for the complete packs that must be purchased, while the bronze and aluminum entries represent stock used to manufacture our parts. The currently priced materials total **$1,223.41**. The fabricated couplers remain unpriced and are excluded from this subtotal.
+
+
+## Final Assembly — Bryan
+
+After modeling the components, we assembled the frame, motors, mounting plates, couplers, lead screws, crosshead, and floating bearing mounts in CAD. This allowed us to review the arrangement of the parts and their connection locations.
+
+<img width="1120" height="867" alt="Screenshot 2026-11-18 233958" src="https://github.com/user-attachments/assets/730b62d7-d0ce-4a1d-a265-08a1eea981c1" />
+
+The assembly drawing provides an overall isometric view of the tensile tester. The motors are positioned above the top frame member, with one motor driving each lead screw. The crosshead spans the two screws, and the floating bearing mounts support their lower ends.
+
+<img width="859" height="1141" alt="image" src="https://github.com/user-attachments/assets/8410a8e1-baaf-4554-b05e-a3be571de754" />
+
+
+The shaded view shows the complete frame arrangement and the placement of the crosshead between the vertical supports. The corner plates connect the horizontal and vertical frame members, while the extended base members provide the supporting footprint.
+
+<img width="1224" height="958" alt="image" src="https://github.com/user-attachments/assets/31138aac-b2cb-47aa-828c-1db09767fe1d" />
+
+We used a transparent view to show the shaft and coupler connections inside the top frame member. This view makes the motor mounting arrangement and screw alignment easier to review. It also shows the intended four-fastener connection at each motor location.
 
 ## Lessons Learned - Ethan
 
@@ -654,11 +701,13 @@ Throughout this assignment, we learned how to organize our work around each othe
 
 The mount and coupler calculations helped us connect material strength to component dimensions. We then used CAD to show how those parts fit together. This reinforced that a component needs more than sufficient strength; its holes, shaft connections, and mounting surfaces also need to align with the surrounding assembly.
 
+One mistake we made repeatedly was updating the BOM without updating every quantity and total connected to it. As we combined A10 and A11, some entries still listed one motor or mount even though our assembly required two, and earlier totals remained after we added components. We corrected the listed quantities, checked the pack costs, and recalculated the material and labor totals. This taught us to keep one shared BOM and review the complete cost summary whenever the design changes.
+
 Through FEA, we learned how fixtures, load locations, and mesh refinement affect the results. Comparing mesh runs helped us judge whether the reported stresses and displacements were stable. The vertical frame results also showed that a high factor of safety does not necessarily mean a part is stiff enough, which led us to consider additional transverse bracing.
 
-The assignment required approximately **23 combined team hours**, including calculations, CAD modeling, FEA, coordination, and documentation.
+The assignment required approximately **36 combined team hours**, including calculations, CAD modeling, FEA, coordination, and documentation.
 
-### Resources
+## Resources
 
 [CAD FILES](https://drive.google.com/drive/folders/1u-TWogEifa_BrdLtgf8Pgp2fLFRhht96)
 
