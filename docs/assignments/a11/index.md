@@ -1,6 +1,12 @@
 # A11 – Motor Selection
 
-## Objective
+Group Members:
+Grant Parker 
+Ethan Minton
+Bryan Mccanch
+
+
+## Objective - Ethan 
 
 The objective of this assignment is to continue the tensile tester design from A10 by selecting motors and designing the mounts, couplers, frame connections, and floating bearing mounts. We will use engineering calculations and FEA to check whether the design can support the 2,000 N load with a safety factor of 4 while providing a crosshead speed of 1–50 mm/min. We will also create the CAD assembly and drawings, document our design decisions, and estimate the material and labor costs.
 
@@ -459,7 +465,7 @@ A proposed improvement is to use larger load-spreading plates around the mountin
 
 Under the modeled loading and support conditions, the refined maximum stress gives a factor of safety of **6.29**, exceeding the required value of **4**. The maximum resultant displacement is **0.02857 mm**. These results support the strength of the modeled top member, with the remaining verification focused on the load settings, mesh details, and vertical displacement at the grip line.
 
-## Vertical Frame FEA 
+## Vertical Frame FEA - Bryan
 
 ### Fixtures and Loading
 
@@ -547,7 +553,7 @@ The proposed change has not been analyzed in the supplied results, so any reduct
 
 The refined model gives a minimum factor of safety of **33.67** against yielding under the modeled loads and support conditions. The maximum resultant displacement is **0.1398 mm**, so stiffness remains an important consideration even though the calculated stress is low. Transverse bracing is the proposed improvement for reducing this movement.
 
-## Floating Bearing Mount
+## Floating Bearing Mount - Bryan
 
 We designed the mount as a square bronze plate with a centered bearing bore and four mounting holes. The centered bore locates the screw, while the corner holes provide attachment points to the bottom frame.
 
@@ -593,7 +599,7 @@ The counterbores recess the fastener heads, while the central pocket supports th
 
 The proposed mount establishes the bearing location, RC3 bore limits, and four-hole attachment arrangement. Final verification requires the mating shaft dimensions, corrected bearing-pressure check, and completed fastener and hole-location dimensions.
 
-## Bill of Materials and Labor Cost
+## Bill of Materials and Labor Cost - Grant 
 
 We organized the purchased components, material stock, and design labor to estimate the project cost. Packaged hardware is priced by the number of complete packs required, while the quantity column identifies how many individual fasteners are needed.
 
@@ -642,7 +648,7 @@ The design labor estimate uses 12 hours per team member at $30 per hour. This gi
 
 The current priced project cost is **$2,225.36**, including the listed materials, components, and design labor. The coupler cost will be added once determined.
 
-## Lessons Learned
+## Lessons Learned - Ethan
 
 Throughout this assignment, we learned how to organize our work around each other's schedules and the amount of work each person could take on. We divided tasks based on our strengths in calculations, CAD, simulation, and documentation. This helped us make progress while balancing our other responsibilities. We also learned that dividing the work requires communication because each section depends on decisions made in the others. Teamwork was important in connecting our individual contributions into one design.
 
